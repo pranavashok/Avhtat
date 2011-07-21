@@ -1,0 +1,14 @@
+there will be one main content manager interface and an editting page..
+1) Content manager -
+  - add articles
+  - list all the articles
+  - selecting one article will take us to the editting page
+  
+2) Editing page -
+  - will get article id through GET
+  - just one rich text box, submit button and a preview button
+  
+3) Installation
+  - creates main database
+
+4) Log in page
