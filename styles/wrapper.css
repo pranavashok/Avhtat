@@ -14,6 +14,7 @@ body{
 
 #wrapper{
   width:100%;
+  height:100%;
  
 }
 
@@ -267,6 +268,34 @@ form .searchboxwrapper input:hover{
 }
 
 #sidelinks{
+
+}
+
+#frontpage{
+  width:90%;
+  margin:60px auto;
+  min-width:920px;
+
+}
+
+#headerlogo{
+  float:left;
+  margin-left:20px;
+  background: transparent url('images/header-logo.png') no-repeat;
+  width: 450px;
+  height:160px;
+}
+
+#sponsorbox{
+   float:right;
+   margin-right:20px;
+   margin-top:20px;
+   background: transparent;
+   -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0px 20px #a7cf2e;
+   width: 270px;
+   height:250px;
 
 }
 

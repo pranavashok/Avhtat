@@ -137,6 +137,13 @@
   		
   		</div>
   		
+  		<div id = "frontpage">
+  		 <div id = "headerlogo">
+  		 </div>
+  		 <div id = "sponsorbox">
+  		 </div>
+  		</div>
+  		
   		<div id = "updatebar">
   		  <div id = "updates">This is the updates bar and all updates are going to come here</div>
   		  <div id = "contacts">Contacts [+]</div>
