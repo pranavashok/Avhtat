@@ -24,7 +24,8 @@ body{
   position: absolute;
   top:0;
   z-index:100;
-  border-bottom:1px solid #4a4a4a;  
+  border-bottom:1px solid #4a4a4a; 
+  min-width:960px; 
 }
 
 .oe_wrapper{
@@ -139,24 +140,23 @@ li.oe_heading{
 .logo{
   background: url('images/small-logo.png') no-repeat;
   background-position: 0 -37px;
-  margin-top:0;
+  float:left;
   height:37px;
   width:35px;
-  margin-left:2px;
   padding-right:10px;
 }
 .logo:hover {
   background-position: 0 0;
 }
 #loginlinkscontainer{
-  position:absolute;
+  float:right
   top:0;
-  right:20px;
+ 
 }
 #loginlinks{
 	list-style-type:none;
 	height:38px;
-	width:200px;
+	
 }
 
 #loginlinks li{

@@ -21,14 +21,7 @@
  	
   		<div id="oe_overlay" class="oe_overlay"></div>
   		<div id = "topbar">
-   			<div id = "searchcontainer">
-    			<form id="searchform" action="search.php" method="get">
-      			<div class="searchboxwrapper">
-      		  	<input class="searchbox" name="q" type="text" autocomplete="off"/> 
-      			</div>
-      			<input id="searchbutton" type="submit" />
-    			</form>
-    			</div>
+   		
     			
     			<div class="logo"><a href="index.php"></a></div>
     			<div class = "oe_wrapper">
@@ -124,6 +117,14 @@
     				<li><a href="#">Lectures</a></li>
     			</ul>
     			</div>  
+    				<div id = "searchcontainer">
+    			<form id="searchform" action="search.php" method="get">
+      			<div class="searchboxwrapper">
+      		  	<input class="searchbox" name="q" type="text" autocomplete="off"/> 
+      			</div>
+      			<input id="searchbutton" type="submit" />
+    			</form>
+    			</div>
     			<div id = "loginlinkscontainer">
     			<ul id="loginlinks">
     				<li><a href="">Log In</a></li>
