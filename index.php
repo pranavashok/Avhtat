@@ -19,7 +19,7 @@
 	
  
  	
-  		
+  		<div id="oe_overlay" class="oe_overlay"></div>
   		<div id = "topbar">
    			<div id = "searchcontainer">
     			<form id="searchform" action="search.php" method="get">
@@ -32,7 +32,7 @@
     			
     			<div class="logo"><a href="index.php"></a></div>
     			<div class = "oe_wrapper">
-    			<div id="oe_overlay" class="oe_overlay"></div>
+    			
     			<ul id="oe_menu" class="oe_menu"> 
     				<li><a href="#">Events</a>
     				<div style="width:480px;">
