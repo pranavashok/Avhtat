@@ -278,6 +278,26 @@ form .searchboxwrapper input:hover{
 
 }
 
+#innerpage{
+	display:none;
+        width:900px;
+        background: rgba(00,00,00, 0.6);
+        margin: 70px auto;
+        min-height:300px;
+
+}
+
+#content {
+    font-family:arial;
+    font-size:13px;
+    display:none;
+    color:white;
+    display: block;
+    margin: 0 20px 0 20px;
+    padding-top:30px;
+}   
+
+
 #headerlogo{
   float:left;
   margin-left:20px;
