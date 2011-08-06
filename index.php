@@ -4,10 +4,13 @@
 	<head>
 
 		<link href = 'styles/wrapper.css' type='text/css' rel='stylesheet' />
+		<link href = 'styles/lavalamp.css' type='text/css' rel='stylesheet' />
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <!--		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
 <script type="text/javascript" src="js/jquery.history.js"></script>
-		
+		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>		
+			
 		<script type="text/javascript" src="js/script.js">
 		</script>
 		<script type="text/javascript"> 
@@ -188,6 +191,25 @@
   		 </div>
   		 <div id = "sponsorbox">
   		 </div>
+		 <div id="slider">
+		   
+		   <div id = "panel1">
+			
+		   </div>
+		   <div id = "panel2">
+	
+		   </div>
+		   <div id = "panel3">
+			
+		   </div>
+		   <div id = "nav-icons">
+			<ul class="lavaLamp">
+				<li><a href=""><img src="styles/images/button1.jpg"/></a></li>
+				<li><a href=""><img src="styles/images/button2.jpg"/></a></li>
+				<li><a href=""><img src="styles/images/button3.jpg"/></a></li>
+			</ul>	
+		   </div>
+		 </div>
   		</div>
   		
   		<div id = "innerpage">
@@ -204,10 +226,6 @@
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>
   		    <a href="#"><img src="styles/images/facebook.png"></img></a>
   		  </div>  		
-  		</div>
-  		
-  		<div id = "slider">
-  		
   		</div>
   	</div>
 	</body>	

@@ -22,7 +22,7 @@ body{
   background-color:rgba(88,88,88,0.7);
   width: 100%;
   height:38px;
-  position: absolute;
+  position: fixed;
   top:0;
   z-index:100;
   border-bottom:1px solid #4a4a4a; 
@@ -45,6 +45,7 @@ body{
  width:100%;
  height:100%;
  z-index:40;
+ display:none;
 }
 ul.oe_menu{
 	list-style:none;
@@ -273,7 +274,9 @@ form .searchboxwrapper input:hover{
 
 #frontpage{
   width:90%;
-  margin:60px auto;
+  position:absolute;
+  margin-left:5%;
+  margin-top:60px;
   min-width:920px;
 
 }
@@ -308,19 +311,19 @@ form .searchboxwrapper input:hover{
 
 #sponsorbox{
    float:right;
-   margin-right:20px;
-   margin-top:20px;
+   margin-right:10px;
+   margin-top:10px;
    background: transparent;
    -moz-box-shadow: 0 0 5px #888;
 -webkit-box-shadow: 0 0 5px#888;
 box-shadow: 0 0px 20px #a7cf2e;
-   width: 270px;
-   height:250px;
+   width: 140px;
+   height:140px;
 
 }
 
 #updatebar{
-  position:absolute;
+  position:fixed;
   background-color:#585858;
   bottom:0;
   width:100%;
@@ -374,5 +377,14 @@ box-shadow: 0 0px 20px #a7cf2e;
 }*/
 
 #slider{
-
+  width:100%;
+  min-height:320px;
+  position:absolute;
+  top:180px;
+  background-color:#000;
+}
+#nav-icons{
+  position:absolute;
+  bottom:20px;
+  right:20px;
 }
