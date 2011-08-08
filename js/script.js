@@ -36,5 +36,6 @@ $(document).ready(function () {
     })
     $(".oe_menu ul li a").click(function(){
 	 $oe_menu_items.children('div').hide();	
+	 $oe_overlay.hide(); 
     });
 });
