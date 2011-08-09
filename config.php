@@ -1,9 +1,9 @@
 <?php
 /* Variables */
 
-$host = "";
-$db_name = "";
-$db_user = "";
-$db_password = "";
+$host = "localhost";
+$db_name = "cms";
+$db_user = "root";
+$db_password = "pass";
 
 ?>

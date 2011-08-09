@@ -13,7 +13,10 @@ Admin Panel
 </title>
 </head>
 <body>
-<table>
+<form action="edit.php" method="post">
+<input type="submit" name="new" value="Create New"/>
+</form>
+
 <?php
 $con = mysql_connect($host, $db_user, $db_password);
 if (!$con) {
@@ -21,16 +24,16 @@ if (!$con) {
 	}
 $db = mysql_select_db($db_name, $con);
 
-$sql = "SELECT * FROM 'articles' SORT BY ".$sort_by.";";
+$sql = "SELECT * FROM articles ORDER BY `".$sort_by."`;";
 $result = mysql_query($sql,$con);
 $row = mysql_fetch_array($result);
 if (!$row){
 	echo "No Records found..";
 } else {
-	echo "<table><tr><th><a href='edit.php?sort_by=ID'>ID</a></th><th><a href='edit.php?sort_by=article_title'>Title</a></th><th><a href='edit.php?sort_by=article_author'>Author</a></th><th></th></tr>";
-	while ($row=mysql_fetch_array($result)) {
-		echo "<tr><td>".$row['ID']."</td><td>".$row['article_title']."</td><td>".$row['article_author']."</td><td><a href='edit.php?id=".$row['ID']."'>edit</a></td></tr>";
-	}
+	echo "<table border='1'><tr><th><a href='admin.php?sort_by=ID'>ID</a></th><th><a href='admin.php?sort_by=article_title'>Title</a></th><th><a href='admin.php?sort_by=article_author'>Author</a></th><th></th><th></th></tr>";
+	do{
+		echo "<tr><td>".$row['ID']."</td><td>".$row['article_title']."</td><td>".$row['article_author']."</td><td><a href='edit.php?id=".$row['ID']."'>edit</a></td><td><a href='delete.php?id=".$row['ID']."'>delete</a></td></tr>";
+	}while ($row=mysql_fetch_array($result));
 	echo "</table>";
 }
 	

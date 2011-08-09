@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php'
+require_once 'config.php';
 ?>
 <html>
 <head>
@@ -20,13 +20,18 @@ if ($_POST['submit']) {
 	$title=$_POST['article_title'];
 	$content=$_POST['article_content'];
 
-	$sql = "UPDATE 'articles' SET article_type='".$type."' article_title='".$title."' article_content='".$content."' WHERE ID=".$id.";";
+	$sql = "UPDATE articles SET `article_type` = '".$type."', `article_title` = '".$title."', `article_content` = '".$content."' WHERE ID=".$id.";";
 	$query = mysql_query($sql,$con);
+	if(!$query) {
+		die("\nError adding values...");
+	}
 	echo "Done...";
 	?>
-	<a href="cms.
+	<a href='admin.php'> Go to Admin Panel</a>
 <?php
 } else if($_POST['preview']) {
+	$title=$_POST['article_title'];
+	$content=$_POST['article_content'];
 ?>
 <h2> <?php echo $title; ?> </h2><br/>
 <?php echo $content;        
