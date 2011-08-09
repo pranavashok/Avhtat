@@ -20,7 +20,7 @@ if (!$con) {
 	}
 $db = mysql_select_db($db_name, $con);
 
-$sql = "SELECT article_content FROM articles WHERE article_hash=`$_GET['page']`;";
+$sql = "SELECT article_content FROM articles WHERE article_hash=`".$_GET['page']."`;";
 $result = mysql_query($sql,$con);
 $page = $result['article_content'];
 
