@@ -19,6 +19,7 @@ $(document).ready(function () {
     }).bind('mouseleave', function () {
         var $this = $(this);
         $this.removeClass('selected').children('div').css('z-index', '1');
+        $oe_menu_items.not('.slided').children('div').hide();
     });
 
     $oe_menu.bind('mouseenter', function () {
@@ -35,5 +36,6 @@ $(document).ready(function () {
     })
     $(".oe_menu ul li a").click(function(){
 	 $oe_menu_items.children('div').hide();	
+	 $oe_overlay.hide(); 
     });
 });
