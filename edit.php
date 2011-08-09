@@ -50,6 +50,7 @@ Type: <input type="text" name="article_type" value="<?php echo $row['article_typ
 Author: <?php echo $row['article_author']; ?> <br/>
 Created: <?php echo $row['article_created'];?> <br/>
 Title: <input type="text" name="article_title" value="<?php echo $row['article_title'];?>"/> <br/>
+Hash Tag: <input type="text" name="article_hash" value="<?php echo $row['article_hash'];?>"/> <br/>
 Content: <textarea name="article_content" col=100 row=100><?php echo $row['article_content']; ?></textarea><br/>
 <input type="submit" name="submit" value="Submit"/>
 <input type="submit" name="preview" value="Preview"/>

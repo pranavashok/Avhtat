@@ -18,9 +18,10 @@ if ($_POST['submit']) {
 	$id=$_POST['article_id'];
 	$type=$_POST['article_type'];
 	$title=$_POST['article_title'];
+	$hash=$_POST['article_hash'];
 	$content=$_POST['article_content'];
 
-	$sql = "UPDATE articles SET `article_type` = '".$type."', `article_title` = '".$title."', `article_content` = '".$content."' WHERE ID=".$id.";";
+	$sql = "UPDATE articles SET `article_type` = '".$type."', `article_title` = '".$title."', `article_content` = '".$content."', `article_hash` = '".$hash."'  WHERE ID=".$id.";";
 	$query = mysql_query($sql,$con);
 	if(!$query) {
 		die("\nError adding values...");

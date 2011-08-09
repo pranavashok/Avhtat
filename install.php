@@ -12,15 +12,15 @@ if (!$con) {
 	}
 $db = mysql_select_db($db_name, $con);
 
-$sql = "CREATE TABLE 'users'(ID int primary key, user_login varchar(60), user_pass varchar(64), user_email varchar(100), user_registered datetime, display_name varchar(100));";
+$sql = "CREATE TABLE users(ID int primary key, user_login varchar(60), user_pass varchar(64), user_email varchar(100), user_registered datetime, display_name varchar(100));";
 
 $result = mysql_query($sql, $con);
 
-$sql = "CREATE TABLE 'articles'(ID int primary key, article_type varchar(20), article_author varchar(60), article_created datetime, article_title varchar(40), article_content longtext);";
+$sql = "CREATE TABLE articles(ID int primary key, article_type varchar(20), article_author varchar(60), article_created datetime, article_title varchar(40), article_content longtext, article_hash varchar(20));";
 
 $result = mysql_query($sql, $con);
 
-$sql = "CREATE TABLE 'menus'(ID int primary key, item_parent int, item_title varchar(40), item_desc varchar(40));";
+$sql = "CREATE TABLE menus(ID int primary key, item_parent int, item_title varchar(40), item_desc varchar(40));";
 
 $result = mysql_query($sql, $con);
 ?>
