@@ -6,7 +6,7 @@
 		<link href = 'styles/lavalamp.css' type='text/css' rel='stylesheet' />
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
-
+<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
@@ -267,7 +267,7 @@
   		
   		<div id = "updatebar">
   		  <div id = "updates">This is the updates bar and all updates are going to come here</div>
-  		  <div id = "contacts">Contacts [+]</div>
+  		  <div id = "contactsbutton">Contacts [+]</div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>
@@ -275,7 +275,19 @@
   		  </div>  		
   		</div>
   		<div id="footer">
-  		<div id="
+  		<div id="footercontainer">
+  		<div id="maps">Getting There</div>
+  		<div id="contacts">
+  		
+  		</div>
+  		<div id="nitc"><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" style="float:left;"/></a>
+  		NIT Calicut
+  		<br>
+  		NIT Campus P. O.
+  		<br>
+  		Calicut - 673601
+  		<br/></div>
+  		</div>
   		</div>
   	</div>
 	</body>	
