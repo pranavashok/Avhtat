@@ -4,10 +4,10 @@ $(document).ready(function () {
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
 			click: function() {
+			$("#panel"+$("#nav-icons li.current").attr('id')).hide();
 			$(".lavaLamp li").removeClass('current');
 			$(this).addClass('current');
-			$("#panels li").explode();
-			$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn('slow');
+			$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn(2000);
 			return true;}
 	});
 	$(".lavaLamp").lavaLamp({ linum: 0 });
