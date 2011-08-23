@@ -85,10 +85,15 @@ ul.oe_menu > li > a:hover,
 ul.oe_menu > li.selected > a{
 	color: #ffffff;
   opacity:0.9;
-	-webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
- 	transition: all 0.6s ease;
+	-webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+ 	transition: opacity 0.6s ease;
+ 	border-top:3px solid #ffbf00;
+ 	-webkit-transition: border 0.3s;
+  -moz-transition: border 0.1s;
+  -o-transition: border 0.3s;
+ 	transition: border 0.3s;
 }
 .oe_wrapper ul.hovered > li > a{
 	/*text-shadow:0px 0px 1px #FFF;*/
@@ -100,7 +105,7 @@ ul.oe_menu div{
 	background:#fff;
 /*	width:480px;
         height:180px;*/
-	padding:30px;
+	padding:20px 20px 20px 30px;
 	display:none;
 }
 ul.oe_menu div ul li a{
@@ -117,7 +122,7 @@ ul.oe_menu div ul li a:hover{
 }
 
 ul.oe_menu div ul li:last-child a{
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 ul.oe_menu div ul.oe_full{
 	width:100%;
@@ -281,13 +286,16 @@ form .searchboxwrapper input:hover{
 #innerpage{
 	position:relative;
 	display:none;
-  width:900px;
-  background: rgba(00,00,00,0.6);
-  margin: 70px auto;
-  min-height:300px;
+  	width:900px;
+  	background: rgba(00,00,00,0.6);
+  	margin: 70px auto;	
+	  min-height:300px;
 	height:80%; 
-  border-radius:30px;
-  border:2px solid #ffffff;
+		-moz-box-shadow: 0px 0px 5px rgba(72,72,72,0.5);
+  	-webkit-box-shadow: 0px 0px 5px rgba(72,72,72,0.5);
+  	box-shadow:0px 0px 5px rgba(72,72,72,0.5);
+
+
 }
 
 #content {
@@ -348,8 +356,10 @@ form .searchboxwrapper input:hover{
   height:200px;
   position:relative;
   
-  background-color:#333;
-  border-top-left-radius:15px; border-top-right-radius:15px;
+  background-color:#000;
+  -moz-box-shadow: 0px -10px 1px #ccc;
+  -webkit-box-shadow: 0px -10px 1px #ccc;
+  box-shadow: 0px -10px 1px #ccc;
   z-index:0;
 }
 
@@ -446,6 +456,7 @@ overflow:auto;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  display:none;
 }
 
 #igrad{
@@ -463,4 +474,18 @@ overflow:auto;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  display:none;
+}
+
+#panels img{
+	width:500px;
+	height:300px;
+}
+#nav-icons{
+	display:block;
+	width:200px;
+	height:50px;
+}
+#nav-icons ul{
+	
 }

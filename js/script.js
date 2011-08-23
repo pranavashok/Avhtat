@@ -2,8 +2,7 @@
 $(document).ready(function () {
 
 	$(".lavaLamp").lavaLamp({
-			fx: "easeInOutQuad",
-			speed: 300,
+			fx: "swing",
 			click: function() {return true;}
 	});
 	$(".lavaLamp").lavaLamp({ linum: 0 });
@@ -43,13 +42,21 @@ $(document).ready(function () {
     	$(".ilinks li").removeClass("selected");
     	$(this).addClass("selected");
     });
-    $('#panels').coinslider({
+   /* $('#panels').coinslider({
 	spw:5,
 	sph:5, 
 	sDelay:	40,
 	width:600,
 	height:320,
-	hoverPause: false });
+	hoverPause: false });*/
+   $("#panels li").hide();
+   $("#panels li:eq(0)").fadeIn('slow');
+   //$("#nav-icons li").click(function() {
+   //	$("#nav-icons li").removeClass('selected');
+   //	$(this).addClass('selected');
+   //	$("#panels li").fadeOut('slow');
+   //	$("#panels li:eq("+($(this).attr('id')+")").fadeIn('slow');
+   //});
 });
 
 function bindLinks(){
