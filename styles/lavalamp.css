@@ -11,7 +11,7 @@
 .lavaLamp li.back {
 	border: 0;
 	background-color:#979797;
-	width: 1px;
+	width: 10px;
 	height: 1px;
 	z-index: 8;
 	position: absolute;	
@@ -26,6 +26,6 @@
 	overflow: hidden;
 	margin: 0;
 	display:block;
-	min-width:60px;
+	min-width:10px;
 	text-decoration:none;
 }
