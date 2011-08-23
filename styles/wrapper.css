@@ -381,7 +381,6 @@ form .searchboxwrapper input:hover{
   top:180px;
   background-color:#000;
   border-radius:25px;
-  border:2px solid #ffffff;
 }
 .cs-buttons{
   position:absolute;
@@ -478,14 +477,19 @@ overflow:auto;
 }
 
 #panels img{
-	position:relative;
+	position:absolute;
 	left:200px;
 	top:30px;
 	width:500px;
 	height:300px;
+	border:10px solid #979797;
 }
+
 #nav-icons{
 	display:block;
+	position:relative;
+	top:100px;
+	left:400px;
 	width:200px;
 	height:50px;
 }

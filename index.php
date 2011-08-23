@@ -207,6 +207,9 @@
 		 <div id="slider">
 		   <ul id="panels">
 		   <li id='panel1'>
+		   <div id="text-content">
+		   	
+		   </div>
 		   <a href="#">
 			<img src="styles/images/airshow.jpg" alt="1"/>
 		   </a>

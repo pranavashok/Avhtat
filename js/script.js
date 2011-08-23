@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
 			click: function() {
-			$("#panel"+$("#nav-icons li.current").attr('id')).hide();
+			$("#panel"+$("#nav-icons li.current").attr('id')).fadeOut(1000);
 			$(".lavaLamp li").removeClass('current');
 			$(this).addClass('current');
 			$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn(2000);
