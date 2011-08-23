@@ -383,9 +383,7 @@ opacity:1;
   position:relative;
   
   background-color:#000;
-  -moz-box-shadow: 0px -10px 1px #ccc;
-  -webkit-box-shadow: 0px -10px 1px #ccc;
-  box-shadow: 0px -10px 1px #ccc;
+  border-top:1px solid #fff;
   z-index:0;
 }
 
@@ -462,6 +460,7 @@ overflow:auto;
 	font-weight:bold;
 	border-bottom:2px solid #fff;
 	width:auto;
+	color:#bfff00;
 	height:38px;
 	cursor:pointer;
 }
@@ -510,7 +509,15 @@ overflow:auto;
 	height:300px;
 	border:10px solid #979797;
 }
+.text-content{
+	position:absolute;
+	left:750px;
+	top:30px;
+	width:300px;
+	height:auto;
+	color:#bfff00;
 
+}
 #nav-icons{
 	display:block;
 	position:relative;

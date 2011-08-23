@@ -132,7 +132,7 @@
               <ul>
                   <li class="oe_heading">Civil</li>
                   <li><a href="#erecthion" rel="ajax">eRECthion</a></li>
-                  <li><a href="#galleggiante" rel="ajax">Galleggiante</a></li>
+                  <li><a href="#ageoffloatingempire" rel="ajax">Age of Floating Empire</a></li>
                   <li><a href="#descartessquare" rel="ajax">Descartes Square</a></li>
               </ul>
 	      <ul>
@@ -213,20 +213,35 @@
   		 </div>
 		 <div id="slider">
 		   <ul id="panels">
-		   <li id='panel1'>
-		   <div id="text-content">
-		   	
+		   <li id='panel0'>
+		   <div class="text-content">
+		   	<h2> Airshow </h2><br/>
+			<p>
+				This is a short write-up for airshow workshop.
+			</p>
 		   </div>
 		   <a href="#">
 			<img src="styles/images/airshow.jpg" alt="1"/>
 		   </a>
 		   </li>
-		   <li id='panel2'>
+		   <li id='panel1'>
+		 	<div class="text-content">
+		   	<h2> Cloud Computing Workshop </h2><br/>
+			<p>
+				Cloud computing workshop...
+			</p>
+		   </div>
 		   <a href="#">
 			<img src="styles/images/cloud.jpg" alt="2"/>
 		   </a>
 		   </li>
-		   <li id='panel3'>
+		   <li id='panel2'>
+		 	<div class="text-content">
+		   	<h2> Water Rocket </h2><br/>
+			<p>
+				Water Rocket ...
+			</p>
+		   </div>
 		   <a href="#">
 			<img src="styles/images/waterrocket.jpg" alt="3"/>
 		   </a>
@@ -234,9 +249,9 @@
 		   </div>
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
-				<li id='1'><a href="#"><img src="styles/images/button1.jpg" /></a></li>
-				<li id='2'><a href="#"><img src="styles/images/button2.jpg" /></a></li>
-				<li id='3'><a href="#"><img src="styles/images/button3.jpg" /></a></li>
+				<li id='0'><a href="#"><img src="styles/images/button1.jpg" /></a></li>
+				<li id='1'><a href="#"><img src="styles/images/button2.jpg" /></a></li>
+				<li id='2'><a href="#"><img src="styles/images/button3.jpg" /></a></li>
 			</ul>	
 		   </div>
         			

@@ -1,14 +1,18 @@
 /* General Stuff */
+var timer1=null, start=0;
 $(document).ready(function () {
 
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
 			click: function() {
-			$("#panel"+$("#nav-icons li.current").attr('id')).fadeOut(1000);
+			timer1 = null;
+			start = $("#nav-icons li.current").attr('id');
+			$("#panel"+start).stop().fadeOut(200);
 			$(".lavaLamp li").removeClass('current');
 			$(this).addClass('current');
-			$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn(2000);
-			return true;}
+			$("#panel"+$("#nav-icons li.current").attr('id')).stop().fadeIn(500);   		        				
+			return true;
+			}
 	});
 	$(".lavaLamp").lavaLamp({ linum: 0 });
     var $oe_menu = $('#oe_menu');
@@ -61,7 +65,9 @@ $(document).ready(function () {
    //	$(this).addClass('selected');
    //	$("#panels li").fadeOut('slow');
    //	$("#panels li:eq("+($(this).attr('id')+")").fadeIn('slow');
-   //});
+   //}); 
+   timer=null;
+   timer1 = setTimeout('cycle()',8000);
 });
 
 function bindLinks(){
@@ -88,3 +94,20 @@ function bindLinks(){
 	$("#imcs_container").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);
         
 }
+function cycle(){
+	timer1=null;
+	start++;	
+	var count = $(".lavaLamp li").length - 2;
+	if(start>=count) start=0;
+	$("#panel"+$("#nav-icons li.current").attr('id')).fadeOut(200);
+
+	$(".lavaLamp li").removeClass('current');
+
+	$(".lavaLamp li:eq("+start+")").addClass('current');
+	$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn(500);
+
+	
+	timer1 = setTimeout('cycle()',8000);
+	
+}
+
