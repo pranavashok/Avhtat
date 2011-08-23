@@ -258,8 +258,34 @@ form .searchboxwrapper input:hover{
   top:50%; 
   margin-top: -200px; 
   z-index:300;
+  padding-left:8px;
+  padding-top:25px;
+  
+  font-size:10px;
+ 
+}
+#sidebar ul{  
+  width:65px;
+  
+ }
+ 
+#sidebar li{
+	padding-bottom:10px;
+	text-align:center;
 }
 
+#sidebar li img{
+	opacity:0.5;
+	
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+#sidebar li:hover img{
+opacity:1;
+}
 #sidebar:hover{
   left:0px;
   -webkit-transition: left 0.6s ease;

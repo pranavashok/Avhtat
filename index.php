@@ -198,6 +198,13 @@
   		</div>
   		  		
   		<div id = "sidebar">
+  		<ul>
+  		<li><img src="styles/images/sbinfo.png"/></li>
+  		<li><img src="styles/images/sbschedule.png"/></li>
+  		<li><img src="styles/images/sbgallery.png"/></li>
+  		<li><img src="styles/images/sbsponsorship.png"/></li>
+  		<li><img src="styles/images/sbfeedback.png"/></li>
+  		</ul>
   		
   		</div>
 
