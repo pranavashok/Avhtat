@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+/* some custom fonts via google font api */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight);
+/* content block 1 */
+
+#imcs_container{position:absolute; top:90px; left:180px; width:75%; height:80%; padding:0 10px; /*border-top:1px solid #333; border-bottom:1px solid #333;*/}
+#imcs_container .icustomScrollBox {position:relative; height:90%; overflow:hidden;}
+#imcs_container .icustomScrollBox .icontainer {position:relative; width:96%; top:0; float:left;}
+#imcs_container .icustomScrollBox .icontent {margin: 10px 0 0 0; clear:both;}
+#imcs_container .icustomScrollBox .icontent p {padding:0 5px; margin:10px 0; color:#fff; font-family:Verdana, Geneva, sans-serif; font-size:13px; line-height:20px;}
+#imcs_container .icustomScrollBox .icontent p.alt {padding:10px 5px; margin:10px 0; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:17px; line-height:19px; color:#999;}
+#imcs_container .icustomScrollBox img{border:5px solid #fff;}
+#imcs_container .idragger_container {position:relative; width:2px; height:80%; float:left; margin:45px 5px 0 18px; background:#000; cursor:pointer -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:s-resize;}
+#imcs_container .idragger {position:absolute; width:2px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#imcs_container .idragger_pressed{position:absolute; width:4px; margin-left:-1px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
+#imcs_container .iscrollUpBtn, #imcs_container .iscrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; right:10px; text-decoration:none; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
+#imcs_container .iscrollUpBtn{top:16px; background:url(mcs_btnUp.png) center center no-repeat;}
+#imcs_container .iscrollDownBtn{bottom:12px; background:url(mcs_btnDown.png) center center no-repeat;}
+#imcs_container .iscrollUpBtn:hover,#imcs_container .iscrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}

@@ -1,18 +1,23 @@
-
 <html>
 
 	<head>
-
+		<link rel="icon" type="image/png" href="styles/images/favicon.png" />
 		<link href = 'styles/wrapper.css' type='text/css' rel='stylesheet' />
 		<link href = 'styles/lavalamp.css' type='text/css' rel='stylesheet' />
+		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <!--		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
 <script type="text/javascript" src="js/jquery.history.js"></script>
-		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>		
-			
-		<script type="text/javascript" src="js/script.js">
-		</script>
+		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>
+		<script  type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>		
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/coin-slider.js"></script>
 		<script type="text/javascript"> 
 	
 	        $(document).ready(function () {
@@ -49,11 +54,11 @@
 				$('#bglogo').show();			
 				$('#content').html(html);
 				$('#innerpage').fadeIn('slow');		
+				bindLinks();
 		
 			}		
 		});
 	}
- 
 	</script> 
 		<title>
 			Tathva '11 | National Institute of Technology, Calicut
@@ -80,66 +85,69 @@
                   <li class="oe_heading">Robotics</li>
                   <li><a href="#transpoter" rel="ajax">Transporter</a></li>
                   <li><a href="#leagueofmachines" rel="ajax">League of Machines</a></li>
+                  <li><a href="#miniaturemouse" rel="ajax">Miniature Mouse</a></li>
                   <li><a href="#signalmaestro" rel="ajax">Signal Maestro</a></li>
-                  <li><a href="#minotaursmaze" rel="ajax">Minotaur's Maze</a></li>
-              </ul>
-              <ul>
-                  <li class="oe_heading" >Electronics</li>
-                  <li><a href="#sonici" rel="ajax">Sonic i</a></li>
-                  <li><a href="#lightmusic" rel="ajax">Light Music</a></li>
-                  <li><a href="#mousedrive" rel="ajax">Mouse Drive</a></li>
-                  <li><a href="#gsm" rel="ajax">GSM</a></li>
-              </ul>
-              <ul>
-                  <li class="oe_heading" >Mechanical</li>
-                  <li><a href="#cadquest" rel="ajax">CAD Quest</a></li>
-                  <li><a href="#navygator" rel="ajax">NAVYGator</a></li>
-                  <li><a href="#incarnate" rel="ajax">Incarnate</a></li>
-                  <li><a href="#themi" rel="ajax">The MI</a></li>
-              </ul>
-              <ul style="clear:both">
-                  <li class="oe_heading" >Chemical</li>
-                  <li><a href="#cheautic" rel="ajax">Che Autic</a></li>
-                  <li><a href="#chemeleon" rel="ajax">CHeMELEON</a></li>
+                  <li><a href="#robowars" rel="ajax">Robo Wars</a></li>
+                  <li><a href="#dirtrace" rel="ajax">Dirt Race</a></li>              
               </ul>
               <ul>
                   <li class="oe_heading">Computer Science</li>
-                  <li><a href="#koderkombat" rel="ajax">Koderkombat</a></li>
                   <li><a href="#befunge" rel="ajax">Befunge</a></li>
-                  
-                
+                  <li><a href="#koderkombat" rel="ajax">Koderkombat</a></li>
+                  <li><a href="#tuxofwar" rel="ajax">Tux of War</a></li>
+                  <li><a href="#relaycoding" rel="ajax">Relay Coding</a></li>                  
+              </ul>
+              <ul>
+                  <li class="oe_heading" >Mechanical</li>
+                  <li><a href="#cadquest" rel="ajax">Contraption</a></li>
+                  <li><a href="#incarnate" rel="ajax">Incarnate</a></li>
+                  <li><a href="#theoffroadmi" rel="ajax">The Off Road MI</a></li>
+                  <li><a href="#amphiboat" rel="ajax">Amphiboat</a></li>
+                  <li><a href="#waterrocket" rel="ajax">Water Rocket</a></li>
+              </ul>
+              <ul style="clear:both">
+                  <li class="oe_heading" >Electronics</li>
+                  <li><a href="#gsm" rel="ajax">GSM</a></li>
+                  <li><a href="#sonici" rel="ajax">Sonic i</a></li>
+                  <li><a href="#eracer" rel="ajax">E Racer</a></li>
               </ul>
               <ul>
                   <li class="oe_heading">Electrical</li>
+                  <li><a href="#mousedrive" rel="ajax">Mouse Drive</a></li>
                   <li><a href="#coilgun" rel="ajax">Coil Gun</a></li>
-                  <li><a href="#interrupteur" rel="ajax">Interrupteur</a></li>
-              </ul>
-              <ul>
-                  <li class="oe_heading">Management</li>
-                  <li><a href="#themasterplan" rel="ajax">The Master Plan</a></li>
-                  <li><a href="#b-aptist" rel="ajax">B-Aptist</a></li>
-                  <li><a href="#businesstycoon" rel="ajax">Business Tycoon</a></li>
-                  <li><a href="#blueprint" rel="ajax">Blueprint</a></li>
+                  <li><a href="#puretricks" rel="ajax">Pure Tricks</a></li>
               </ul>
               <ul>
                   <li class="oe_heading">General</li>
-                  <li><a href="#logiq" rel="ajax">LogIQ</a></li>
-                  <li><a href="#contraptiion" rel="ajax">Contraption</a></li>
+                  <li><a href="#blueprint" rel="ajax">Blueprint</a></li>
                   <li><a href="#blitzkreig" rel="ajax">Blitzkreig</a></li>
                   <li><a href="#losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
+              </ul>
+              <ul>
+                  <li class="oe_heading">Management</li>
+                  <li><a href="#b-aptist" rel="ajax">B-Aptist</a></li>
+                  <li><a href="#tycoon" rel="ajax">Tycoon</a></li>
+              </ul>
+              <ul>
+                  <li class="oe_heading" >Chemical</li>
+                  <li><a href="#cheautic" rel="ajax">Che Autic</a></li>
+                  <li><a href="#interrepteur" rel="ajax">Interrupteur</a></li>
               </ul>
               <ul>
                   <li class="oe_heading">Online</li>
                   <li><a href="#bullsnbears" rel="ajax">Bulls n Bears</a></li>
                   <li><a href="#clueless" rel="ajax">Clueless</a></li>
-                  <li><a href="#opensoftware" rel="ajax">Open Software</a></li>
-                  <li><a href="#onlinequiz" rel="ajax">Online Quiz</a></li>
               </ul>
               <ul style="clear:both">
                   <li class="oe_heading">Civil</li>
-                  <li><a href="#descartessquare" rel="ajax">Descartes Square</a></li>
                   <li><a href="#erecthion" rel="ajax">eRECthion</a></li>
                   <li><a href="#galleggiante" rel="ajax">Galleggiante</a></li>
+                  <li><a href="#descartessquare" rel="ajax">Descartes Square</a></li>
+              </ul>
+	      <ul>
+                  <li class="oe_heading">Biotechnology</li>
+		  <li><a href="#bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
+                  <li><a href="#inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
               </ul>
     				</div>
     				</li>
@@ -147,24 +155,29 @@
     				  <div style="width:320px;">
     				    <ul>
     				      <li class="oe_heading">General</li>
-    				      <li><a href="#kiteflying">Kite Flying</a></li>
-    				      <li><a href="#painting">Painting</a></li>	
     				      <li><a href="#astrophotography">Astro Photography</a></li>
-    				      <li><a href="#careerguidance">Career Guidance</a></li>
     				    </ul>
     				    <ul>
     				      <li class="oe_heading">Technical</li>
     				      <li><a href="#rcplane">RC Plane</a></li>
-    				      <li><a href="#ethicalhacking">Ethical Hacking</a></li>
-    				      <li><a href="#adobeflash">Adobe Flash</a></li>
-    				      <li><a href="#humanoidrobot">Humanoid Robot</a></li> 
-    				      <li><a href="#blender3d">Blender 3D</a></li>
+    				      <li><a href="#hackattack">Hack Attack</a></li>
+    				      <li><a href="#humanoidrobot">Bipedal Humanoid</a></li> 
     				    </ul>
     				  </div>
     				</li>
     				<li><a href="#">Exhibitions</a></li>
-    				<li><a href="#">Lectures</a></li>
-    			</ul>
+    				<li><a href="#">Lectures</a>
+				<div style="width:160px;">
+    				    <ul>
+    				      <li><a href="#drtessythomas">Dr. Tessy Thomas</a></li>
+    				      <li><a href="#rajunarayanaswamy">Raju Narayana Swamy</a></li>
+
+    				    </ul>
+    				  </div>
+
+		
+				</li>
+     			</ul> <!-- oe_menu ???-->
     			</div>  
     				<div id = "searchcontainer">
     			<form id="searchform" action="search.php" method="get">
@@ -176,8 +189,8 @@
     			</div>
     			<div id = "loginlinkscontainer">
     			<ul id="loginlinks">
-    				<li><a href="">Log In</a></li>
     				<li><a href="">Register</a></li>
+				
     			</ul>
     			</div>	
   		</div>
@@ -189,19 +202,20 @@
   		<div id = "frontpage">
   		 <div id = "headerlogo">
   		 </div>
-  		 <div id = "sponsorbox">
-  		 </div>
 		 <div id="slider">
-		   
-		   <div id = "panel1">
-			
+		
+		   <div id="panels">
+		   <a href="#" target="_blank">
+			<img src="styles/images/airshow.jpg" alt="1"/>
+		   </a>
+		   <a href="#" target="_blank">
+			<img src="styles/images/cloud.jpg" alt="2"/>
+		   </a>
+		   <a href="#" target="_blank">
+			<img src="styles/images/waterrocket.jpg" alt="3"/>
+		   </a>
 		   </div>
-		   <div id = "panel2">
-	
-		   </div>
-		   <div id = "panel3">
-			
-		   </div>
+		   <!--
 		   <div id = "nav-icons">
 			<ul class="lavaLamp">
 				<li><a href=""><img src="styles/images/button1.jpg"/></a></li>
@@ -209,7 +223,9 @@
 				<li><a href=""><img src="styles/images/button3.jpg"/></a></li>
 			</ul>	
 		   </div>
+         -->			
 		 </div>
+		
   		</div>
   		
   		<div id = "innerpage">
@@ -227,6 +243,7 @@
   		    <a href="#"><img src="styles/images/facebook.png"></img></a>
   		  </div>  		
   		</div>
+  		<div id="footer"></div>
   	</div>
 	</body>	
 </html>

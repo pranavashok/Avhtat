@@ -1,5 +1,6 @@
 /* General Stuff */
 $(document).ready(function () {
+
 	$(".lavaLamp").lavaLamp({
 			fx: "easeInOutQuad",
 			speed: 300,
@@ -38,4 +39,40 @@ $(document).ready(function () {
 	 $oe_menu_items.children('div').hide();	
 	 $oe_overlay.hide(); 
     });
+    $(".ilinks li").click(function() {
+    	$(".ilinks li").removeClass("selected");
+    	$(this).addClass("selected");
+    });
+    $('#panels').coinslider({
+	spw:5,
+	sph:5, 
+	sDelay:	40,
+	width:600,
+	height:320,
+	hoverPause: false });
 });
+
+function bindLinks(){
+	var i=0;
+	var count = $(".ilinks li").length;
+	$(".isection").hide();
+	$(".icontent div:eq(0)").fadeIn('slow');
+	while(i<count){
+		$(".ilinks li").bind('click',function(){
+			$(".ilinks li").removeClass('selected');
+			$(this).addClass('selected');
+			$(".isection").hide();
+			$("#isection"+$(this).attr('id')).fadeIn('fast', function(){
+				$("#imcs_container").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);
+			});
+		});	
+		i++;
+	}	
+	$("#ititle").bind('click', function(){
+			$(".ilinks li").removeClass('selected');
+			$(".isection").hide();
+			$(".icontent div:eq(0)").fadeIn('slow');
+	});
+	$("#imcs_container").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);
+        
+}
