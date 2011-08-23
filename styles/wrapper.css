@@ -478,6 +478,9 @@ overflow:auto;
 }
 
 #panels img{
+	position:relative;
+	left:200px;
+	top:30px;
 	width:500px;
 	height:300px;
 }

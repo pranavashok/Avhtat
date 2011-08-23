@@ -3,7 +3,12 @@ $(document).ready(function () {
 
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
-			click: function() {return true;}
+			click: function() {
+			$(".lavaLamp li").removeClass('current');
+			$(this).addClass('current');
+			$("#panels li").explode();
+			$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn('slow');
+			return true;}
 	});
 	$(".lavaLamp").lavaLamp({ linum: 0 });
     var $oe_menu = $('#oe_menu');
@@ -50,7 +55,7 @@ $(document).ready(function () {
 	height:320,
 	hoverPause: false });*/
    $("#panels li").hide();
-   $("#panels li:eq(0)").fadeIn('slow');
+   $("#panels li:eq(0)").show();
    //$("#nav-icons li").click(function() {
    //	$("#nav-icons li").removeClass('selected');
    //	$(this).addClass('selected');

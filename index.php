@@ -224,9 +224,9 @@
 		   </div>
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
-				<li id='0'><a href="#"><img src="styles/images/button1.jpg" /></a></li>
-				<li id='1'><a href="#"><img src="styles/images/button2.jpg" /></a></li>
-				<li id='2'><a href="#"><img src="styles/images/button3.jpg" /></a></li>
+				<li id='1'><a href="#"><img src="styles/images/button1.jpg" /></a></li>
+				<li id='2'><a href="#"><img src="styles/images/button2.jpg" /></a></li>
+				<li id='3'><a href="#"><img src="styles/images/button3.jpg" /></a></li>
 			</ul>	
 		   </div>
         			
