@@ -4,9 +4,14 @@
 		<link rel="icon" type="image/png" href="styles/images/favicon.png" />
 		<link href = 'styles/wrapper.css' type='text/css' rel='stylesheet' />
 		<link href = 'styles/lavalamp.css' type='text/css' rel='stylesheet' />
+		<link href = 'styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->
+		
+		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
@@ -18,10 +23,11 @@
 		<script  type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>		
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/coin-slider.js"></script>
+		<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 		<script type="text/javascript"> 
 	
 	        $(document).ready(function () {
- 
+ 			$('.sbicon').tipsy({gravity: 's'});
                         $.history.init(pageload);	
 	                $('a[href=' + window.location.hash + ']').addClass('selected');
 		        $('a[rel=ajax]').click(function () {
@@ -199,11 +205,11 @@
   		  		
   		<div id = "sidebar">
   		<ul>
-  		<li><img src="styles/images/sbinfo.png"/></li>
-  		<li><img src="styles/images/sbschedule.png"/></li>
-  		<li><img src="styles/images/sbgallery.png"/></li>
-  		<li><img src="styles/images/sbsponsorship.png"/></li>
-  		<li><img src="styles/images/sbfeedback.png"/></li>
+  		<li><a href="#info" ><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
+  		<li><a href="#info" ><img class ="sbicon" title="Scheedule" src="styles/images/sbschedule.png"/></a></li>
+  		<li><a href="#info" ><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+  		<li><a href="#info" ><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
+  		<li><a href="#info" ><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
   		</ul>
   		
   		</div>
