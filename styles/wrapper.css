@@ -653,3 +653,86 @@ overflow:auto;
 	height:100%;
 }
 
+/*--------------For Registration Form-----------------------*/
+
+
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+/*border:solid 2px #b7ddf2;*/
+background:transparent;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #ccc;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+margin-left:200px;
+cursor:pointer;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+
+-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+box-shadow:0 1px 0 rgba(0,0,0,0.3);
+
+background: -moz-linear-gradient(19% 75% 90deg, #E0E0E0, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E0E0E0));
+color:#4A4A4A;
+font-family:arial,helvetica,sans-serif;
+font-size:14px;
+font-weight:bold;
+padding:7px 15px;
+text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+#stylized button:hover{
+background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(FAFAFA), to(#D6D6D6));
+}
+}
+
