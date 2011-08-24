@@ -206,10 +206,10 @@
   		<div id = "sidebar">
   		<ul>
   		<li><a href="#info" ><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
-  		<li><a href="#info" ><img class ="sbicon" title="Scheedule" src="styles/images/sbschedule.png"/></a></li>
-  		<li><a href="#info" ><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
-  		<li><a href="#info" ><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
-  		<li><a href="#info" ><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
+  		<li><a href="#schedule" ><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
+  		<li><a href="#gallery" ><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+  		<li><a href="#sponsors" ><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
+  		<li><a href="#feedback" ><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
   		</ul>
   		
   		</div>
