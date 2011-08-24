@@ -339,19 +339,15 @@
   		<div id="contacts">
   		<table>
   		<tr>
-  		<th> Publicity </th>
+  			<th>Technical Affairs Secretary</th><th>Student Coordinator</th><th>Marketing Managers</th>
   		</tr>
   		<tr>
-  		<td> Rojith Jones</td><td> rojith@tathva.org</td><td>9999999999</td>
+  			<td><strong>Rojith Jones</strong><br /><span class="contact-details">rojith@tathva.org<br />+91-9497308105</span></td>
+  			<td><strong>Marilyn George</strong><br /><span class="contact-details">marilyn@tathva.org<br />+91-9497778936</span></td>
+  			<td><strong>Nitheesh K</strong><br /><span class="contact-details">nitheeshkpai@tathva.org<br />+91-9895689519</span></td>
   		</tr>
   		<tr>
-  		<th> Marketing </th>
-  		</tr>
-  		 <td>Nitheesh K Pai</td><td> nitheesh@tathva.org</td><td>9999999999</td>
-  		</tr>
-  		 <td>Sachin Boban</td><td> sachin@tathva.org</td><td>9999999999</td>
-  		</tr>
-  		 <td>Rashid CMP</td><td> rashid@tathva.org</td><td>9999999999</td>
+  			<td></td><td></td><td><strong>Rashid CMP</strong><br /><span class="contact-details">rashidcmp@tathva.org<br />+91-9746749787</span></td>
   		</tr>
   		</table>
   	
