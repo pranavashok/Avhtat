@@ -302,19 +302,19 @@ opacity:1;
 }
 
 #frontpage{
-  width:90%;
+  width:80%;
   position:relative;
-  margin-left:5%;
+  margin-left:10%;
   margin-top:60px;
   height:580px;
-  min-width:920px;
+  min-width:800px;
   bottom:0;
 }
 
 #innerpage{
 	position:relative;
 	display:block;
-  	width:900px;
+  	width:800px;
   	background: rgba(00,00,00,0.6);
   	margin: 70px auto;	
 	  min-height:300px;
@@ -534,15 +534,15 @@ overflow:auto;
 
 #panels img{
 	position:absolute;
-	left:200px;
-	top:30px;
+	left:20px;
+	top:20px;
 	width:500px;
 	height:300px;
 	border:10px solid #979797;
 }
 .text-content{
 	position:absolute;
-	left:750px;
+	left:550px;
 	top:30px;
 	width:300px;
 	padding-left:30px;
@@ -558,7 +558,7 @@ overflow:auto;
 	display:block;
 	position:absolute;
 	top:450px;
-	left:800px;
+	left:580px;
 	width:200px;
 	height:20px;
 }
