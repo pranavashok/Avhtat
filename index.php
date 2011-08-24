@@ -12,6 +12,7 @@
    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/easySlider1.7.js"></script>
 <!--		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
 <script type="text/javascript" src="js/jquery.history.js"></script>
 		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>
@@ -211,6 +212,18 @@
   		<div id = "frontpage">
   		<div id = "headerlogo">
   		 </div>
+		<div id="sponsor">
+			<div id="sponsslider"> 
+ 	 <ul> 
+ 	  <li><img src="styles/images/sponsors/gasotech.png" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/aruba.png" alt=""/></li>	 
+ 	  <li><img src="styles/images/sponsors/greenadd.png" alt=""/></li> 	  
+ 	  <li><img src="styles/images/sponsors/sms.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/treksnrapids.gif" alt=""/></li>
+ 	 </ul> 
+ 	 </div> 
+		</div>
 		 <div id="slider">
 		   <ul id="panels">
 		   <li id='panel0'>

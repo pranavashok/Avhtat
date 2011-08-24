@@ -67,6 +67,10 @@ $(document).ready(function () {
    //	$("#panels li").fadeOut('slow');
    //	$("#panels li:eq("+($(this).attr('id')+")").fadeIn('slow');
    //}); 
+   $("#sponsslider").easySlider({
+		auto: true,
+		continuous: true 
+	});
    timer=null;
    timer1 = setTimeout('cycle()',8000);
 });
