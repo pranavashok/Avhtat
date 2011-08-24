@@ -1,23 +1,24 @@
 /* General Stuff */
 var timer1=null, start=0;
 $(document).ready(function () {
-
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
 			click: function() {
 			timer1 = null;
 			start = $("#nav-icons li.current").attr('id');
-			$("#panel"+start).stop().fadeOut(200);
+			$("#panel"+start).stop(true,true).fadeOut(200);
 			$(".lavaLamp li").removeClass('current');
 			$(this).addClass('current');
-			$("#panel"+$("#nav-icons li.current").attr('id')).stop().fadeIn(500);   		        				
+			$("#panel"+$("#nav-icons li.current").attr('id')).stop(true,true).fadeIn(500);   		        				
 			return true;
 			}
 	});
 	$(".lavaLamp").lavaLamp({ linum: 0 });
-    var $oe_menu = $('#oe_menu');
+    var $oe_menu = $('.oe_menu');
     var $oe_menu_items = $oe_menu.children('li');
     var $oe_overlay = $('#oe_overlay');
+    $oe_overlay.hide();
+    $oe_overlay.css({zIndex:'40'});
     $oe_menu_items.bind('mouseenter', function () {
         var $this = $(this);
         $this.addClass('slided selected');
@@ -99,12 +100,12 @@ function cycle(){
 	start++;	
 	var count = $(".lavaLamp li").length - 2;
 	if(start>=count) start=0;
-	$("#panel"+$("#nav-icons li.current").attr('id')).fadeOut(200);
+	$("#panel"+$("#nav-icons li.current").attr('id')).stop(true,true).fadeOut(200);
 
 	$(".lavaLamp li").removeClass('current');
 
 	$(".lavaLamp li:eq("+start+")").addClass('current');
-	$("#panel"+$("#nav-icons li.current").attr('id')).fadeIn(500);
+	$("#panel"+$("#nav-icons li.current").attr('id')).stop(true,true).fadeIn(500);
 
 	
 	timer1 = setTimeout('cycle()',8000);
