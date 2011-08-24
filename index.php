@@ -9,7 +9,7 @@
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -222,6 +222,7 @@
  	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></li>
+   	  <li><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></li>
  	 </ul> 
  	 </div> 
 		</div>
@@ -297,12 +298,12 @@
 		   </div>
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
-				<li id='0'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
-				<li id='1'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
-				<li id='2'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
-				<li id='3'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
-				<li id='4'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
-				<li id='5'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
+				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
+				<li id='1'><a href="#"><img src="styles/images/buttons/cloud.jpg"/></a></li>
+				<li id='2'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
+				<li id='3'><a href="#"><img src="styles/images/buttons/dirtrace.jpg"/></a></li>
+				<li id='4'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
+				<li id='5'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
 			</ul>	
 		   </div>
         			

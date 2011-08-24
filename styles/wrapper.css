@@ -616,33 +616,37 @@ overflow:auto;
 }
 .text-content{
 	position:absolute;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
 	left:550px;
 	top:30px;
-	width:300px;
+	width:450px;
 	padding-left:30px;
 	height:320px;
 	color:#fff;
 }
 .text-content h2{
+	font-family:'Oswald', sans-serif;
+	font-size:30px;
+	font-weight:100;
 	color:#bfff00;
 	padding-bottom:5px;
 	border-bottom:1px solid #fff;
 }
 #nav-icons{
 	display:block;
-	position:absolute;
-	top:450px;
-	left:580px;
+	position:relative;
 	width:200px;
 	height:20px;
+	margin:100px 0 0 610px;
 }
 #sponsor {
 	display:block;
+	background:#fff;
 	position:relative;
-	width:300px;
-	height:150px;
+	width:220px;
+	height:110px;
 	float:right;
-	margin-right:20px;
+	margin:30px 40px 0 0;	
 }
 #sponsslider img{
 	width:100%;
