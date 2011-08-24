@@ -105,18 +105,14 @@
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
 							  <li><a href="#!idp" rel="ajax">Industry Defined Problems</a></li>
 						      </ul>
-						      
 						      <ul>
-							  <li class="oe_heading">Online</li>
-							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
-							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
+					                  <li class="oe_heading">Architecture</li>
+					                  <li><a href="#!pathtofame" rel="ajax">Path to Fame</a></li>
+					                  <li><a href="#!poddesign" rel="ajax">Pod Design</a></li>
+					                  <li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>
+					                  <li><a href="#!kineticsculpture" rel="ajax">Kinetic Sculpture</a></li>
 						      </ul>
-						      <ul>
-							  <li class="oe_heading">Management</li>
-							  <li><a href="#!b-aptist" rel="ajax">B-Aptist</a></li>
-							  <li><a href="#!tycoon" rel="ajax">Tycoon</a></li>
-						      </ul>
-						      <ul>
+						      <ul style="clear:both;">
 							  <li class="oe_heading">Electrical</li>
 							  <li><a href="#!mousedrive" rel="ajax">Mouse Drive</a></li>
 							  <li><a href="#!coilgun" rel="ajax">Coil Gun</a></li>
@@ -139,6 +135,18 @@
 							  <li><a href="#!befunge" rel="ajax">Befunge</a></li>
 							  <li><a href="#!koderkombat" rel="ajax">Koderkombat</a></li>
 							  <li><a href="#!tuxofwar" rel="ajax">Tux of War</a></li>               
+						      </ul>
+						      <ul>
+							  <li class="oe_heading">Online</li>
+							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
+							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
+							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
+						      </ul>
+						      <ul>
+							  <li class="oe_heading">Management</li>
+							  <li><a href="#!b-aptist" rel="ajax">B-Aptist</a></li>
+							  <li><a href="#!tycoon" rel="ajax">Tycoon</a></li>
+						          <li><a href="#!bplan" rel="ajax">B-Plan</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Chemical</li>
