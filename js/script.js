@@ -1,5 +1,5 @@
 /* General Stuff */
-var timer1=null, start=0;
+var timer1=null, start=0, cur=0;
 $(document).ready(function () {
 	$(".lavaLamp").lavaLamp({
 			fx: "swing",
@@ -72,8 +72,14 @@ $(document).ready(function () {
 		continuous: true 
 	});
    $("#contactsbutton").click(function(){
+	cur++;
+	if(cur%2==0) 
+		pos = 0;
+	else
+		pos = ($(document).height() - $(window).height());
 	$('html, body').stop(true,true).animate({
-            scrollTop: ($('#footer').offset().top - 200)
+            scrollTop: pos,
+	    queue: false
         }, 2000,'easeInOutCirc');
    });
    timer=null;
