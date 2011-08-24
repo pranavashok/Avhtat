@@ -404,7 +404,7 @@ opacity:1;
  height:120px;
  font-size:14px;
  padding-right:10px;
- padding-top:20px
+ padding-top:30px
  
 }
 
@@ -435,20 +435,23 @@ list-style:none;
 #contacts table{
 	color:white;
 	width:100%;
-	
+	text-align:center;
 }
 #contacts table td{
-
 	padding-left:10px;
 	font-size:12px;
 }
-	
+#contacts table tr {
+	height:30px;
+}	
 #contacts table th{
-	padding-top:5px;
-	padding-bottom:3px;
 	padding-left:10px;
+	font-size:14px;
 	text-align:center;
 	color:#fbbb00;
+}
+span.contact-details {
+	color:#999;
 }
 
 #nitc{
