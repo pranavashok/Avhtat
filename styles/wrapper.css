@@ -268,7 +268,7 @@ form .searchboxwrapper input:hover{
 }
 #sidebar ul{  
   width:65px;
-  
+  list-style:none;
  }
  
 #sidebar li{
@@ -473,6 +473,10 @@ opacity:1;
 .isection {
 	position:relative;
 	padding-bottom:20px;
+	line-height:1.75em;
+}
+.isection a{
+	color:#bfff00;
 }
 /*#imcs_container {
 	position:absolute;
@@ -574,3 +578,4 @@ overflow:auto;
 	width:100%;
 	height:100%;
 }
+
