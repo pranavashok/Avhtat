@@ -317,7 +317,13 @@
                                 </div>         
                 </div> 
   		<div id = "updatebar">
-  		  <div id = "updates"> </div>
+  		  <div id = "updates"> 
+			<div id="ticker-wrapper" class="no-js">
+			    <ul id="js-news" class="js-hidden">
+				<li class="news-item"><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+			    </ul>
+			</div>
+		  </div>
   		  <div id = "contactsbutton">Contacts [+] </div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
