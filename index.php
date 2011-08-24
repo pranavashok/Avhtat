@@ -212,134 +212,112 @@
   		</div>
 
   		<div id = "frontpage">
-	  		<div id = "headerlogo">
-	  		</div>
+	  		<div id = "headerlogo"></div>
 			<div id="sponsor">
-			<div id="sponsslider"> 
- 	 <ul> 
- 	  <li><img src="styles/images/sponsors/gasotech.png" alt=""/></li>
- 	  <li><img src="styles/images/sponsors/aruba.png" alt=""/></li>	 
- 	  <li><img src="styles/images/sponsors/greenadd.png" alt=""/></li> 	  
- 	  <li><img src="styles/images/sponsors/sms.jpg" alt=""/></li>
- 	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
- 	  <li><img src="styles/images/sponsors/treksnrapids.gif" alt=""/></li>
- 	 </ul> 
- 	 </div> 
+				<div id="sponsslider"> 
+ 	 				<ul> 
+						<li><img src="styles/images/sponsors/gasotech.png" alt=""/></li>
+ 	  					<li><img src="styles/images/sponsors/aruba.png" alt=""/></li>	 
+ 	  					<li><img src="styles/images/sponsors/greenadd.png" alt=""/></li> 	  
+						<li><img src="styles/images/sponsors/sms.jpg" alt=""/></li>
+						<li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
+						<li><img src="styles/images/sponsors/treksnrapids.gif" alt=""/></li>
+					</ul> 
+				</div> 
+			</div>
+			<?php if(!isset($_GET['_escaped_fragment_'])): ?>
+		 	<div id="slider">
+		   		<ul id="panels">
+		   			<li id='panel0'>
+		   				<div class="text-content">
+		   					<h2> Airshow </h2><br/>
+							<p>This is a short write-up for airshow workshop.</p>
+		 				</div>
+		   				<a href="#"><img src="styles/images/airshow.jpg" alt="1"/></a>
+		   			</li>
+		   			<li id='panel1'>
+		 				<div class="text-content">
+		   					<h2> Cloud Computing Workshop </h2><br/>
+							<p>Cloud computing workshop...</p>
+		   				</div>
+		   				<a href="#"><img src="styles/images/cloud.jpg" alt="2"/></a>
+		   			</li>
+		   			<li id='panel2'>
+		 				<div class="text-content">
+		   					<h2> Water Rocket </h2><br/>
+							<p>Water Rocket ...</p>
+						</div>
+					   	<a href="#"><img src="styles/images/waterrocket.jpg" alt="3"/></a>
+		   			</li>
+					<li id='panel3'>
+						<div class="text-content">
+							<h2> Dirt Race </h2>
+							<br/>
+							<p>Dirt Race ...</p>
+						</div>
+						<a href="#"><img src="styles/images/dirtrace.jpg" alt="4"/></a>
+					</li>
+					<li id='panel4'>
+						<div class="text-content">
+					   		<h2> B - Plan </h2>
+					   		<br/>
+							<p>B - Plan ...</p>
+					   	</div>
+					   	<a href="#"><img src="styles/images/bplan.jpg" alt="5"/></a>
+					</li>
+				   	<li id='panel5'>
+				 		<div class="text-content">
+				   			<h2> Touch Magix </h2>
+				   			<br/>
+							<p>Touch Magix ...</p>
+						</div>
+				   		<a href="#"><img src="styles/images/touchmagix.jpg" alt="6"/></a>
+				   	</li>
+		   		</div>
+				<div id="nav-icons">
+					<ul class='lavaLamp'>
+						<li id='0'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
+						<li id='1'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
+						<li id='2'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
+						<li id='3'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
+						<li id='4'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
+						<li id='5'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
+					</ul>	
+				</div>	
+			</div>
+			<?php endif; ?>
 		</div>
-		<?php if(!isset($_GET['_escaped_fragment_'])): ?>
-		 <div id="slider">
-		   <ul id="panels">
-		   <li id='panel0'>
-		   <div class="text-content">
-		   	<h2> Airshow </h2><br/>
-			<p>
-				This is a short write-up for airshow workshop.
-			</p>
-		   </div>
-		   <a href="#">
-			<img src="styles/images/airshow.jpg" alt="1"/>
-		   </a>
-		   </li>
-		   <li id='panel1'>
-		 	<div class="text-content">
-		   	<h2> Cloud Computing Workshop </h2><br/>
-			<p>
-				Cloud computing workshop...
-			</p>
-		   </div>
-		   <a href="#">
-			<img src="styles/images/cloud.jpg" alt="2"/>
-		   </a>
-		   </li>
-		   <li id='panel2'>
-		 	<div class="text-content">
-		   	<h2> Water Rocket </h2><br/>
-			<p>
-				Water Rocket ...
-			</p>
-		   	</div>
-		   	<a href="#">
-				<img src="styles/images/waterrocket.jpg" alt="3"/>
-		   	</a>
-		   </li>
-		   <li id='panel3'>
-		 	<div class="text-content">
-		   	<h2> Dirt Race </h2><br/>
-			<p>
-				Dirt Race ...
-			</p>
-		   	</div>
-		   	<a href="#">
-				<img src="styles/images/dirtrace.jpg" alt="4"/>
-		   	</a>
-		   </li>
-		   <li id='panel4'>
-		 	<div class="text-content">
-		   	<h2> B - Plan </h2><br/>
-			<p>
-				B - Plan ...
-			</p>
-		   	</div>
-		   	<a href="#">
-				<img src="styles/images/bplan.jpg" alt="5"/>
-		   	</a>
-		   </li>
-		   <li id='panel5'>
-		 	<div class="text-content">
-		   	<h2> Touch Magix </h2><br/>
-			<p>
-				Touch Magix ...
-			</p>
-		   	</div>
-		   	<a href="#">
-				<img src="styles/images/touchmagix.jpg" alt="6"/>
-		   	</a>
-		   </li>
-		   </div>
-		   <div id="nav-icons">
-			<ul class='lavaLamp'>
-				<li id='0'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
-				<li id='1'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
-				<li id='2'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
-				<li id='3'><a href="#"><img src="styles/images/button1.jpg"/></a></li>
-				<li id='4'><a href="#"><img src="styles/images/button2.jpg"/></a></li>
-				<li id='5'><a href="#"><img src="styles/images/button3.jpg"/></a></li>
-			</ul>	
-		   </div>
-        			
-		 </div>
-			   <?php endif; ?>
-  		</div>
   		<div id="innerpage">
-  		                <div id="content">
-	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
+			<div id="content">
+	                	<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
   		                	<!-- Ajax Content -->
-                                </div>         
-                </div> 
-  		<div id = "updatebar">
-  		  <div id = "updates">This is the updates bar and all updates are going to come here</div>
-  		  <div id = "contactsbutton">Contacts [+]</div>
-  		  <div id = "social">
-  		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
-  		    <a href="#"><img src="styles/images/twitter.png"></img></a>
-  		    <a href="#"><img src="styles/images/facebook.png"></img></a>
-  		  </div>  		
+                        </div>         
+                </div>
+		<div id = "updatebar">
+  			<div id = "updates">This is the updates bar and all updates are going to come here</div>
+  		  	<div id = "contactsbutton">Contacts [+]</div>
+  		  	<div id = "social">
+  		    		<div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
+  		    		<a href="#"><img src="styles/images/twitter.png"></img></a>
+  		    		<a href="#"><img src="styles/images/facebook.png"></img></a>
+  		  	</div>  		
   		</div>
   		<div id="footer">
-  		<div id="footercontainer">
-  		<div id="maps">Getting There</div>
-  		<div id="contacts">
-  		
+  			<div id="footercontainer">
+  				<div id="maps">Getting There</div>
+  				<div id="contacts">
+  				</div>
+  				<div id="nitc">
+	  				<a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" style="float:left;"/></a>
+			  		NIT Calicut
+			  		<br>
+			  		NIT Campus P. O.
+			  		<br>
+			  		Calicut - 673601
+			  		<br/>
+			  	</div>
+  			</div>
   		</div>
-  		<div id="nitc"><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" style="float:left;"/></a>
-  		NIT Calicut
-  		<br>
-  		NIT Campus P. O.
-  		<br>
-  		Calicut - 673601
-  		<br/></div>
-  		</div>
-  		</div>
-  	</div>
-	</body>	
+	</div>
+</body>	
 </html>
