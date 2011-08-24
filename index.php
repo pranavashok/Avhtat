@@ -8,7 +8,7 @@
 		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
-<!--		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -318,17 +318,49 @@
   		</div>
   		<div id="footer">
   		<div id="footercontainer">
-  		<div id="maps">Getting There</div>
-  		<div id="contacts">
-  		
+  		<div id="footerlinks">
+  		<ul>
+  		<li> <a href="#initiatives" rel="ajax">Initiatives </a></li>
+  		<li> <a href="#reachus" rel="ajax">Reach Us </a></li>
+  		<li> <a href="#downloads" rel="ajax">Downloads</a></li>
+  		<li><a href="http://tathva.org/forum"> Forum</a> </li>
+  		<li><a href="#credits" rel="ajax"> Credits</a> </li>
+  		</ul>
   		</div>
-  		<div id="nitc"><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" style="float:left;"/></a>
+  		<div id="contacts">
+  		<table>
+  		<tr>
+  		<th> Publicity </th>
+  		</tr>
+  		<tr>
+  		<td> Rojith Jones</td><td> rojith@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		<tr>
+  		<th> Marketing </th>
+  		</tr>
+  		 <td>Nitheesh K Pai</td><td> nitheesh@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		 <td>Sachin Boban</td><td> sachin@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		 <td>Rashid CMP</td><td> rashid@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		</table>
+  	
+  		</div>
+  		<div id="nitc"><p><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" /></a>		
   		NIT Calicut
-  		<br>
+  		<br/>
   		NIT Campus P. O.
-  		<br>
+  		<br/>
   		Calicut - 673601
-  		<br/></div>
+  		<br/>
+  		<a href="http://nitc.ac.in" target="_blank">
+  		http://nitc.ac.in
+  		</a>
+  		</p>
+  		<br>...........................................................<br/>
+  		<span> Best viewed in latest versions of <a href="http://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://www.mozilla.com/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> </span>
+  		</div>
   		</div>
   		</div>
   	</div>
