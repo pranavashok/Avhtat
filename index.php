@@ -22,7 +22,6 @@
 		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>
 		<script  type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>		
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/coin-slider.js"></script>
 		<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 		<script type="text/javascript">	
 	        $(document).ready(function () {
@@ -309,8 +308,8 @@
                                 </div>         
                 </div> 
   		<div id = "updatebar">
-  		  <div id = "updates">This is the updates bar and all updates are going to come here</div>
-  		  <div id = "contactsbutton">Contacts [+]</div>
+  		  <div id = "updates"> </div>
+  		  <div id = "contactsbutton">Contacts [+] </div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>

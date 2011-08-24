@@ -71,6 +71,11 @@ $(document).ready(function () {
 		auto: true,
 		continuous: true 
 	});
+   $("#contactsbutton").click(function(){
+	$('html, body').stop(true,true).animate({
+            scrollTop: ($('#footer').offset().top - 200)
+        }, 2000,'easeInOutCirc');
+   });
    timer=null;
    timer1 = setTimeout('cycle()',8000);
 });
