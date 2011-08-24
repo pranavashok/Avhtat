@@ -208,12 +208,13 @@
 			<div id="sponsor">
 			<div id="sponsslider"> 
  	 <ul> 
- 	  <li><img src="styles/images/sponsors/gasotech.png" alt=""/></li>
- 	  <li><img src="styles/images/sponsors/aruba.png" alt=""/></li>	 
- 	  <li><img src="styles/images/sponsors/greenadd.png" alt=""/></li> 	  
- 	  <li><img src="styles/images/sponsors/sms.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/gasotech.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>	 
+ 	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
+ 	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
- 	  <li><img src="styles/images/sponsors/treksnrapids.gif" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></li>
  	 </ul> 
  	 </div> 
 		</div>
