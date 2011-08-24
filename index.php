@@ -8,7 +8,7 @@
 		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+<!--		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>-->
 
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -50,7 +50,7 @@
 		}
 		
 		function getPage() {
-			var data = 'page=' + encodeURIComponent(document.location.hash.substring(1));
+			var data = 'page=' + encodeURIComponent(document.location.hash.substring(2));
 			$.ajax({
 				url: "loader.php",	
 				type: "GET",		
