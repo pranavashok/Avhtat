@@ -318,11 +318,11 @@
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 
-			<div id="ticker-wrapper" class="no-js">
+			<!--<div id="ticker-wrapper" class="no-js">
 			    <ul id="js-news" class="js-hidden">
 				<li class="news-item"><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
 			    </ul>
-			</div>
+			</div>-->
 		  </div>
   		  <div id = "contactsbutton">Contacts [+] </div>
   		  <div id = "social">
