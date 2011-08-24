@@ -313,7 +313,7 @@ opacity:1;
 
 #innerpage{
 	position:relative;
-	display:none;
+	display:block;
   	width:900px;
   	background: rgba(00,00,00,0.6);
   	margin: 70px auto;	
