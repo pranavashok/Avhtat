@@ -8,7 +8,7 @@
 		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
-<!--		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -105,14 +105,18 @@
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
 							  <li><a href="#!idp" rel="ajax">Industry Defined Problems</a></li>
 						      </ul>
+						      
 						      <ul>
-							  <li class="oe_heading">Architecture</li>
-							  <li><a href="#!pathtofame" rel="ajax">Path to Fame</a></li>
-							  <li><a href="#!poddesign" rel="ajax">Pod Design</a></li>
-							  <li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>
-							  <li><a href="#!kineticsculpture" rel="ajax">Kinetic Sculpture</a></li>
+							  <li class="oe_heading">Online</li>
+							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
+							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
 						      </ul>
-						      <ul style="clear:both;">
+						      <ul>
+							  <li class="oe_heading">Management</li>
+							  <li><a href="#!b-aptist" rel="ajax">B-Aptist</a></li>
+							  <li><a href="#!tycoon" rel="ajax">Tycoon</a></li>
+						      </ul>
+						      <ul>
 							  <li class="oe_heading">Electrical</li>
 							  <li><a href="#!mousedrive" rel="ajax">Mouse Drive</a></li>
 							  <li><a href="#!coilgun" rel="ajax">Coil Gun</a></li>
@@ -127,7 +131,7 @@
 						      <ul>
 							  <li class="oe_heading">Civil</li>
 							  <li><a href="#!erecthion" rel="ajax">eRECthion</a></li>
-							  <li><a href="#!ageoffloatingempire" rel="ajax">Age of Floating Empires</a></li>
+							  <li><a href="#!ageoffloatingempire" rel="ajax">Age of Floating Empire</a></li>
 							  <li><a href="#!descartessquare" rel="ajax">Descartes Square</a></li>
 						      </ul>
 						      <ul>
@@ -135,18 +139,6 @@
 							  <li><a href="#!befunge" rel="ajax">Befunge</a></li>
 							  <li><a href="#!koderkombat" rel="ajax">Koderkombat</a></li>
 							  <li><a href="#!tuxofwar" rel="ajax">Tux of War</a></li>               
-						      </ul>
-						      <ul>
-							  <li class="oe_heading">Online</li>
-							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
-							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
-							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
-						      </ul>
-						      <ul>
-							  <li class="oe_heading">Management</li>
-							  <li><a href="#!b-aptist" rel="ajax">B-Aptist</a></li>
-							  <li><a href="#!tycoon" rel="ajax">Tycoon</a></li>
-							  <li><a href="#!bplan" rel="ajax">B-Plan</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Chemical</li>
@@ -158,7 +150,6 @@
 							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 						      </ul>
-						      
     						</div>
     					</li>
     					<li><a href="#">Workshops</a>
@@ -196,17 +187,17 @@
     			</div>
     			<div id = "loginlinkscontainer">
 	    			<ul id="loginlinks">
-	    				<li><a href="">Register</a></li>				
+	    				<li><a href="#!register" rel="ajax">Register</a></li>				
 	    			</ul>
     			</div>	
   		</div>  		  		
   		<div id = "sidebar">
 	  		<ul>
-		  		<li><a href="#!info" ><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
-		  		<li><a href="#!schedule" ><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
-		  		<li><a href="#!gallery" ><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
-		  		<li><a href="#!sponsors" ><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
-		  		<li><a href="#!feedback" ><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
+		  		<li><a href="#!info" rel="ajax"><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
+		  		<li><a href="#!schedule" rel="ajax"><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
+		  		<li><a href="#!gallery" rel="ajax"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+		  		<li><a href="#!sponsors" rel="ajax"><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
+		  		<li><a href="#!feedback" rel="ajax"><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
 	  		</ul>
   		</div>
 
@@ -326,17 +317,49 @@
   		</div>
   		<div id="footer">
   		<div id="footercontainer">
-  		<div id="maps">Getting There</div>
-  		<div id="contacts">
-  		
+  		<div id="footerlinks">
+  		<ul>
+  		<li> <a href="#!initiatives" rel="ajax">Initiatives </a></li>
+  		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
+  		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
+  		<li><a href="http://tathva.org/forum"> Forum</a> </li>
+  		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
+  		</ul>
   		</div>
-  		<div id="nitc"><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" style="float:left;"/></a>
+  		<div id="contacts">
+  		<table>
+  		<tr>
+  		<th> Publicity </th>
+  		</tr>
+  		<tr>
+  		<td> Rojith Jones</td><td> rojith@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		<tr>
+  		<th> Marketing </th>
+  		</tr>
+  		 <td>Nitheesh K Pai</td><td> nitheesh@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		 <td>Sachin Boban</td><td> sachin@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		 <td>Rashid CMP</td><td> rashid@tathva.org</td><td>9999999999</td>
+  		</tr>
+  		</table>
+  	
+  		</div>
+  		<div id="nitc"><p><a href="http://nitc.ac.in" target="_blank"><img  src="styles/images/nitc.png" /></a>		
   		NIT Calicut
-  		<br>
+  		<br/>
   		NIT Campus P. O.
-  		<br>
+  		<br/>
   		Calicut - 673601
-  		<br/></div>
+  		<br/>
+  		<a href="http://nitc.ac.in" target="_blank">
+  		http://nitc.ac.in
+  		</a>
+  		</p>
+  		<br>...........................................................<br/>
+  		<span> Best viewed in latest versions of <a href="http://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://www.mozilla.com/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> </span>
+  		</div>
   		</div>
   		</div>
   	</div>
