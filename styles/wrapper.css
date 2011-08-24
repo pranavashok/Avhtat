@@ -667,8 +667,8 @@ padding:14px;
 
 /* ----------- stylized ----------- */
 #stylized{
-border:solid 2px #b7ddf2;
-background:#ebf4fb;
+/*border:solid 2px #b7ddf2;*/
+background:transparent;
 }
 #stylized h1 {
 font-size:14px;
@@ -679,7 +679,7 @@ margin-bottom:8px;
 font-size:11px;
 color:#666666;
 margin-bottom:20px;
-border-bottom:solid 1px #b7ddf2;
+border-bottom:solid 1px #ccc;
 padding-bottom:10px;
 }
 #stylized label{
@@ -706,15 +706,29 @@ width:200px;
 margin:2px 0 20px 10px;
 }
 #stylized button{
-clear:both;
-margin-left:150px;
-width:125px;
-height:31px;
-background:#666666 url(img/button.png) no-repeat;
-text-align:center;
-line-height:31px;
-color:#FFFFFF;
-font-size:11px;
+margin-left:200px;
+cursor:pointer;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+
+-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+box-shadow:0 1px 0 rgba(0,0,0,0.3);
+
+background: -moz-linear-gradient(19% 75% 90deg, #E0E0E0, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E0E0E0));
+color:#4A4A4A;
+font-family:arial,helvetica,sans-serif;
+font-size:14px;
 font-weight:bold;
+padding:7px 15px;
+text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+#stylized button:hover{
+background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(FAFAFA), to(#D6D6D6));
+}
 }
 
