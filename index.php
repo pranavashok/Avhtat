@@ -1,26 +1,31 @@
-<html>
-	<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="cache-control" content="public" />
+		<meta http-equiv="content-language" content="en-IN" />
+		<meta http-equiv="expires" content="Mon, 31 Aug 2012 00:00:00 GMT" />
+
 		<link rel="icon" type="image/png" href="styles/images/favicon.png" />
-		<link href = 'styles/wrapper.css' type='text/css' rel='stylesheet' />
-		<link href = 'styles/lavalamp.css' type='text/css' rel='stylesheet' />
-		<link href = 'styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->
-		
-		
+		<link href='styles/wrapper.css' type='text/css' rel='stylesheet' />
+		<link href='styles/lavalamp.css' type='text/css' rel='stylesheet' />
+		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />
+<!--		<link href="styles/coin-slider-styles.css" rel="stylesheet" type="text/css" />-->
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<!-- 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+<!--		<script type="text/javascript" src="js/jquery.min.js"></script>-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!--		<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
+ 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>
 <!--		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
 		<script type="text/javascript" src="js/jquery.history.js"></script>
 		<script type="text/javascript" src="js/jquery.lavalamp.1.2.js"></script>
-		<script  type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>		
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>		
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 		<script type="text/javascript">	
