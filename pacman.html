@@ -1,0 +1,65 @@
+<html>
+<head>
+<script type="text/javascript" src="js/pacman.js"></script>
+<style type="text/css">
+body {
+  background:#000;
+}
+#loader {
+  position:relative;
+  background:#000;
+  width:600px;
+  height:384px;
+  margin:auto;
+  overflow:hidden;
+}
+#pacman {
+  position:absolute;
+  background:#000 url('styles/images/pacman.gif') no-repeat;
+  width:24px;
+  height:24px;
+  z-index:10;
+}
+#pacman.right{
+}
+#pacman.up{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#pacman.down{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+#pacman.left{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+#food {
+  position:absolute;
+  background:#fff;  /* url('styles/images/food.gif') no repeat;*/
+  width:10px;
+  height:10px;
+}
+#scoreboard{
+  color:#fff;
+  z-index:100;
+}
+</style>
+</head>
+<body onload='init()'  onkeydown='keyHandler(event)'>
+<div id="loader">
+<div id="pacman"></div>
+<div id="food"></div>
+<div id="scoreboard"></div>
+</div>
+</body>
+</html>
