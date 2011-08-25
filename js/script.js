@@ -3,7 +3,6 @@ var timer1 = null,
 	start = 0,
 	cur = 0;
 $(document).ready(function () {
-	$(".oe_overlay").hide();
 	$(".lavaLamp").lavaLamp({
 		fx: "swing",
 		click: function () {
@@ -22,7 +21,7 @@ $(document).ready(function () {
 	var $oe_menu = $('.oe_menu');
 	var $oe_menu_items = $oe_menu.children('li');
 	var $oe_overlay = $('#oe_overlay');
-	$oe_overlay.hide();
+	//$oe_overlay.hide();
 	$oe_overlay.css({
 		zIndex: '40'
 	});
@@ -72,7 +71,7 @@ $(document).ready(function () {
 		$('html, body').stop(true, true).animate({
 			scrollTop: pos,
 			queue: false
-		}, 2000, 'easeInOutCirc');
+		}, 2000, 'easeOutSine');
 	});
 	timer = null;
 	timer1 = setTimeout('cycle()', 8000);
