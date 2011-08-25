@@ -627,7 +627,8 @@ overflow:auto;
 }
 .text-content{
 	position:absolute;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif; /*"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;*/
+	font-size:16px;
 	left:550px;
 	top:30px;
 	width:450px;

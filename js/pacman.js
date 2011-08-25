@@ -19,7 +19,6 @@ function init(){
 }
 
 function keyHandler(event){
-	event.preventDefault();
 	if(event.keyCode==37){
 		dx=-1;
 		dy=0;
@@ -42,11 +41,6 @@ function keyHandler(event){
 		addClass(pac, 'down');
 	}else if(event.keyCode==27){
 		flag=0;
-	}else if(event.keyCode==113){
-		alert('yes');
-		oe_overlay.style.display='block';
-		flag=1;
-		mainLoop();
 	}
 }
 function newFood(){

@@ -74,7 +74,7 @@ $(document).ready(function () {
 	});
 	timer = null;
 	timer1 = setTimeout('cycle()', 8000);
-//	$oe_overlay.hide();
+	$oe_overlay.hide();
 });
 
 function bindLinks() {

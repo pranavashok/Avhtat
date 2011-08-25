@@ -234,7 +234,9 @@
 		   <div class="text-content">
 		   	<h2> Airshow </h2><br/>
 			<p>
-				This is a short write-up for airshow workshop.
+				Always been mesmerized by aircrafts and aviation? Then this is the chance for you to see and learn
+it from the professionals. A series of workshops that is sure to take you on a magical journey into the
+world of aerodynamics. Experience this life of zero gravity only at Tathva ’11.
 			</p>
 		   </div>
 		   <a href="#">
@@ -245,7 +247,9 @@
 		 	<div class="text-content">
 		   	<h2> Cloud Computing Workshop </h2><br/>
 			<p>
-				Cloud computing workshop...
+				Bringing to the masses a service that has taken the virtual world by storm. Tathva ’11 offers you this
+unique opportunity of mastering this technique of sharing information and learning the intricacies
+behind it.
 			</p>
 		   </div>
 		   <a href="#">
@@ -256,7 +260,8 @@
 		 	<div class="text-content">
 		   	<h2> Water Rocket </h2><br/>
 			<p>
-				Water Rocket ...
+				A challenging event that tests your designing skills. Blend two of the ancient elements of nature,
+water and air, to create one of the most modern innovations of mankind.
 			</p>
 		   	</div>
 		   	<a href="#">
@@ -267,7 +272,8 @@
 		 	<div class="text-content">
 		   	<h2> Dirt Race </h2><br/>
 			<p>
-				Dirt Race ...
+				The race to the finish-line can never get more interesting than this. Let your bots do all the talking
+while you sit back and enjoy the game. Be crowned the champion in this all new exciting Robot-war!
 			</p>
 		   	</div>
 		   	<a href="#">
@@ -278,7 +284,8 @@
 		 	<div class="text-content">
 		   	<h2> B - Plan </h2><br/>
 			<p>
-				B - Plan ...
+				If you have ever dreamt of making it big in the Biz-world, then this is the event for you. Chalk out
+your dream business venture and earn a place in our coveted Hall of Fame!
 			</p>
 		   	</div>
 		   	<a href="#">
@@ -289,7 +296,8 @@
 		 	<div class="text-content">
 		   	<h2> Touch Magix </h2><br/>
 			<p>
-				Touch Magix ...
+				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
+you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
 			</p>
 		   	</div>
 		   	<a href="#">
