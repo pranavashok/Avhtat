@@ -6,9 +6,13 @@ a:link, a:visited, img {
   outline:none;
   border:none;
 }
+ul {
+	list-style:none;
+}
 body{
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   background:url('images/carbon.jpg');
+  font-size:12px;
 }
 iframe{
   position:absolute;
@@ -52,7 +56,6 @@ iframe{
  display:block;
 }
 ul.oe_menu{
-	list-style:none;
 	position:relative;
 	margin:0px 0px 0px 0px;
 	float:left;
@@ -135,7 +138,6 @@ ul.oe_menu div ul.oe_full{
 	width:100%;
 }
 ul.oe_menu li ul{
-	list-style:none;
 	float:left;
 	width: 150px;
 	margin-right:10px;
@@ -166,7 +168,6 @@ li.oe_heading{
 }
 
 #loginlinks{
-	list-style-type:none;
 	height:38px;
 	
 }
@@ -275,7 +276,6 @@ form .searchboxwrapper input:hover{
 }
 #sidebar ul{  
   width:65px;
-  list-style:none;
  }
  
 #sidebar li{
@@ -415,10 +415,6 @@ opacity:1;
  
 }
 
-#footerlinks li{
-list-style:none;
-}
-
 #footerlinks li a{
   font-weight:bold;
   color:white;
@@ -525,7 +521,6 @@ span.contact-details {
 }
 /*  Styles for ajax loaded content */
 .ilinks{
-	list-style-type:none;
 	position:absolute;
 	left:20px;
 	top:100px;
@@ -621,7 +616,7 @@ overflow:auto;
 	position:absolute;
 	left:20px;
 	top:20px;
-	width:500px;
+	width:45%;
 	height:300px;
 	border:10px solid #979797;
 }
@@ -629,9 +624,9 @@ overflow:auto;
 	position:absolute;
 	font-family: 'Play', sans-serif; /*"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;*/
 	font-size:16px;
-	left:550px;
+	left:50%;
 	top:30px;
-	width:360px;
+	width:40%;
 	padding-left:30px;
 	height:320px;
 	color:#fff;
@@ -646,10 +641,12 @@ overflow:auto;
 }
 #nav-icons{
 	display:block;
-	position:relative;
-	width:200px;
-	height:20px;
-	margin:100px 0 0 580px;
+	position:absolute;
+	left:55%;
+	bottom:60px;
+	width:40%;
+	height:40px;
+	overflow:hidden;
 }
 #sponsor {
 	display:block;
@@ -670,11 +667,6 @@ overflow:auto;
 
 /*--------------For Registration Form-----------------------*/
 
-
-body{
-font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
-font-size:12px;
-}
 p, h1, form, button{border:0; margin:0; padding:0;}
 .spacer{clear:both; height:1px;}
 /* ----------- My Form ----------- */
