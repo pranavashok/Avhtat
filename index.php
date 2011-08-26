@@ -25,6 +25,7 @@
 		<!--<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 -->
 		<script type="text/javascript">	
+		setTimeout('ipac.contentWindow.focus()',5000);
 	        $(document).ready(function () {
 			var _escaped_fragment_ = document.location.search;
 			if(!_escaped_fragment_) $("#innerpage").hide();
@@ -73,7 +74,7 @@
 	</head>
 	<body>
 	<div id = "wrapper">
-  		<div id="oe_overlay" class="oe_overlay"><iframe width=620 height=400 src="pacman.html"></iframe></div>
+  		<div id="oe_overlay" class="oe_overlay"><!--<iframe id='ipac' width=620 height=400 src="pacman.html"></iframe>--></div>
   		<div id = "topbar">   		
     			<a href="index.php">
     			<div class="logo"></div>
@@ -218,6 +219,7 @@
  	 <ul> 
  	  <li><img src="styles/images/sponsors/gasotech.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/arbitron.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>	 
  	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
  	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>
