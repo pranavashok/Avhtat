@@ -38,8 +38,8 @@
 	 		        $.history.load(hash);	
 	 		        $('a[rel=ajax]').removeClass('selected');
 	 		        $(this).addClass('selected');
-	 		        $('#innerpage').hide();
-	 		        $('#frontpage').hide();
+	 		        //$('#innerpage').hide();
+	 		        //$('#frontpage').hide();
 	 		        $('#bglogo').show();
 	 		        getPage();
 			        return false;
@@ -246,7 +246,7 @@ world of aerodynamics. Experience this life of zero gravity only at Tathva ’11
 		   </a>
 		   </li>
 		   <li id='panel1'>
-		 	<div class="text-content">
+		   <div class="text-content">
 		   	<h2> Cloud Computing Workshop </h2><br/>
 			<p>
 				Bringing to the masses a service that has taken the virtual world by storm. Tathva ’11 offers you this
@@ -306,7 +306,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<img src="styles/images/touchmagix.jpg" alt="6"/>
 		   	</a>
 		   </li>
-		   </div>
+		   </ul>
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
 				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
@@ -316,6 +316,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<li id='4'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
 				<li id='5'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
 			</ul>	
+		   </div>
 		   </div>
         			
 		 </div>
