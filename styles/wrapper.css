@@ -309,10 +309,9 @@ opacity:1;
 }
 
 #frontpage{
-  width:80%;
+  width:1000px;
   position:relative;
-  margin-left:10%;
-  margin-top:60px;
+  margin:60px auto;
   height:580px;
   min-width:800px;
   bottom:0;
@@ -511,7 +510,8 @@ span.contact-details {
 }
 
 #slider{
-  width:100%;
+  width:1000px;
+  margin:0 auto;
   height:360px;
   position:relative;
   top:180px;
@@ -631,7 +631,7 @@ overflow:auto;
 	font-size:16px;
 	left:550px;
 	top:30px;
-	width:450px;
+	width:360px;
 	padding-left:30px;
 	height:320px;
 	color:#fff;
@@ -649,7 +649,7 @@ overflow:auto;
 	position:relative;
 	width:200px;
 	height:20px;
-	margin:100px 0 0 610px;
+	margin:100px 0 0 580px;
 }
 #sponsor {
 	display:block;
@@ -658,7 +658,10 @@ overflow:auto;
 	width:220px;
 	height:110px;
 	float:right;
-	margin:30px 40px 0 0;	
+	margin:30px 40px 0 0;
+	-moz-box-shadow:0 0 10px white;
+	-webkit-box-shadow:0 0 10px white;
+	box-shadow:0  0 10px white;	
 }
 #sponsslider img{
 	width:100%;
