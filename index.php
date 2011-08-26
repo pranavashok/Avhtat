@@ -45,7 +45,7 @@
 			        return false;
 	        	});	
 		});
-	
+		
 		function pageload(hash) {
 			if (hash) getPage();    
 		}
@@ -67,7 +67,7 @@
 				}		
 			});
 		}
-		</script> 
+		</script>
 		<title>
 			Tathva '11 | National Institute of Technology, Calicut
 		</title>
