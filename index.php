@@ -336,7 +336,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			    </ul>
 			</div>-->
 		  </div>
-  		  <div id = "contactsbutton">Contacts [+] </div>
+  		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>

@@ -14,6 +14,7 @@ body{
   background:url('images/carbon.jpg');
   font-size:12px;
 }
+
 iframe{
   position:absolute;
   left:50%;
@@ -85,24 +86,24 @@ ul.oe_menu > li > a{
 	background-color: transparent;
 	text-align:center;
 	-webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
+  	-moz-transition: all 0.6s ease;
+  	-o-transition: all 0.6s ease;
  	transition: all 0.6s ease;
-	/*text-shadow:0px 0px 1px #000;*/
 	opacity:0.7;
+	text-shadow:#000 0px 1px 0, #000 0 -1px 0;
 }
 ul.oe_menu > li > a:hover,
 ul.oe_menu > li.selected > a{
 	color: #ffffff;
-  opacity:0.9;
+  	opacity:0.9;
 	-webkit-transition: opacity 0.6s ease;
-  -moz-transition: opacity 0.6s ease;
-  -o-transition: opacity 0.6s ease;
+  	-moz-transition: opacity 0.6s ease;
+	-o-transition: opacity 0.6s ease;
  	transition: opacity 0.6s ease;
  	border-top:3px solid #ffbf00;
  	-webkit-transition: border 0.3s;
-  -moz-transition: border 0.1s;
-  -o-transition: border 0.3s;
+  	-moz-transition: border 0.1s;
+  	-o-transition: border 0.3s;
  	transition: border 0.3s;
 }
 .oe_wrapper ul.hovered > li > a{
@@ -191,23 +192,24 @@ li.oe_heading{
 	background-color: transparent;
 	text-align:center;
 	-webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
+  	-moz-transition: all 0.6s ease;
+  	-o-transition: all 0.6s ease;
  	transition: all 0.6s ease;
+ 	text-shadow:#000 0px 1px 0, #000 0 -1px 0;
 }
 #loginlinks li a:hover{
 	color: #ffffff;
 	-webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
  	transition: all 0.6s ease;
+ 	text-shadow:#000 0px 1px 0, #000 0 -1px 0;
 	
 }
 
 #loginlinks li a:active{
 	color: #ffffff;
 }
-
 #searchcontainer {
   left:50%;
   position:absolute;
@@ -491,13 +493,16 @@ span.contact-details {
 #contactsbutton{
 	line-height:24px;
 	position:absolute;
-	bottom:8px;
+	font-size:13px;
+	font-weight:bold;
+	bottom:6px;
 	right:150px;
 	cursor:pointer;
 	color:#fff;
 }
 #contactsbutton:hover{
 	color:#ffbf00;
+	text-shadow:#000 0px 1px 0, #000 0 -1px 0;
 }
 #gplus {
   position:absolute;
@@ -622,8 +627,8 @@ overflow:auto;
 }
 .text-content{
 	position:absolute;
-	font-family: 'Play', sans-serif; /*"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;*/
-	font-size:16px;
+	font-family: 'Play', sans-serif;
+	font-size:15px;
 	left:50%;
 	top:30px;
 	width:40%;
