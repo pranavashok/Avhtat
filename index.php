@@ -25,7 +25,7 @@
 		<!--<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 -->
 		<script type="text/javascript">	
-		setTimeout('ipac.contentWindow.focus()',5000);
+		//setTimeout('ipac.contentWindow.focus()',5000);
 	        $(document).ready(function () {
 			var _escaped_fragment_ = document.location.search;
 			if(!_escaped_fragment_) $("#innerpage").hide();
@@ -89,7 +89,7 @@
 							  <li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>
 							  <li><a href="#!miniaturemouse" rel="ajax">Miniature Mouse</a></li>
 							  <li><a href="#!signalmaestro" rel="ajax">Signal Maestro</a></li>
-							  <li><a href="#!robowars" rel="ajax">Robo Wars</a></li>
+							  <li><a href="#!collisioncourse" rel="ajax">Collision Course</a></li>
 							  <li><a href="#!dirtrace" rel="ajax">Dirt Race</a></li>              
 						      </ul>
 						      <ul>
