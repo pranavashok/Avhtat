@@ -61,7 +61,7 @@ ul.oe_menu{
 	margin:0px 0px 0px 0px;
 	float:left;
 	clear:both;
-	width:560px;
+	width:700px;
 }
 
 ul.oe_menu > li {
@@ -170,6 +170,7 @@ li.oe_heading{
 
 #loginlinks{
 	height:38px;
+	width:100px;
 	
 }
 
@@ -211,13 +212,13 @@ li.oe_heading{
 	color: #ffffff;
 }
 #searchcontainer {
-  left:50%;
+  right:200px;
   position:absolute;
   top:3px;
 }
 
 .searchboxwrapper{	
-	width: 350px;
+	width: 300px;
 	height: 30px;
 }
 
@@ -394,7 +395,7 @@ opacity:1;
   font-family: 'Play', sans-serif;
   width:100%;
   height:200px;
-  position:relative;
+  position:absolute;
   color:white;
   background-color:#000;
   font-size:12px;

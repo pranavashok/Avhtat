@@ -10,10 +10,12 @@
 		<link href='styles/lavalamp.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
- 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
+<!--		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+ 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.min.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
@@ -97,7 +99,7 @@
 							  <li><a href="#!contraption" rel="ajax">Contraption</a></li>
 							  <li><a href="#!incarnate" rel="ajax">Incarnate</a></li>
 							  <li><a href="#!theoffroadmi" rel="ajax">The Off Road MI</a></li>
-							  <li><a href="#!amphiboat" rel="ajax">Amphiboat</a></li>
+							  <li><a href="#!amphiboat" rel="ajax">AMPHI-BOaT</a></li>
 							  <li><a href="#!waterrocket" rel="ajax">Water Rocket</a></li>
 						      </ul>
 						      <ul>
@@ -176,14 +178,49 @@
 			    				</ul>
     				  		</div>
     					</li>
-    					<li><a href="#">Exhibitions</a></li>
-    					<li><a href="#">Lectures</a>
-						<div style="width:160px;">
-    				    			<ul>
+    					<li><a href="#">Showcase</a>
+							<div style="width:320px;">
+		    					<ul>
+		    				      		<li class="oe_heading">Exhibitions</li>
+		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
+		    				      		<li><a href="#!npol">NPOL</a></li>
+		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
+		    				    	</ul>
+		    				    	<ul>
+
+			    				      	<li class="oe_heading">Lectures</li>
     				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
     				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
+			    				   
+			    				</ul>
+    				  		</div>
+    					
+    					
+    					</li>
+					<li><a href="#">Envision</a>
+						<div style="width:160px;">
+    				    			<ul>
+    				    				<li class="oe_heading">Real World Challenges</li>
+								 			
     				    			</ul>
     				  		</div>
+    				  		
+					</li>
+					<li><a href="#">Initiatives</a>
+						<div style="width:160px;">
+    				    			<ul>
+		    				      		<li class="oe_heading">Social Initiatives</li>
+		    				      		<li><a href="#!astrophotography">Army</a></li>
+		    				    	</ul>
+		    				    	<ul>
+
+			    				      	<li class="oe_heading">Campus Initiatives</li>
+    				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
+    				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
+			    				   
+			    				</ul>
+    				  		</div>
+    				  		
 					</li>
      				</ul> <!-- oe_menu ???-->
     			</div>  
