@@ -42,11 +42,11 @@ echo '<div id="stylized" class="myform">
 }
 else if($_GET['page']=="info")
 {
-echo 'About tathva';
+echo '<div id="ititle">The Journey</div>';
 }
 else if($_GET['page']=="schedule")
 {
-echo 'Schedule comes here';
+echo '<div id="ititle">Schedule</div>';
 }
 else if($_GET['page']=="gallery")
 {
@@ -54,11 +54,36 @@ echo 'Gallery here';
 }
 else if($_GET['page']=="sponsors")
 {
-echo 'Sponsors page';
+echo '<div id="ititle">Sponsors</div>';
 }
 else if($_GET['page']=="feedback")
 {
-echo 'Feedback form';
+echo '<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="register.php">
+<h1>Feedback</h1>
+<p></p>
+<br /><br /><br />
+<label>Name
+<span class="small">Add your name</span>
+</label>
+<input type="text" name="name" id="name" />
+
+<label>Email
+<span class="small">Add a valid address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Feedback
+<span class="small">Enter feedback here</span>
+</label>
+<textarea rows="4" cols="30" name="institution" id="institution" />
+
+
+<button type="submit">Submit</button>
+<div class="spacer"></div>
+
+</form>
+</div>';
 }
 else
 {

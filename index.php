@@ -201,7 +201,7 @@
 						<div style="width:160px;">
     				    			<ul>
     				    				<li class="oe_heading">Real World Challenges</li>
-								 			
+										
     				    			</ul>
     				  		</div>
     				  		
@@ -210,15 +210,17 @@
 						<div style="width:160px;">
     				    			<ul>
 		    				      		<li class="oe_heading">Social Initiatives</li>
-		    				      		<li><a href="#!astrophotography">Army</a></li>
+		    				      		<li><a href="#!teachforindia">Teach for India</a></li>
+		    				      		<li><a href="#!supportmyschool">NDTV-Coke <br />Support My School</a></li>
+		    				      		<li><a href="#!youngengineer">Young Engineer</a></li>
 		    				    	</ul>
-		    				    	<ul>
+		    				    	<!--<ul>
 
 			    				      	<li class="oe_heading">Campus Initiatives</li>
-    				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
-    				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
+    				      				<li><a href="#!campusmapping">Campus Mapping</a></li>
+    				      				<li><a href="#!greencampus">Green Campus</a></li>
 			    				   
-			    				</ul>
+			    				</ul>-->
     				  		</div>
     				  		
 					</li>
