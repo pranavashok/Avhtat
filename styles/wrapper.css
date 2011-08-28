@@ -624,6 +624,17 @@ overflow:auto;
 	width:45%;
 	height:300px;
 	border:10px solid #979797;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition: all 0.2s ease;
+  	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+#panels img:hover{
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition: all 0.2s ease;
+  	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	border:10px solid #e1e1e1;
 }
 .text-content{
 	position:absolute;
