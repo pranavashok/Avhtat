@@ -59,7 +59,7 @@ echo '<div id="ititle">Sponsors</div>';
 else if($_GET['page']=="feedback")
 {
 echo '<div id="stylized" class="myform">
-<form id="form" name="form" method="post" action="register.php">
+<form id="form" name="form" method="post" action="">
 <h1>Feedback</h1>
 <p></p>
 <br /><br /><br />
