@@ -69,6 +69,24 @@
 				}		
 			});
 		}
+		function search() {
+			var data = 'q=' + $('#q').attr('value').replace(' ','|') ;
+			document.location
+			$.ajax({
+				url: "search.php",	
+				type: "GET",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#frontpage').hide();	
+					$('#bglogo').show();			
+					$('#content').html(html);
+					$('#innerpage').fadeIn('slow');		
+					bindLinks();
+		
+				}		
+			});
+		}
 		</script>
 		<title>
 			Tathva '11 | National Institute of Technology, Calicut
@@ -210,13 +228,10 @@
 						<div style="width:160px;">
     				    			<ul>
 		    				      		<li class="oe_heading">Social Initiatives</li>
-		    				      		<li><a href="#!astrophotography">Army</a></li>
 		    				    	</ul>
 		    				    	<ul>
 
 			    				      	<li class="oe_heading">Campus Initiatives</li>
-    				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
-    				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
 			    				   
 			    				</ul>
     				  		</div>
@@ -225,9 +240,9 @@
      				</ul> <!-- oe_menu ???-->
     			</div>  
     			<div id = "searchcontainer">
-    				<form id="searchform" action="search.php" method="get">
+    				<form id="searchform" action="javascript:search()" method="get">
       					<div class="searchboxwrapper">
-      		  				<input class="searchbox" name="q" type="text" autocomplete="off"/> 
+      		  				<input id="q" class="searchbox" name="q" type="text" autocomplete="off"/> 
       					</div>
       					<input id="searchbutton" type="submit" />
     				</form>
