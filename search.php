@@ -29,7 +29,7 @@ if(isset($_GET['q'])){
 	$terms=explode('|',$q);
 	$matches = array();
 	foreach ($terms as $i){
-		array_push($matches, " article_title LIKE '%".$i."%' OR article_content LIKE '% ".$i." %' OR article_tags LIKE '%".$i."%' "); 
+		array_push($matches, " article_title LIKE '%".$i."%' OR article_content LIKE '%".$i."%' OR article_tags LIKE '%".$i."%' "); 
 	}	
 	$query = implode(' OR ', $matches);
 	$query = "SELECT * FROM articles WHERE ". $query;	
