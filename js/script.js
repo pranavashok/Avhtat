@@ -75,6 +75,7 @@ $(document).ready(function () {
 	timer = null;
 	timer1 = setTimeout('cycle()', 8000);
 	$oe_overlay.hide();
+	ticker($('#ticker-wrapper ul'),'slide',2000);
 });
 
 function bindLinks() {
@@ -87,7 +88,7 @@ function bindLinks() {
 			$(".ilinks li").removeClass('selected');
 			$(this).addClass('selected');
 			$(".isection").hide();
-			$("#isection" + $(this).attr('id')).fadeIn('fast', function () {
+			$("#isection" + $(this).attr('id')).fadeIn(400, function () {
 				$("#imcs_container").mCustomScrollbar("vertical", 400, "easeOutCirc", 1.05, "auto", "yes", "yes", 10);
 			});
 		});
@@ -111,4 +112,29 @@ function cycle() {
 	$(".lavaLamp li:eq(" + start + ")").addClass('current');
 	$("#panel" + $("#nav-icons li.current").attr('id')).stop(true, true).fadeIn(500);
 	timer1 = setTimeout('cycle()', 8000);
+}
+function ticker(obj,effect,speed){
+      var list = obj.children();
+      list.not(':first').hide();
+      setInterval(function(){
+        
+        list = obj.children();
+        list.not(':first').hide();
+        
+        var first_li = list.eq(0)
+        var second_li = list.eq(1)
+		
+		if(effect == 'slide'){
+			first_li.slideUp(500,function(){
+			second_li.slideDown(500,function(){
+				first_li.remove().appendTo(obj);
+			});
+			});
+		} else if(effect == 'fade'){
+			first_li.fadeOut(function(){
+				second_li.fadeIn('slow');
+				first_li.remove().appendTo(obj);
+			});
+		}
+      }, speed);
 }

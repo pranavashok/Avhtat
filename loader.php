@@ -18,11 +18,6 @@ echo '<div id="stylized" class="myform">
 </label>
 <input type="text" name="email" id="email" />
 
-<label>Name
-<span class="small">Add your name</span>
-</label>
-<input type="text" name="name" id="name" />
-
 <label>Password
 <span class="small">Min. size 6 chars</span>
 </label>
@@ -31,12 +26,12 @@ echo '<div id="stylized" class="myform">
 <label>Confirm Password
 <span class="small">Re-type your password</span>
 </label>
-<input type="password" name="password" id="password" />
+<input type="password" name="password2" id="password2" />
 
 <label>Institution Name
 <span class="small">Add your institution</span>
 </label>
-<input type="text" name="password" id="password" />
+<input type="text" name="institution" id="institution" />
 
 
 <button type="submit">Register</button>

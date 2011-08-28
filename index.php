@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>	
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta http-equiv="cache-control" content="public" />
 		<meta http-equiv="content-language" content="en-IN" />
 		<meta http-equiv="expires" content="Mon, 31 Aug 2012 00:00:00 GMT" />
@@ -321,7 +321,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
         			
 		 </div>
 			   <?php endif; ?>
-  		</div>
+  		
   		<div id="innerpage">
   		                <div id="content">
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
@@ -330,11 +330,14 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 
-			<!--<div id="ticker-wrapper" class="no-js">
-			    <ul id="js-news" class="js-hidden">
-				<li class="news-item"><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+			<div id="ticker-wrapper">
+			    <ul>
+				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+				<li><span> Tathva '11 from October 20th to 23rd </span></li>	
+				<li><span> Updates item 3 </span></li>	
+				<li><span> Updates item 4 </span></li>	
 			    </ul>
-			</div>-->
+			</div>
 		  </div>
   		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
   		  <div id = "social">
@@ -386,6 +389,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		</div>
   		</div>
   		</div>
+  	</div>
   	</div>
 	</body>	
 </html>

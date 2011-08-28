@@ -387,6 +387,8 @@ opacity:1;
   position:absolute;
   left:40px;
   margin:auto;
+ height:12px;
+ overflow:hidden;
 }
 #footer {
   font-family: 'Play', sans-serif;
