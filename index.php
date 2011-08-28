@@ -330,11 +330,14 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 
-			<!--<div id="ticker-wrapper" class="no-js">
-			    <ul id="js-news" class="js-hidden">
-				<li class="news-item"><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+			<div id="ticker-wrapper">
+			    <ul>
+				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+				<li><span> Tathva '11 from October 20th to 23rd </span></li>	
+				<li><span> Updates item 3 </span></li>	
+				<li><span> Updates item 4 </span></li>	
 			    </ul>
-			</div>-->
+			</div>
 		  </div>
   		  <div id = "contactsbutton">Contacts [+] </div>
   		  <div id = "social">
