@@ -39,9 +39,27 @@ echo '<div id="stylized" class="myform">
 
 </form>
 </div>';
-
 }
-
+else if($_GET['page']=="info")
+{
+echo 'About tathva';
+}
+else if($_GET['page']=="schedule")
+{
+echo 'Schedule comes here';
+}
+else if($_GET['page']=="gallery")
+{
+echo 'Gallery here';
+}
+else if($_GET['page']=="sponsors")
+{
+echo 'Sponsors page';
+}
+else if($_GET['page']=="feedback")
+{
+echo 'Feedback form';
+}
 else
 {
 $con = mysql_connect($host, $db_user, $db_password);
