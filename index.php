@@ -118,7 +118,7 @@
 							  <li class="oe_heading">Electrical</li>
 							  <li><a href="#!mousedrive" rel="ajax">Mouse Drive</a></li>
 							  <li><a href="#!coilgun" rel="ajax">Coil Gun</a></li>
-							  <li><a href="#!puretricks" rel="ajax">Pure Tricks</a></li>
+							  <li><a href="#!puretrics" rel="ajax">Pure Trics</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Electronics</li>
