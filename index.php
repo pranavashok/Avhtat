@@ -321,7 +321,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
         			
 		 </div>
 			   <?php endif; ?>
-  		</div>
+  		
   		<div id="innerpage">
   		                <div id="content">
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
@@ -339,7 +339,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			    </ul>
 			</div>
 		  </div>
-  		  <div id = "contactsbutton">Contacts [+] </div>
+  		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>
@@ -389,6 +389,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		</div>
   		</div>
   		</div>
+  	</div>
   	</div>
 	</body>	
 </html>
