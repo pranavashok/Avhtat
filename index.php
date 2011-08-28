@@ -104,14 +104,13 @@
 							  <li><a href="#!incarnate" rel="ajax">Incarnate</a></li>
 							  <li><a href="#!theoffroadmi" rel="ajax">The Off Road MI</a></li>
 							  <li><a href="#!amphiboat" rel="ajax">AMPHI-BOaT</a></li>
-							  <li><a href="#!waterrocket" rel="ajax">Water Rocket</a></li>
+							  <li><a href="#!aquamissile" rel="ajax">Aqua Missile</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">General</li>
 							  <li><a href="#!blueprint" rel="ajax">Blueprint</a></li>
 							  <li><a href="#!blitzkreig" rel="ajax">Blitzkreig</a></li>
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
-							  <li><a href="#!idp" rel="ajax">Industry Defined Problems</a></li>
 						      </ul>
 						      <ul>
 					                  <li class="oe_heading">Architecture</li>
@@ -385,7 +384,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>
-  		    <a href="#"><img src="styles/images/facebook.png"></img></a>
+  		    <a href="http://www.facebook.com/pages/Tathva-11/188427287863834"><img src="styles/images/facebook.png"></img></a>
   		  </div>  		
   		</div>
   		<div id="footer">
@@ -395,7 +394,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		<li> <a href="#!initiatives" rel="ajax">Initiatives </a></li>
   		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
   		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
-  		<li><a href="http://tathva.org/forum"> Forum</a> </li>
+  		<li><a href="#"> Forum</a> </li>
   		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
   		</ul>
   		</div>
@@ -407,7 +406,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		<tr>
   			<td><strong>Rojith Jones</strong><br /><span class="contact-details">rojith@tathva.org<br />+91-9497308105</span></td>
   			<td><strong>Marilyn George</strong><br /><span class="contact-details">marilyn@tathva.org<br />+91-9497778936</span></td>
-  			<td><strong>Nitheesh K</strong><br /><span class="contact-details">nitheeshkpai@tathva.org<br />+91-9895689519</span></td>
+  			<td><strong>Nitheesh K Pai</strong><br /><span class="contact-details">nitheeshkpai@tathva.org<br />+91-9895689519</span></td>
   		</tr>
   		<tr>
   			<td></td><td></td><td><strong>Rashid CMP</strong><br /><span class="contact-details">rashidcmp@tathva.org<br />+91-9746749787</span></td>
