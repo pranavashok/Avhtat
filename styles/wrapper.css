@@ -728,7 +728,7 @@ font-weight:normal;
 text-align:right;
 width:220px;
 }
-#stylized input{
+#stylized input, textarea{
 float:left;
 font-size:12px;
 padding:4px 2px;
@@ -740,7 +740,7 @@ margin:2px 0 20px 10px;
 border-radius:4px;
 }
 
-#stylized input:focus{
+#stylized input:focus, textarea:focus{
  	-moz-box-shadow:0 0 9px #fbbb00;
 	-webkit-box-shadow:0 0 9px #fbbb00;
 	box-shadow:0  0 9px #fbbb00;	

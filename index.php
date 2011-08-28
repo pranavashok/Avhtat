@@ -70,22 +70,8 @@
 			});
 		}
 		function search() {
-			var data = 'q=' + $('#q').attr('value').replace(' ','|') ;
-			document.location
-			$.ajax({
-				url: "search.php",	
-				type: "GET",		
-				data: data,		
-				cache: false,
-				success: function (html) {	
-					$('#frontpage').hide();	
-					$('#bglogo').show();			
-					$('#content').html(html);
-					$('#innerpage').fadeIn('slow');		
-					bindLinks();
-		
-				}		
-			});
+			document.location.hash='!q='+$('#q').attr('value').replace(' ','|');
+			getPage();
 		}
 		</script>
 		<title>
@@ -219,7 +205,7 @@
 						<div style="width:160px;">
     				    			<ul>
     				    				<li class="oe_heading">Real World Challenges</li>
-								 			
+										
     				    			</ul>
     				  		</div>
     				  		
@@ -228,12 +214,15 @@
 						<div style="width:160px;">
     				    			<ul>
 		    				      		<li class="oe_heading">Social Initiatives</li>
+		    				      		<li><a href="#!teachforindia">Teach for India</a></li>
+		    				      		<li><a href="#!supportmyschool">NDTV-Coke <br />Support My School</a></li>
+		    				      		<li><a href="#!youngengineer">Young Engineer</a></li>
 		    				    	</ul>
-		    				    	<ul>
-
+		    				    	<!--<ul>
 			    				      	<li class="oe_heading">Campus Initiatives</li>
-			    				   
-			    				</ul>
+    				      				<li><a href="#!campusmapping">Campus Mapping</a></li>
+    				      				<li><a href="#!greencampus">Green Campus</a></li>
+			    				</ul>-->
     				  		</div>
     				  		
 					</li>
