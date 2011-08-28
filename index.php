@@ -321,7 +321,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
         			
 		 </div>
 			   <?php endif; ?>
-  		</div>
+  		
   		<div id="innerpage">
   		                <div id="content">
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
@@ -386,6 +386,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		</div>
   		</div>
   		</div>
+  	</div>
   	</div>
 	</body>	
 </html>
