@@ -18,6 +18,11 @@ echo '<div id="stylized" class="myform">
 </label>
 <input type="text" name="email" id="email" />
 
+<label>Phone
+<span class="small">Add a valid phone number</span>
+</label>
+<input type="text" name="phone" id="phone" />
+
 <label>Password
 <span class="small">Min. size 6 chars</span>
 </label>
@@ -189,7 +194,7 @@ echo '<div id="stylized" class="myform">
 </form>
 </div>';
 }else if ($_GET['page'][1]=='='){
-	$searchResult = file_get_contents('http://localhost/Tathva--11-Website/search.php?'.$_GET['page']);
+	$searchResult = file_get_contents('http://www.tathva.org/2011/search.php?'.$_GET['page']);
 	
 	echo $searchResult;
 }else

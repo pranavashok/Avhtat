@@ -3,6 +3,7 @@ require_once 'config.php';
 if(isset($_POST['name']) && !empty($_POST['name']) AND isset($_POST['email']) && !empty($_POST['email']) AND isset($_POST['password']) && !empty($_POST['password'])){
 	$name = mysql_escape_string($_POST['name']);
 	$email = mysql_escape_string($_POST['email']);
+	$phone = mysql_escape_string($_POST['phone']);
 	$password = mysql_escape_string($_POST['password']);
 }
 if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)){
@@ -32,8 +33,8 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 			$_POST["password"]=md5($_POST["password"]);
 		//id setting	
 			$hash = md5( rand(0,1000) );
-			$sql="INSERT INTO participant (tathva_id, name, email,password,college_name, hash) VALUES 
-			('TAT".$row[0]."','".$name."','".$email."','".md5($password)."','".$_POST["institution"]."','".$hash."');";
+			$sql="INSERT INTO participant (tathva_id, name, email, phone, password, college_name, hash) VALUES 
+			('TAT".$row[0]."','".$name."','".$email."','".$phone."','".md5($password)."','".$_POST["institution"]."','".$hash."');";
 			mysql_query($sql,$con) or die('Error.');
 		
 			$to      = $email; // Send email to our user
