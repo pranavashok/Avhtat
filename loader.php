@@ -46,7 +46,19 @@ echo '<div id="ititle">The Journey</div>';
 }
 else if($_GET['page']=="schedule")
 {
-echo '<div id="ititle">Schedule</div>';
+echo '<div id="ititle">Schedule</div><div id="imcs_container">
+<div class="icustomScrollBox">
+<div class="icontainer">
+<div class="icontent"><div id="isection0" class="isection">Schedule will be put up shortly.</div></div><!--icontent-->
+</div><!--icontainer-->
+<div class="idragger_container">
+<div class="idragger"></div>
+</div>
+<div id="igrad"></div>
+</div><!--icustomScrollBox-->
+<a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
+</div> <!--imcs_container-->';
+
 }
 else if($_GET['page']=="gallery")
 {
