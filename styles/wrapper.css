@@ -11,7 +11,7 @@ ul {
 }
 body{
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
-  background:url('images/carbon.jpg');
+  background:#0d0d0f url('images/carbon.jpg');
   font-size:12px;
 }
 
@@ -775,4 +775,27 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	box-shadow:0  0 4px white;	
 }
 
-
+/* Gallery */
+#screen { 
+	position: absolute; 
+	background: #000; 
+	left: 50%; 
+	top: 50%; 
+	width: 960px; 
+	height: 520px; 
+	margin-left: -480px; 
+	margin-top: -260px; 
+	display:hidden;
+} 
+#screen div { 
+	position: absolute; 
+	font-family: arial; 
+	font-size: 12px; 
+	color: #FFF; 
+	cursor: pointer; 
+	overflow: hidden; 
+	width: 0px; 
+} 
+#screen img { 
+	position: absolute; 
+} 

@@ -10,8 +10,8 @@
 		<link href='styles/lavalamp.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <!--		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
  		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -92,8 +92,8 @@
     						<div style="width:640px;">    				
 						      <ul>
 							  <li class="oe_heading">Robotics</li>
-							  <li><a href="#!transpoter" rel="ajax">Transporter</a></li>
-							  <li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>
+							  <!--<li><a href="#!transpoter" rel="ajax">Transporter</a></li>-->
+							  <!--<li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>-->
 							  <li><a href="#!xmarksthespotover" rel="ajax">X marks the spot: Over</a></li>
 							  <li><a href="#!signalmaestro" rel="ajax">Signal Maestro</a></li>
 							  <li><a href="#!collisioncourse" rel="ajax">Collision Course</a></li>
@@ -246,7 +246,7 @@
 	  		<ul>
 		  		<li><a href="#!info" rel="ajax"><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
 		  		<li><a href="#!schedule" rel="ajax"><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
-		  		<li><a href="#!gallery" rel="ajax"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+		  		<li><a href="gallery.php"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
 		  		<li><a href="#!sponsors" rel="ajax"><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
 		  		<li><a href="#!feedback" rel="ajax"><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
 	  		</ul>
@@ -369,7 +369,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
   		                	<!-- Ajax Content -->
                                 </div>
-                                <div id="screen"> 
+<!--                                <div id="screen"> 
 					<div><img src="../images/141042255_ebf074d1fc.jpg" alt="3,3"></div> 
 					<div><img src="../images/2219947909_a66126dd90.jpg" alt="3,3"></div> 
 					<div><img src="../images/262457997_e7979f95bc.jpg" alt="3,3"></div> 
@@ -379,7 +379,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 					<div><img src="../images/4372917590_becbbeb12c.jpg" alt="3,3"></div> 
 					<div><img src="../images/370674902_97f566439b.jpg" alt="2,4"></div> 
 					<div><img src="../images/92962116_449dca6ca3.jpg" alt="3,3"></div> 				 
-				</div>      
+					</div>      -->
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 

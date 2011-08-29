@@ -78,6 +78,7 @@ $(document).ready(function () {
 	ticker($('#ticker-wrapper ul'),'slide',2000);
 });
 
+
 function bindLinks() {
 	var i = 0;
 	var count = $(".ilinks li").length;
