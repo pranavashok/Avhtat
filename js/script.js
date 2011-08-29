@@ -138,3 +138,18 @@ function ticker(obj,effect,speed){
 		}
       }, speed);
 }
+function register() {
+			var data = 'name=' + $('input#name)').attr('value');
+			$.ajax({
+				url: "register.php",	
+				type: "POST",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#stylized').html(html);
+					$('#innerpage').fadeIn('slow');		
+					bindLinks();
+		
+				}		
+			});
+		}
