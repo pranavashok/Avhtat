@@ -203,7 +203,7 @@ $sql = "SELECT article_content FROM articles WHERE article_hash='".$_GET['page']
 $result = mysql_query($sql,$con) or die("no content") ;
 $row = mysql_fetch_array($result);
 if (!($row))
-	echo '404 Page Not Found';
+	echo 'This page will be updated soon.';
 else
 	echo $row['article_content'];
 }
