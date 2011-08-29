@@ -140,7 +140,7 @@ function ticker(obj,effect,speed){
       }, speed);
 }
 function register() {
-			var data = 'name=' + $('input#name)').attr('value') + '&email=' + $('input#email').attr('value') ;
+			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&password=' + $('#password').attr('value')+ '&password2=' + $('#password2').attr('value')+ '&institution=' + $('#institution').attr('value') ;
 			$.ajax({
 				url: "register.php",	
 				type: "POST",		

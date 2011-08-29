@@ -4,7 +4,7 @@ require_once 'config.php';
 if($_GET['page']=="register")
 {
 echo '<div id="stylized" class="myform">
-<form id="form" name="form" method="post" action="register.php">
+<form id="form" name="form" method="post" action="javascript:register();">
 <h1>Registration</h1>
 <p>Fill in all the required details</p>
 

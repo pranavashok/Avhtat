@@ -56,8 +56,8 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 
 			$headers = 'From:no-reply@tathva.org' . "\r\n"; // Set from headers
 			if(mail($to, $subject, $message, $headers)){ // Send our email
-				echo "<p>".$_POST["name"].", you have been registered</p>";
-				echo "<p>Your Tathva ID is TAT".$row[0]." </p>";
+				echo $_POST["name"].", you have been registered. <br/>";
+				echo "Your Tathva ID is TAT".$row[0]."<br/>";
 				$msg = 'Your account has been created, <br /> please verify it by clicking the activation link that has been send to your email.';
 			}else{
 				$msg = 'Sorry, the register feature is not working now. Try again later.'; 
