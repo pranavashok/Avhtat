@@ -141,7 +141,7 @@ echo '<div id="ititle">Sponsors</div>';
 else if($_GET['page']=="feedback")
 {
 echo '<div id="stylized" class="myform">
-<form id="form" name="form" method="post" action="">
+<form id="form" name="form" method="post" action="feedback.php">
 <h1>Feedback</h1>
 <p></p>
 <br /><br /><br />
@@ -158,7 +158,7 @@ echo '<div id="stylized" class="myform">
 <label>Feedback
 <span class="small">Enter feedback here</span>
 </label>
-<textarea rows="4" cols="30" name="institution" id="institution" />
+<textarea rows="4" cols="30" name="feedback" id="feedback" />
 
 
 <button type="submit">Submit</button>
