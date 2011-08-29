@@ -89,7 +89,7 @@ function bindLinks() {
 			$(".ilinks li").removeClass('selected');
 			$(this).addClass('selected');
 			$(".isection").hide();
-			$("#isection" + $(this).attr('id')).fadeIn(400, function () {
+			$("#isection" + $(this).attr('id')).fadeIn(200, function () {
 				$("#imcs_container").mCustomScrollbar("vertical", 400, "easeOutCirc", 1.05, "auto", "yes", "yes", 10);
 			});
 		});
