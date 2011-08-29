@@ -4,7 +4,7 @@ require_once 'config.php';
 if($_GET['page']=="register")
 {
 echo '<div id="stylized" class="myform">
-<form id="form" name="form" method="post" action="register.php">
+<form id="form" name="form" method="post" action="javascript:register();">
 <h1>Registration</h1>
 <p>Fill in all the required details</p>
 
@@ -136,12 +136,34 @@ echo 'Gallery here';
 }
 else if($_GET['page']=="sponsors")
 {
-echo '<div id="ititle">Sponsors</div>';
+echo '<div id="ititle">Sponsors</div><div id="imcs_container">
+<div class="icustomScrollBox">
+<div class="icontainer">
+<div class="icontent"><div id="isection0" class="isection">
+<ul id="#sponsorslist"> 
+ 	  <li><a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a></li>
+ 	  <li><a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt=""/></a></li>
+ 	  <li><a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a></li>
+ 	  <li><a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a></li> 	  
+ 	  <li><a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a></li>
+ 	  <li><a href="http://www.treksnrapids.com/" target="_blank"><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></a></li>
+   	  <li><a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a></li>
+   	  <li><a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a></li>
+</ul> 
+</div></div><!--icontent-->
+</div><!--icontainer-->
+<div class="idragger_container">
+<div class="idragger"></div>
+</div>
+<div id="igrad"></div>
+</div><!--icustomScrollBox-->
+<a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
+</div> <!--imcs_container-->';
 }
 else if($_GET['page']=="feedback")
 {
 echo '<div id="stylized" class="myform">
-<form id="form" name="form" method="post" action="feedback.php">
+<form id="form" name="form" method="post" action="javascript:feedback()">
 <h1>Feedback</h1>
 <p></p>
 <br /><br /><br />

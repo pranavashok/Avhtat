@@ -89,7 +89,7 @@ function bindLinks() {
 			$(".ilinks li").removeClass('selected');
 			$(this).addClass('selected');
 			$(".isection").hide();
-			$("#isection" + $(this).attr('id')).fadeIn(400, function () {
+			$("#isection" + $(this).attr('id')).fadeIn(200, function () {
 				$("#imcs_container").mCustomScrollbar("vertical", 400, "easeOutCirc", 1.05, "auto", "yes", "yes", 10);
 			});
 		});
@@ -139,3 +139,33 @@ function ticker(obj,effect,speed){
 		}
       }, speed);
 }
+function register() {
+			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&password=' + $('#password').attr('value')+ '&password2=' + $('#password2').attr('value')+ '&institution=' + $('#institution').attr('value') ;
+			$.ajax({
+				url: "register.php",	
+				type: "POST",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#stylized').html(html);
+					$('#innerpage').fadeIn('slow');		
+					bindLinks();
+		
+				}		
+			});
+		}
+function feedback() {
+			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&feedback=' + $('#feedback').attr('value');
+			$.ajax({
+				url: "feedback.php",	
+				type: "POST",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#stylized').html(html);
+					$('#innerpage').fadeIn('slow');		
+					bindLinks();
+		
+				}		
+			});
+		}

@@ -706,6 +706,9 @@ font-weight:bold;
 margin-bottom:8px;
 color: #bfff00;
 }
+#stylized a{
+color:#bfff00;
+}
 #stylized p{
 font-size:11px;
 color:#666666;
@@ -799,3 +802,8 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 #screen img { 
 	position: absolute; 
 } 
+/* Sponsors */
+#sponsorslist img{
+	width:220px;
+	height:110px;
+}
