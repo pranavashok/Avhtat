@@ -31,10 +31,10 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 				$_POST["accomodation"]="no";
 			$_POST["password"]=md5($_POST["password"]);
 		//id setting	
-			$sql="INSERT INTO participant (tathva_id, name, email,password,college_name) VALUES 
-			('TAT".$row[0]."','".$name."','".$email."','".md5($password)."','".$_POST["institution"]."');";
-			mysql_query($sql,$con) or die('Error.');
 			$hash = md5( rand(0,1000) );
+			$sql="INSERT INTO participant (tathva_id, name, email,password,college_name, hash) VALUES 
+			('TAT".$row[0]."','".$name."','".$email."','".md5($password)."','".$_POST["institution"]."','".$hash."');";
+			mysql_query($sql,$con) or die('Error.');
 		
 			$to      = $email; // Send email to our user
 			$subject = 'Tathva \'11 Signup Verification'; // Give the email a subject
