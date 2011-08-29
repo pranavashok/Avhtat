@@ -1,10 +1,10 @@
 TODO
 ----
 
-1. Get the user database design, implement it and finish off registration + email verification.
-2. Sidebar (Edit loader.php) - Add general writeup, put something in schedule, add sponsors)
-3. Gallery
-4. Feedback form is complete, but doesn't do anything. Maybe we'll recieve feedback from launch day itself?
+1. Get the user database design, implement it and finish off registration + email verification.  
+2. Sidebar (Edit loader.php) - Add general writeup, put something in schedule, add sponsors) -- DONE
+3. Gallery -- DONE
+4. Feedback form is complete, but doesn't do anything. Maybe we'll recieve feedback from launch day itself? -- DONE
 5. Search logging.
-6. Updates bar. Either make it display one update or add something sensible to it :)
-7. Fill something in real world challenges.
+6. Updates bar. Either make it display one update or add something sensible to it :)  --DONE
+7. Fill something in real world challenges. 
