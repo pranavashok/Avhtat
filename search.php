@@ -27,11 +27,14 @@ if(isset($_GET['q'])){
 	$q=strip_tags($q);
 	$q=mysql_real_escape_string($q);
 	$terms=explode('|',$q);
+	$sql="INSERT INTO searchlog (IP,term) VALUES ('".$_SERVER['REMOTE_ADDR']."', '".$q."');";
+	$result = mysql_query($sql,$con);
 	$matches = array();
 	foreach ($terms as $i){
 		array_push($matches, " article_title LIKE '%".$i."%' OR article_content LIKE '%".$i."%' OR article_tags LIKE '%".$i."%' "); 
 	}	
 	$query = implode(' OR ', $matches);
+	
 	$query = "SELECT * FROM articles WHERE ". $query;	
 	$result = mysql_query($query,$con) or die("No results found.") ;
 	echo $finalResult;

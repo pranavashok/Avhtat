@@ -41,19 +41,17 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 			$subject = 'Tathva \'11 Signup Verification'; // Give the email a subject
 			$message = '
 		
-			Thank You for signing up on Tathva \'11!
-			Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
-		
-			------------------------
-			E-Mail: '.$name.'
-			Password: '.$password.'
-			------------------------
-		
-			Please click this link to activate your account:
-			
-			http://www.tathva.org/2011/verify.php?email='.$email.'&hash='.$hash.'
-		
-			';
+Thank You for signing up on Tathva \'11!
+Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
+	------------------------
+	E-Mail: '.$name.'
+	Password: '.$password.'
+	------------------------
+
+Please click this link to activate your account:
+http://www.tathva.org/2011/#!verify?email='.$email.'&hash='.$hash.'
+
+';
 
 			$headers = 'From:no-reply@tathva.org' . "\r\n"; // Set from headers
 			if(mail($to, $subject, $message, $headers)){ // Send our email

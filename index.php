@@ -50,6 +50,7 @@
 		
 		function pageload(hash) {
 			if (hash == '!gallery') showGallery();
+			else if (hash.substr(0,7) == '!verify')	loadVerify(hash.substr(8));
 			else if (hash) getPage();    
 		}
 		
@@ -264,7 +265,7 @@
  	  <!--<li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>-->
  	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
  	  <!--<li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>-->
- 	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>
+ <!--	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>-->
  	  <li><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
@@ -369,17 +370,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
   		                	<!-- Ajax Content -->
                                 </div>
-<!--                                <div id="screen"> 
-					<div><img src="../images/141042255_ebf074d1fc.jpg" alt="3,3"></div> 
-					<div><img src="../images/2219947909_a66126dd90.jpg" alt="3,3"></div> 
-					<div><img src="../images/262457997_e7979f95bc.jpg" alt="3,3"></div> 
-					<div><img src="../images/3199389907_76642169e7.jpg" alt="2,4"></div> 
-					<div><img src="../images/11704430_d941a398f6.jpg" alt="2,4"></div> 
-					<div><img src="../images/213745659_17a537ddb1.jpg" alt="2,4"></div> 
-					<div><img src="../images/4372917590_becbbeb12c.jpg" alt="3,3"></div> 
-					<div><img src="../images/370674902_97f566439b.jpg" alt="2,4"></div> 
-					<div><img src="../images/92962116_449dca6ca3.jpg" alt="3,3"></div> 				 
-					</div>      -->
+
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 

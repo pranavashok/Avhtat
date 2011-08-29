@@ -164,8 +164,7 @@ echo '<div id="ititle">Sponsors</div><div id="imcs_container">
 </div><!--icustomScrollBox-->
 <a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
 </div> <!--imcs_container-->';
-}
-else if($_GET['page']=="feedback")
+}else if($_GET['page']=="feedback")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:feedback()">
