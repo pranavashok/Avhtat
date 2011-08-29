@@ -14,15 +14,15 @@
 	</head>
 	<body>
 	                         <div id="screen"> 
-					<div><img src="gallery/bot.jpg" alt="3,3"></div> 
-					<div><img src="gallery/car.jpg" alt="3,3"></div> 
-					<div><img src="gallery/gmadhavmemento.jpg" alt="3,3"></div> 
-					<div><img src="gallery/gokart.jpg" alt="2,4"></div> 
-					<div><img src="gallery/pyro.jpg" alt="2,4"></div> 
-					<div><img src="gallery/robodog.jpg" alt="2,4"></div> 
-					<div><img src="gallery/robosoc.jpg" alt="3,3"></div> 
-					<div><img src="gallery/teamunwired.jpg" alt="2,4"></div> 
-					<div><img src="gallery/isroexhibition.jpg" alt="3,3"></div> 				 
+					<div><img src="gallery/bot.jpg" alt="4,3"></div> 
+					<div><img src="gallery/car.jpg" alt="4,3"></div> 
+					<div><img src="gallery/gmadhavmemento.jpg" alt="4,3"></div> 
+					<div><img src="gallery/gokart.jpg" alt="4,3"></div> 
+					<div><img src="gallery/pyro.jpg" alt="4,3"></div> 
+					<div><img src="gallery/robodog.jpg" alt="4,3"></div> 
+					<div><img src="gallery/robosoc.jpg" alt="4,3"></div> 
+					<div><img src="gallery/teamunwired.jpg" alt="3,4"></div> 
+					<div><img src="gallery/isroexhibition.jpg" alt="4,3"></div> 				 
 				</div> 
 	<script type="text/javascript"> 
 	// ==== start script ==== 
