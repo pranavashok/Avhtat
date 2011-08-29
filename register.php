@@ -58,7 +58,7 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 			if(mail($to, $subject, $message, $headers)){ // Send our email
 				echo "<p>".$_POST["name"].", you have been registered</p>";
 				echo "<p>Your Tathva ID is TAT".$row[0]." </p>";
-				$msg = 'Your account has been made, <br /> please verify it by clicking the activation link that has been send to your email.';
+				$msg = 'Your account has been created, <br /> please verify it by clicking the activation link that has been send to your email.';
 			}else{
 				$msg = 'Sorry, the register feature is not working now. Try again later.'; 
 				$sql="DELETE FROM participant WHERE tathva_id = 'TAT".$row[0]."';";

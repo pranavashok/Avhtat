@@ -21,8 +21,10 @@ if(isset($_POST['name']) && !empty($_POST['name']) AND isset($_POST['email']) &&
 		
 	//echo $sql;
 	mysql_query($sql) or die(mysql_error());
-	
+	echo 'Thank You for your valuable feedback! <br/> <a href="index.php"> Home </a>';
 		
+}else{ 
+	echo 'Please fill in all the fields properly.';
 }
 
 ?>

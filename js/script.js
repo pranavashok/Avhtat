@@ -140,9 +140,24 @@ function ticker(obj,effect,speed){
       }, speed);
 }
 function register() {
-			var data = 'name=' + $('input#name)').attr('value');
+			var data = 'name=' + $('input#name)').attr('value') + '&email=' + $('input#email').attr('value') ;
 			$.ajax({
 				url: "register.php",	
+				type: "POST",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#stylized').html(html);
+					$('#innerpage').fadeIn('slow');		
+					bindLinks();
+		
+				}		
+			});
+		}
+function feedback() {
+			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&feedback=' + $('#feedback').attr('value');
+			$.ajax({
+				url: "feedback.php",	
 				type: "POST",		
 				data: data,		
 				cache: false,

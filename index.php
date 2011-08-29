@@ -386,7 +386,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			<div id="ticker-wrapper">
 			    <ul>
 				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
-				<li><span> Tathva '11 from October 20th to 23rd </span></li>	
+				<li><span> Official Tathva '11 website launch today at 5:30PM </span></li>					
 			    </ul>
 			</div>
 		  </div>
