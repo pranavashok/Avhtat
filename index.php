@@ -245,7 +245,7 @@
 	  		<ul>
 		  		<li><a href="#!info" rel="ajax"><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
 		  		<li><a href="#!schedule" rel="ajax"><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
-		  		<li><a href="#!gallery" rel="ajax"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+		  		<li><a href="gallery.php"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
 		  		<li><a href="#!sponsors" rel="ajax"><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
 		  		<li><a href="#!feedback" rel="ajax"><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
 	  		</ul>
@@ -367,7 +367,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		                <div id="content">
 	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
   		                	<!-- Ajax Content -->
-                                </div>         
+                                </div>     
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 
