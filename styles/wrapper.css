@@ -650,13 +650,14 @@ overflow:auto;
 	height:320px;
 	color:#fff;
 }
-.text-content h2{
+.text-content h2, h2 a{
 	font-family:'Oswald', sans-serif;
 	font-size:30px;
 	font-weight:100;
 	color:#bfff00;
 	padding-bottom:5px;
 	border-bottom:1px solid #fff;
+	text-decoration:none;
 }
 #nav-icons{
 	display:block;

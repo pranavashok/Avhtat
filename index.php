@@ -12,10 +12,10 @@
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<!--		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
- 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
- 		<script type="text/javascript" src="js/jquery.min.js"></script>
- 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.min.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
@@ -93,8 +93,8 @@
     						<div style="width:640px;">    				
 						      <ul>
 							  <li class="oe_heading">Robotics</li>
-							  <!--<li><a href="#!transpoter" rel="ajax">Transporter</a></li>-->
-							  <!--<li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>-->
+							  <li><a href="#!transpoter" rel="ajax">Transporter</a></li>
+							  <li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>
 							  <li><a href="#!xmarksthespotover" rel="ajax">X marks the spot: Over</a></li>
 							  <li><a href="#!signalmaestro" rel="ajax">Signal Maestro</a></li>
 							  <li><a href="#!collisioncourse" rel="ajax">Collision Course</a></li>
@@ -136,7 +136,7 @@
 						      <ul>
 							  <li class="oe_heading">Civil</li>
 							  <li><a href="#!erecthion" rel="ajax">eRECthion</a></li>
-							  <li><a href="#!ageoffloatingempire" rel="ajax">Age of Floating Empire</a></li>
+							  <li><a href="#!ageoffloatingempires" rel="ajax">Age of Floating Empires</a></li>
 							  <li><a href="#!descartessquare" rel="ajax">Descartes Square</a></li>
 						      </ul>
 						      <ul>
@@ -179,7 +179,8 @@
 			    				      	<li class="oe_heading">Technical</li>
 			    				      	<li><a href="#!rcplane">RC Plane</a></li>
 			    				      	<li><a href="#!hackattack">Hack Attack</a></li>
-			    				      	<li><a href="#!humanoidrobot">Bipedal Humanoid</a></li> 
+			    				      	<li><a href="#!cloudcomputing">Cloud Computing</a></li> 
+			    				      	<li><a href="#!accelerobotix">Accelero-Botix</a></li> 
 			    				</ul>
     				  		</div>
     					</li>
@@ -192,7 +193,6 @@
 		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
 		    				    	</ul>
 		    				    	<ul>
-
 			    				      	<li class="oe_heading">Lectures</li>
     				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
     				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
@@ -277,7 +277,7 @@
 		   <ul id="panels">
 		   <li id='panel0'>
 		   <div class="text-content">
-		   	<h2> Airshow </h2><br/>
+		   	<h2> <a href="#!rcplane">Airshow</a> </h2><br/>
 			<p>
 				Always been mesmerized by aircrafts and aviation? Then this is the chance for you to see and learn
 it from the professionals. A series of workshops that is sure to take you on a magical journey into the
@@ -290,7 +290,7 @@ world of aerodynamics. Experience this life of zero gravity only at Tathva ’11
 		   </li>
 		   <li id='panel1'>
 		   <div class="text-content">
-		   	<h2> Cloud Computing Workshop </h2><br/>
+		   	<h2> <a href="#!cloudcomputing">Cloud Computing Workshop</a> </h2><br/>
 			<p>
 				Bringing to the masses a service that has taken the virtual world by storm. Tathva ’11 offers you this
 unique opportunity of mastering this technique of sharing information and learning the intricacies
@@ -303,7 +303,7 @@ behind it.
 		   </li>
 		   <li id='panel2'>
 		 	<div class="text-content">
-		   	<h2> Water Rocket </h2><br/>
+		   	<h2> <a href="#!aquamissile">Aqua Missile</a> </h2><br/>
 			<p>
 				A challenging event that tests your designing skills. Blend two of the ancient elements of nature,
 water and air, to create one of the most modern innovations of mankind.
@@ -315,7 +315,7 @@ water and air, to create one of the most modern innovations of mankind.
 		   </li>
 		   <li id='panel3'>
 		 	<div class="text-content">
-		   	<h2> Dirt Race </h2><br/>
+		   	<h2> <a href="#!dirtrace">Dirt Race</a> </h2><br/>
 			<p>
 				The race to the finish-line can never get more interesting than this. Let your bots do all the talking
 while you sit back and enjoy the game. Be crowned the champion in this all new exciting Robot-war!
@@ -327,7 +327,7 @@ while you sit back and enjoy the game. Be crowned the champion in this all new e
 		   </li>
 		   <li id='panel4'>
 		 	<div class="text-content">
-		   	<h2> B - Plan </h2><br/>
+		   	<h2> <a href="#!bplan">B - Plan</a> </h2><br/>
 			<p>
 				If you have ever dreamt of making it big in the Biz-world, then this is the event for you. Chalk out
 your dream business venture and earn a place in our coveted Hall of Fame!
@@ -339,7 +339,7 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 		   </li>
 		   <li id='panel5'>
 		 	<div class="text-content">
-		   	<h2> Touch Magix </h2><br/>
+		   	<h2> <a href="#!touchmagix">Touch Magix</a> </h2><br/>
 			<p>
 				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
 you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
