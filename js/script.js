@@ -2,6 +2,7 @@
 var timer1 = null,
 	start = 0,
 	cur = 0;
+	
 $(document).ready(function () {
 	$(".lavaLamp").lavaLamp({
 		fx: "swing",
@@ -70,12 +71,14 @@ $(document).ready(function () {
 		$('html, body').stop(true, true).animate({
 			scrollTop: pos,
 			queue: false
-		}, 2000, 'easeOutSine');
+		}, 1500, 'easeOutSine');
 	});
 	timer = null;
 	timer1 = setTimeout('cycle()', 8000);
 	$oe_overlay.hide();
 	ticker($('#ticker-wrapper ul'),'slide',2000);
+	$("#footer").css({bottom: -$("#footer").height()});
+	$("#frontpage").css({marginTop: ($(window).height()-580)/2+20});
 });
 
 
