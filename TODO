@@ -5,14 +5,14 @@ Critical
 - Respond to feedbacks
 - Make the left drawer more noticable. Or place some alt links somewhere.
 - Reconsider placing initiatives on top bar
-- Landing page slideshow - click on image/title takes to article
+- Landing page slideshow - click on image/title takes to article -- Done
 - Top menu - now the width is set to 4.. make it 5
 - Reconsider placement of updates - maybe move it to right
 - Formatting of the event pages
 - Icons for header menu
-- Gallery thumb should show something relevant
-- Menus on gallery page (it's using prototype.js :( )
-- Sponsors page image placement
+- Gallery thumbnails should show something relevant
+- Menus on gallery page (it's using prototype.js!)
+- Sponsors page image placement -- Done
 
 To Consider
 - Pull the initial slideshow tiles from a couple of options

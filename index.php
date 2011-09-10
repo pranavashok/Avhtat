@@ -285,7 +285,7 @@ it from the professionals. A series of workshops that is sure to take you on a m
 world of aerodynamics. Experience this life of zero gravity only at Tathva ’11.
 			</p>
 		   </div>
-		   <a href="#">
+		   <a href="#!rcplane">
 			<img src="styles/images/airshow.jpg" alt="1"/>
 		   </a>
 		   </li>
@@ -298,7 +298,7 @@ unique opportunity of mastering this technique of sharing information and learni
 behind it.
 			</p>
 		   </div>
-		   <a href="#">
+		   <a href="#!cloudcomputing">
 			<img src="styles/images/cloud.jpg" alt="2"/>
 		   </a>
 		   </li>
@@ -310,7 +310,7 @@ behind it.
 water and air, to create one of the most modern innovations of mankind.
 			</p>
 		   	</div>
-		   	<a href="#">
+		   	<a href="#!aquamissile">
 				<img src="styles/images/waterrocket.jpg" alt="3"/>
 		   	</a>
 		   </li>
@@ -322,7 +322,7 @@ water and air, to create one of the most modern innovations of mankind.
 while you sit back and enjoy the game. Be crowned the champion in this all new exciting Robot-war!
 			</p>
 		   	</div>
-		   	<a href="#">
+		   	<a href="#!dirtrace">
 				<img src="styles/images/dirtrace.jpg" alt="4"/>
 		   	</a>
 		   </li>
@@ -334,7 +334,7 @@ while you sit back and enjoy the game. Be crowned the champion in this all new e
 your dream business venture and earn a place in our coveted Hall of Fame!
 			</p>
 		   	</div>
-		   	<a href="#">
+		   	<a href="#!bplan">
 				<img src="styles/images/bplan.jpg" alt="5"/>
 		   	</a>
 		   </li>
@@ -346,7 +346,7 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
 			</p>
 		   	</div>
-		   	<a href="#">
+		   	<a href="#!touchmagix">
 				<img src="styles/images/touchmagix.jpg" alt="6"/>
 		   	</a>
 		   </li>
