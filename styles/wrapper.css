@@ -804,6 +804,10 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	position: absolute; 
 } 
 /* Sponsors */
+#sponsorslist {
+	margin-top:30px;
+	margin-left:60px;
+}
 #sponsorslist img{
 	width:220px;
 	height:110px;
