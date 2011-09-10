@@ -1,20 +1,19 @@
 TODO
 ----
 
-1. Get the user database design, implement it and finish off registration + email verification.  
-2. Sidebar (Edit loader.php) - Add general writeup, put something in schedule, add sponsors) -- DONE
-3. Gallery -- DONE
-4. Feedback form is complete, but doesn't do anything. Maybe we'll recieve feedback from launch day itself? -- DONE
-5. Search logging.
-6. Updates bar. Either make it display one update or add something sensible to it :)  --DONE
-7. Fill something in real world challenges. 
+Critical
+- Respond to feedbacks
+- Make the left drawer more noticable. Or place some alt links somewhere.
+- Reconsider placing initiatives on top bar
+- Landing page slideshow - click on image/title takes to article
+- Top menu - now the width is set to 4.. make it 5
+- Reconsider placement of updates - maybe move it to right
+- Formatting of the event pages
+- Change favicon
+- Icons for header menu
+- Gallery thumb should show something relevant
+- Menus on gallery page (it's using prototype.js :( )
+- Sponsors page image placement
 
-signal maestro
-blueprint
-lost treasure of techila
-gsm
-sonic i
-bullsn bears
-clueless
-online quiz
-
+To Consider
+- Pull the initial slideshow tiles from a couple of options
