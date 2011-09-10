@@ -269,6 +269,7 @@
  	  <li><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/nsef.jpg" alt=""/></li>
  	 </ul> 
  	 </div> 
 		</div>
