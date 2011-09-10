@@ -113,6 +113,8 @@
 							  <li><a href="#!blueprint" rel="ajax">Blueprint</a></li>
 							  <li><a href="#!blitzkreig" rel="ajax">Blitzkreig</a></li>
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
+  							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
+							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 						      </ul>
 						      <ul>
 					                  <li class="oe_heading">Architecture</li>
@@ -161,11 +163,6 @@
 							  <li class="oe_heading" >Chemical</li>
 							  <li><a href="#!cheautic" rel="ajax">Che Autic</a></li>
 							  <li><a href="#!interrepteur" rel="ajax">Interrupteur</a></li>
-						      </ul>
-						      <ul>
-							  <li class="oe_heading">Biotechnology</li>
-							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
-							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 						      </ul>
     						</div>
     					</li>
