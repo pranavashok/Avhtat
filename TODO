@@ -9,7 +9,6 @@ Critical
 - Top menu - now the width is set to 4.. make it 5
 - Reconsider placement of updates - maybe move it to right
 - Formatting of the event pages
-- Change favicon
 - Icons for header menu
 - Gallery thumb should show something relevant
 - Menus on gallery page (it's using prototype.js :( )
