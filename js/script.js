@@ -76,7 +76,7 @@ $(document).ready(function () {
 	timer = null;
 	timer1 = setTimeout('cycle()', 8000);
 	$oe_overlay.hide();
-	ticker($('#ticker-wrapper ul'),'slide',2000);
+	//ticker($('#ticker-wrapper ul'),'slide',2000);
 	$("#footer").css({bottom: -$("#footer").height()});
 	$("#frontpage").css({marginTop: ($(window).height()-580)/2+20});
 });

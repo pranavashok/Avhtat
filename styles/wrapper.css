@@ -386,9 +386,11 @@ opacity:1;
   top:8px;
   color:#ffeeee;
   position:absolute;
-  left:40px;
+  left:20%;
+  width:60%;
   margin:auto;
  height:20px;
+ font-size:14px;
  overflow:hidden;
 }
 #footer {
@@ -491,7 +493,7 @@ span.contact-details {
 #social{
 	position:fixed;
 	bottom:5px;
-	right:50px;
+	right:30px;
 }
 #contactsbutton{
 	line-height:24px;
@@ -499,7 +501,7 @@ span.contact-details {
 	font-size:13px;
 	font-weight:bold;
 	bottom:6px;
-	right:150px;
+	left:50px;
 	cursor:pointer;
 	color:#fff;
 }

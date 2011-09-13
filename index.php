@@ -8,6 +8,7 @@
 		<link rel="icon" type="image/png" href="styles/images/favicon.png" />
 		<link href='styles/wrapper.css' type='text/css' rel='stylesheet' />
 		<link href='styles/lavalamp.css' type='text/css' rel='stylesheet' />
+		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
@@ -18,6 +19,7 @@
  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.min.js"></script>
+  		<script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>-->
 <!--		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
@@ -46,6 +48,7 @@
 	 		        getPage();
 			        return false;
 	        	});	
+	        	$("ul#ticker01").liScroll({travelocity: 0.10});
 		});
 		
 		function pageload(hash) {
@@ -372,8 +375,8 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div> 
   		<div id = "updatebar">
   		  <div id = "updates"> 
-			<div id="ticker-wrapper">
-			    <ul>
+			<div class="ticketcontainer">
+			    <ul id="ticker01">
 				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
 			    </ul>
 			</div>
