@@ -87,6 +87,7 @@ function bindLinks() {
 	var count = $(".ilinks li").length;
 	$(".isection").hide();
 	$(".icontent div:eq(0)").fadeIn('slow');
+	$(".ilinks li:eq(0)").addClass('selected');
 	while (i < count) {
 		$(".ilinks li").bind('click', function () {
 			$(".ilinks li").removeClass('selected');
@@ -102,6 +103,7 @@ function bindLinks() {
 		$(".ilinks li").removeClass('selected');
 		$(".isection").hide();
 		$(".icontent div:eq(0)").fadeIn('slow');
+		$(".ilinks li:eq(0)").addClass('selected');
 	});
 	$("#imcs_container").mCustomScrollbar("vertical", 400, "easeOutCirc", 1.05, "auto", "yes", "yes", 10);
 }
