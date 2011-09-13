@@ -147,7 +147,8 @@ echo '<div id="ititle">Sponsors</div>
  	  <a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt=""/></a>
  	  <a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a>
  	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a>
- 	  <a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a>
+ 	  <!--<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a>-->
+   	  <a href="http://www.ndtv.com/micro/supportmyschool/default.aspx" target="_blank"><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></a>
  	  <a href="http://www.treksnrapids.com/" target="_blank"><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></a>
    	  <a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a>
    	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a>
