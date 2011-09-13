@@ -157,7 +157,7 @@
 							  <li class="oe_heading">Management</li>
 							  <li><a href="#!b-aptist" rel="ajax">B-Aptist</a></li>
 							  <li><a href="#!tycoon" rel="ajax">Tycoon</a></li>
-						          <li><a href="#!bplan" rel="ajax">B-Plan</a></li>
+						          <li><a href="#!bplan" rel="ajax">Sociobizz '11</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Chemical</li>
@@ -203,7 +203,7 @@
 						<div style="width:160px;">
     				    			<ul>
     				    				<li class="oe_heading">Real World Challenges</li>
-										
+    				      				<li><a href="#!idp">IDP</a></li>
     				    			</ul>
     				  		</div>
     				  		
@@ -375,7 +375,6 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			<div id="ticker-wrapper">
 			    <ul>
 				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
-				<li><span> Official Tathva '11 website launch today at 5:30PM </span></li>					
 			    </ul>
 			</div>
 		  </div>
