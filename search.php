@@ -29,14 +29,24 @@ if(isset($_GET['q'])){
 	$terms=explode('|',$q);
 	$sql="INSERT INTO searchlog (IP,term) VALUES ('".$_SERVER['REMOTE_ADDR']."', '".$q."');";
 	$result = mysql_query($sql,$con);
-	$matches = array();
+	$strongmatches = array();
 	foreach ($terms as $i){
-		array_push($matches, " article_title LIKE '%".$i."%' OR article_content LIKE '%".$i."%' OR article_tags LIKE '%".$i."%' "); 
+		array_push($strongmatches, " article_title LIKE '%".$i."%' OR article_content LIKE '%".$i."%' OR article_tags LIKE '%".$i."%' "); 
 	}	
-	$query = implode(' OR ', $matches);
+	$strongquery = implode(' AND ', $strongmatches);
 	
-	$query = "SELECT * FROM articles WHERE ". $query;	
-	$result = mysql_query($query,$con) or die("No results found.") ;
+	$strongquery = "SELECT * FROM articles WHERE ". $strongquery;	
+	$result = mysql_query($strongquery,$con);
+	if (!$result){
+		$weakmatches = array();
+		foreach ($terms as $i){
+			array_push($weakmatches, " article_title LIKE '%".$i."%' OR article_content LIKE '%".$i."%' OR article_tags LIKE '%".$i."%' "); 
+		}	
+		$weakquery = implode(' OR ', $weakmatches);
+	
+		$weakquery = "SELECT * FROM articles WHERE ". $weakquery;	
+		$result = mysql_query($weakquery,$con);
+	}
 	echo $finalResult;
 	$i=0;
 	echo "<div id='isection".$i."' class='isection'>";
