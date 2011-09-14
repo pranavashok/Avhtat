@@ -49,6 +49,7 @@
 			        return false;
 	        	});	
 	        	$("ul#ticker01").liScroll({travelocity: 0.10});
+	        	$("#loading").hide();
 		});
 		
 		function pageload(hash) {
@@ -59,18 +60,21 @@
 		
 		function getPage() {
 			var data = 'page=' + encodeURIComponent(document.location.hash.substring(2));
+			$('#frontpage').hide();	
+			$('#innerpage').fadeIn('slow');
+			$("#loading").show();
+			$("#oe_overlay").show();
 			$.ajax({
 				url: "loader.php",	
 				type: "GET",		
 				data: data,		
 				cache: false,
 				success: function (html) {	
-					$('#frontpage').hide();	
 					$('#bglogo').show();			
-					$('#content').html(html);
-					$('#innerpage').fadeIn('slow');		
+					$('#content').html(html);				
 					bindLinks();
-		
+					$("#loading").hide();
+					$("#oe_overlay").hide();
 				}		
 			});
 		}
@@ -433,5 +437,6 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		</div>
   	</div>
   	</div>
+  	<div id="loading"><img src="styles/images/loading.gif"/></div>
 	</body>	
 </html>

@@ -686,7 +686,12 @@ overflow:auto;
 	width:100%;
 	height:100%;
 }
-
+#loading{
+	position:fixed;
+	left:48%;
+	top:48%;
+	z-index:100;
+}
 /*--------------For Registration Form-----------------------*/
 
 p, h1, form, button{border:0; margin:0; padding:0;}
