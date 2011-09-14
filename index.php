@@ -266,6 +266,8 @@
  	  <li><img src="styles/images/sponsors/gasotech.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/teachforindia.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/arbitron.jpg" alt=""/></li>
+   	  <li><img src="styles/images/sponsors/transition.jpg" alt=""/></li>
+ 	  <li><img src="styles/images/sponsors/raritan.jpg" alt=""/></li>
  	  <!--<li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>-->
  	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
  	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>

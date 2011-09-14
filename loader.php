@@ -152,6 +152,8 @@ echo '<div id="ititle">Sponsors</div>
  	  <a href="http://www.treksnrapids.com/" target="_blank"><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></a>
    	  <a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a>
    	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a>
+  	  <a href="http://www.transition-asia.com/" target="_blank"><img src="styles/images/sponsors/transition.jpg" alt=""/></a>
+ 	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>
      	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a>
 </div>';
 }else if($_GET['page']=="feedback")
