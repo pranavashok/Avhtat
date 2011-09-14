@@ -215,7 +215,7 @@
     				  		</div>
     				  		
 					</li>
-					<li><a href="#">Initiatives</a>
+					<!-- <li><a href="#">Initiatives</a>
 						<div style="width:160px;">
     				    			<ul>
 		    				      		<li class="oe_heading">Social Initiatives</li>
@@ -223,14 +223,14 @@
 		    				      		<li><a href="#!supportmyschool">NDTV-Coke <br />Support My School</a></li>
 		    				      		<li><a href="#!youngengineer">Young Engineer</a></li>
 		    				    	</ul>
-		    				    	<!--<ul>
+		    				    	<ul>
 			    				      	<li class="oe_heading">Campus Initiatives</li>
     				      				<li><a href="#!campusmapping">Campus Mapping</a></li>
     				      				<li><a href="#!greencampus">Green Campus</a></li>
-			    				</ul>-->
+			    				</ul>
     				  		</div>
     				  		
-					</li>
+					</li>-->
      				</ul> <!-- oe_menu ???-->
     			</div>  
     			<div id = "searchcontainer">
