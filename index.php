@@ -48,7 +48,7 @@
 	 		        getPage();
 			        return false;
 	        	});	
-	        	$("ul#ticker01").liScroll({travelocity: 0.10});
+	        	$("ul#ticker01").liScroll({travelocity: 0.06});
 	        	$("#loading").hide();
 		});
 		
@@ -383,7 +383,9 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		  <div id = "updates"> 
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>	
+				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>
+				<li><span>| Clueless, the cryptic online treasure hunt will be starting in a couple of days </span></li>
+				<li><span>| Watch out for Bulls 'n Bears, the equity trading game - coming soon! </span></li>
 			    </ul>
 			</div>
 		  </div>
