@@ -102,7 +102,7 @@
 							  <li class="oe_heading">Robotics</li>
 							  <li><a href="#!transporter" rel="ajax">Transporter</a></li>
 							  <li><a href="#!leagueofmachines" rel="ajax">League of Machines</a></li>
-							  <li><a href="#!xmarksthespotover" rel="ajax">X marks the spot: Over</a></li>
+							  <li><a href="#!minimousev2" rel="ajax">Minimouse v2</a></li>
 							  <li><a href="#!signalmaestro" rel="ajax">Signal Maestro</a></li>
 							  <li><a href="#!collisioncourse" rel="ajax">Collision Course</a></li>
 							  <li><a href="#!dirtrace" rel="ajax">Dirt Race</a></li>              
