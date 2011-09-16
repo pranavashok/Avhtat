@@ -44,7 +44,9 @@
 	 		        $(this).addClass('selected');
 	 		        //$('#innerpage').hide();
 	 		        //$('#frontpage').hide();
+	 		        $('#gallery-cont').hide();
 	 		        $('#bglogo').show();
+	 		        $("#oe_overlay").show();
 	 		        getPage();
 			        return false;
 	        	});	
@@ -53,7 +55,12 @@
 		});
 		
 		function pageload(hash) {
-			if (hash == '!gallery') showGallery();
+			if (hash == '!gallery') {
+				$('#frontpage').hide();	
+				$('#innerpage').hide();
+				$('#gallery-cont').fadeIn('slow');
+				$('#loading').hide();
+			}
 			else if (hash.substr(0,7) == '!verify')	loadVerify(hash.substr(8));
 			else if (hash) getPage();    
 		}
@@ -64,6 +71,7 @@
 			$('#innerpage').fadeIn('slow');
 			$("#loading").show();
 			$("#oe_overlay").show();
+ 		        $('#gallery-cont').hide();
 			$.ajax({
 				url: "loader.php",	
 				type: "GET",		
@@ -251,7 +259,7 @@
 	  		<ul>
 		  		<li><a href="#!info" rel="ajax"><img class ="sbicon" title="Information" src="styles/images/sbinfo.png"/></a></li>
 		  		<li><a href="#!schedule" rel="ajax"><img class ="sbicon" title="Schedule" src="styles/images/sbschedule.png"/></a></li>
-		  		<li><a href="gallery.php"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
+		  		<li><a href="#!gallery"><img class ="sbicon" title="Gallery" src="styles/images/sbgallery.png"/></a></li>
 		  		<li><a href="#!sponsors" rel="ajax"><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
 		  		<li><a href="#!feedback" rel="ajax"><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
 	  		</ul>
@@ -379,6 +387,9 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                                 </div>
 
                 </div> 
+                <div id="gallery-cont">
+                <iframe width="960px" height="520px" src="gallery.php"></iframe>
+                </div>
   		<div id = "updatebar">
   		  <div id = "updates"> 
 			<div class="ticketcontainer">

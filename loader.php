@@ -137,7 +137,7 @@ echo '<div id="ititle">Schedule</div><div id="imcs_container">
 }
 else if($_GET['page']=="gallery")
 {
-echo 'Gallery here';
+echo '';
 }
 else if($_GET['page']=="sponsors")
 {
