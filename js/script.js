@@ -79,6 +79,15 @@ $(document).ready(function () {
 	//ticker($('#ticker-wrapper ul'),'slide',2000);
 	$("#footer").css({bottom: -$("#footer").height()});
 	$("#frontpage").css({marginTop: ($(window).height()-580)/2+20});
+	$(document).mousemove(function(e){
+		h = document.height;
+		mintop = 60;
+		maxtop = 140;
+		target = (e.pageY/h)*400;
+		if(target<mintop) target = mintop;
+		else if(target>maxtop) target = maxtop;
+		$('#sidebar-puller').css({top:target+'px'});
+	});
 });
 
 

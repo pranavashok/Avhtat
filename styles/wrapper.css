@@ -252,10 +252,10 @@ form .searchboxwrapper input:hover{
 
 #sidebar{
   position: fixed;
-  background: url('images/leftsidebar.png') no-repeat; 
+  background: url('images/sidebar.png') no-repeat; 
   height: 400px;
   width: 100px;
-  left:-79px;
+  left:-90px;
   -webkit-transition: left 0.6s ease;
   -moz-transition: left 0.6s ease;
   -o-transition: left 0.6s ease;
@@ -263,11 +263,28 @@ form .searchboxwrapper input:hover{
   top:50%; 
   margin-top: -200px; 
   z-index:300;
-  padding-left:8px;
+  padding-left:12px;
   padding-top:25px;
   
   font-size:10px;
  
+}
+#sidebar-puller{
+  position: absolute;
+  background: url('images/sidebarpull.png') no-repeat; 
+  height: 200px;
+  width: 20px;
+  left:90px;
+  -webkit-transition: left 0.6s ease;
+  -moz-transition: left 0.6s ease;
+  -o-transition: left 0.6s ease;
+  transition: left 0.6s ease;
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  -o-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+  top:40%; 
+  z-index:100;
 }
 #sidebar ul{  
   width:65px;
@@ -291,7 +308,7 @@ form .searchboxwrapper input:hover{
 opacity:1;
 }
 #sidebar:hover{
-  left:0px;
+  left:-10px;
   -webkit-transition: left 0.6s ease;
   -moz-transition: left 0.6s ease;
   -o-transition: left 0.6s ease;

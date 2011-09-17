@@ -162,7 +162,7 @@
 							  <li><a href="#!koderkombat" rel="ajax">Koderkombat</a></li>
 							  <li><a href="#!tuxofwar" rel="ajax">Tux of War</a></li>               
 						      </ul>
-						      <ul>
+						      <ul style="clear:both;">
 							  <li class="oe_heading">Online</li>
 							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
 							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
@@ -263,6 +263,8 @@
 		  		<li><a href="#!sponsors" rel="ajax"><img class ="sbicon" title="Sponsorship" src="styles/images/sbsponsorship.png"/></a></li>
 		  		<li><a href="#!feedback" rel="ajax"><img class ="sbicon" title="Feedback" src="styles/images/sbfeedback.png"/></a></li>
 	  		</ul>
+	  		<div id="sidebar-puller">
+	  		</div>
   		</div>
 
   		<div id = "frontpage">
