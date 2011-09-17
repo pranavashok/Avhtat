@@ -35,7 +35,7 @@
 			if(!_escaped_fragment_) $("#innerpage").hide();
  			$('.sbicon').tipsy({gravity: 's'});
                         $.history.init(pageload);
-	                $('a[href=' + window.location.hash + ']').addClass('selected');
+	                //$('a[href=' + window.location.hash + ']').addClass('selected');
 		        $('a[rel=ajax]').click(function () {
 				var hash = this.href;
 			        hash = hash.replace(/^.*#/, '');
@@ -394,6 +394,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div>
   		<div id = "updatebar">
   		  <div id = "updates"> 
+  		  	<div id="fadeleft"></div>
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>
@@ -401,6 +402,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<li><span>| Watch out for Bulls 'n Bears, the equity trading game - coming soon! </span></li>
 			    </ul>
 			</div>
+			<div id="faderight"></div>
 		  </div>
   		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
   		  <div id = "social">
