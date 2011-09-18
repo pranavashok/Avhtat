@@ -146,7 +146,7 @@
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Electronics</li>
-							  <li><a href="#!gsm" rel="ajax">GSM</a></li>
+							  <li><a href="#!3gsm" rel="ajax">3GSM</a></li>
 							  <li><a href="#!sonici" rel="ajax">Sonic i</a></li>
 							  <li><a href="#!eracer" rel="ajax">E Racer</a></li>
 						      </ul>
