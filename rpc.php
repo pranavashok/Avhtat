@@ -2,7 +2,7 @@
 <?php
    // PHP5 Implementation - uses MySQLi.
    // mysqli('localhost', 'yourUsername', 'yourPassword', 'yourDatabase');
-   $db = mysql_connect('localhost', 'root', 'pt4428');
+   require_once("config.php");
    mysql_select_db('tathva11', $db);
    
    if(!$db) {
