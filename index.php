@@ -67,6 +67,7 @@
 		
 		function getPage() {
 			var data = 'page=' + encodeURIComponent(document.location.hash.substring(2));
+			$('#suggestions').hide();
 			$('#frontpage').hide();	
 			$('#innerpage').fadeIn('slow');
 			$("#loading").show();
@@ -248,11 +249,11 @@
      				</ul> <!-- oe_menu ???-->
     			</div>  
     			<div id = "searchcontainer">
-    				<form id="searchform" action="javascript:search()" method="get">
+    				<form id="searchform" action="" method="">
       					<div class="searchboxwrapper">
-      		  				<input id="q" class="searchbox" onkeyup="lookup(this.value);" name="q" type="text" value="search term" autocomplete="off"/> 
+      		  				<input id="q" class="searchbox" onkeyup="lookup(this.value);" name="q" type="text" value="tathva instant" autocomplete="off"/> 
       					</div>
-      					<input id="searchbutton" type="submit" />
+      					<!--<input id="searchbutton" type="submit" />-->
       					<div id="suggestions">
       					
       					</div>

@@ -7,26 +7,14 @@ $(document).ready(function () {
 	$("#q.searchbox").focus(function() {
 			this.value='';
 			$("#suggestions").show();
-			/*$("form .searchboxwrapper input").css({
-				'-webkit-border-bottom-left-radius': '0',
-				'-webkit-border-bottom-right-radius': '0',
-				'-moz-border-radius-bottomleft': '0',
-				'-moz-border-radius-bottomright': '0',
-				'border-bottom-left-radius': '0',
-				'border-bottom-right-radius': '0'});*/
 		});
 	$("#q.searchbox").blur(function() {
-			this.value='search term';
-			$("#suggestions").hide();
-			/*$("form .searchboxwrapper input").css({
-				'-webkit-border-bottom-left-radius': '15px',
-				'-webkit-border-bottom-right-radius': '15px',
-				'-moz-border-radius-bottomleft': '15px',
-				'-moz-border-radius-bottomright': '15px',
-				'border-bottom-left-radius': '15px',
-				'border-bottom-right-radius': '15px'});*/
+			this.value='tathva instant';
+			//$("#suggestions").hide();
 		});
-
+	$(":not(#searchcontainer)").click(function() {
+			$("#suggestions").hide();
+		});
 	$(".lavaLamp").lavaLamp({
 		fx: "swing",
 		click: function () {

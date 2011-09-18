@@ -16,7 +16,7 @@
          // Is the string length greater than 0?
          if(strlen($queryString) >0) {
             $query = mysql_query("SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_title LIKE '%".$queryString."%' UNION SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_tags LIKE '%".$queryString."%' UNION 
-SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '% ".$queryString." %' ORDER BY `article_type` DESC LIMIT 8");
+SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '% ".$queryString." %' OR article_strip LIKE '% ".$queryString.".%' ORDER BY `article_type` DESC LIMIT 8");
 
             if($query) {
                // While there are results loop through them - fetching an Object.
@@ -29,7 +29,7 @@ SELECT article_type, article_title, article_strip, article_hash FROM articles WH
                      $category = $result->article_type;
                   }
                      echo '<a href="#!'.$result->article_hash.'">';
-                     echo '<img src="styles/images/aled_lewis.png" alt="" />';
+                     echo '<img src="styles/images/search_thumbs/'.$result->article_hash.'.jpg" alt="" />';
                      
                      $title = $result->article_title;
                      if(strlen($title) > 35) { 
@@ -39,17 +39,18 @@ SELECT article_type, article_title, article_strip, article_hash FROM articles WH
                      
                      $description = strip_tags($result->article_strip);
                      $pos = strpos($description, $queryString);
-                     if(strlen($description) > 80) { 
+                     if(strlen($description) > 100) { 
                         $min = $pos-10;
                         if($min<0) $min=0;
-                        else if($min+80 > strlen($description)) $min= $pos-80;
-                        $description = substr($description, $min, 80);
+                        else if($min+100 > strlen($description)) $min= $pos-100;
+                        $description = substr($description, $min, 100);
                         $min = strpos($description, " ");
                         $max = strrpos($description, " ");
                         $description = substr($description, $min, $max-$min);
+                        $description = preg_replace('/'.$queryString.'/', '<strong>'.$queryString.'</strong>', $description);
                      }
                      
-                     echo '<span>'.$description.'</span></a>';
+                     echo '<span>'.$description.'...</span></a>';
                   }
                   echo '<span class="seperator"></span><br /><br />';
             } else {
