@@ -44,8 +44,8 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
 Thank You for signing up on Tathva \'11!
 Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
 	------------------------
-	E-Mail: '.$name.'
-	Password: '.$password.'
+	Your Name: '.$name.'
+	Tathva ID: TAT'.$password.'
 	------------------------
 
 Please click this link to activate your account:
