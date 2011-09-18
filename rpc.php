@@ -3,6 +3,7 @@
    // PHP5 Implementation - uses MySQLi.
    // mysqli('localhost', 'yourUsername', 'yourPassword', 'yourDatabase');
    require_once("config.php");
+   mysql_connect($host, $db_user, $db_pass);
    mysql_select_db('tathva11', $db);
    
    if(!$db) {
