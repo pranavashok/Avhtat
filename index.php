@@ -244,9 +244,12 @@
     			<div id = "searchcontainer">
     				<form id="searchform" action="javascript:search()" method="get">
       					<div class="searchboxwrapper">
-      		  				<input id="q" class="searchbox" name="q" type="text" autocomplete="off"/> 
+      		  				<input id="q" class="searchbox" onkeyup="lookup(this.value);" name="q" type="text" value="search term" autocomplete="off"/> 
       					</div>
       					<input id="searchbutton" type="submit" />
+      					<div id="suggestions">
+      					
+      					</div>
     				</form>
     			</div>
     			<div id = "loginlinkscontainer">
