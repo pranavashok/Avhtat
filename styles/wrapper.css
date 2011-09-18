@@ -403,6 +403,28 @@ opacity:1;
   font-size:14px;
   overflow:hidden;
 }
+#updates #fadeleft {
+  width:20px;
+  height:20px;
+  background-image: -webkit-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -moz-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -ms-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -o-linear-gradient(top, #1c1c1c, #121212);
+  z-index:10;
+  position:absolute;
+}
+#updates #faderight {
+  width:20px;
+  height:20px;
+  background-image: -webkit-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -moz-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -ms-linear-gradient(top, #1c1c1c, #121212);
+  background-image: -o-linear-gradient(top, #1c1c1c, #121212);
+  z-index:10;
+  right:0;
+  top:0;
+  position:absolute;
+}
 #footer {
   font-family: 'Play', sans-serif;
   width:100%;

@@ -30,11 +30,12 @@ margin: 0;
 padding: 0;
 }
 ul.newsticker a {
-white-space: nowrap;
+/* white-space: nowrap; */
 padding: 0;
-color: #ff0000;
-font: bold 10px Verdana;
-margin: 0 50px 0 0;
+color: #bfff00;
+font-weight:bold;
+/*font: bold 10px Verdana;*/
+text-decoration:none;
 } 
 ul.newsticker span {
 margin: 0 10px 0 0;

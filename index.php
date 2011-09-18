@@ -35,7 +35,7 @@
 			if(!_escaped_fragment_) $("#innerpage").hide();
  			$('.sbicon').tipsy({gravity: 's'});
                         $.history.init(pageload);
-	                $('a[href=' + window.location.hash + ']').addClass('selected');
+	                //$('a[href=' + window.location.hash + ']').addClass('selected');
 		        $('a[rel=ajax]').click(function () {
 				var hash = this.href;
 			        hash = hash.replace(/^.*#/, '');
@@ -193,32 +193,37 @@
 			    				      	<li><a href="#!hackattack">Hack Attack</a></li>
 			    				      	<li><a href="#!cloudcomputing">Cloud Computing</a></li> 
 			    				      	<li><a href="#!accelerobotix">Accelero-Botix</a></li> 
+			    				      	<li><a href="#!automotiveandenginedesign">Automotive & Engine Design</a></li>			    				      	
 			    				</ul>
     				  		</div>
     					</li>
-    					<li><a href="#">Showcase</a>
+    					<li><a href="#">Exhibitions<a>
 							<div style="width:320px;">
 		    					<ul>
-		    				      		<li class="oe_heading">Exhibitions</li>
+		    				      		<li class="oe_heading">Government</li>
 		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
 		    				      		<li><a href="#!npol">NPOL</a></li>
-		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
+		    				      		<li><a href="#!isro">ISRO</a></li>
+		    				      		<li><a href="#!hamradio">Ham Radio</a></li>		    				  		    				      		
 		    				    	</ul>
 		    				    	<ul>
-			    				      	<li class="oe_heading">Lectures</li>
-    				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
-    				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
-			    				   
+			    				      	<li class="oe_heading">Tech Symposium</li>
+		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
 			    				</ul>
     				  		</div>
     					
     					
     					</li>
-					<li><a href="#">Envision</a>
-						<div style="width:160px;">
+					<li><a href="#">Highlights</a>
+						<div style="width:320px;">
     				    			<ul>
-    				    				<li class="oe_heading">Real World Challenges</li>
-    				      				<li><a href="#!idp">IDP</a></li>
+    				    				<li class="oe_heading">Lectures</li>
+    				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
+    				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
+    				    			</ul>
+    				    			<ul>
+    				    				<li class="oe_heading">Envision</li>
+    				      				<li><a href="#!idp">Industry Defined Problems</a></li>
     				    			</ul>
     				  		</div>
     				  		
@@ -394,13 +399,15 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div>
   		<div id = "updatebar">
   		  <div id = "updates"> 
+  		  	<div id="fadeleft"></div>
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>
-				<li><span>| Clueless, the cryptic online treasure hunt will be starting in a couple of days </span></li>
+				<li><span>| <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
 				<li><span>| Watch out for Bulls 'n Bears, the equity trading game - coming soon! </span></li>
 			    </ul>
 			</div>
+			<div id="faderight"></div>
 		  </div>
   		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
   		  <div id = "social">
