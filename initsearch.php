@@ -12,7 +12,10 @@
    $result = mysql_query($query);
    while($row = mysql_fetch_object($result)){
    	$desc = explode('<div class="icontent">', $row->article_content);
-   	$desc2 = mysql_real_escape_string(strip_tags($desc[1]));
+   	$desc2 = preg_replace('/\n|\r/', ' ', $desc[1]);
+   	$desc2 = mysql_real_escape_string(strip_tags($desc2));
+   	$desc2 = preg_replace('/[^a-zA-Z@]/', ' ', $desc2);
+   	$desc2 = preg_replace('/ +/', ' ', $desc2);
 	$sql = "UPDATE articles SET article_strip = '".$desc2."' WHERE ID = ".$row->ID.";";
 	mysql_query($sql) or die('error');
    	echo "Done".$row->ID."!\n";
