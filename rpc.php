@@ -3,9 +3,8 @@
    // PHP5 Implementation - uses MySQLi.
    // mysqli('localhost', 'yourUsername', 'yourPassword', 'yourDatabase');
    require_once("config.php");
-   mysql_connect($host, $db_user, $db_pass);
-   mysql_select_db('tathva11', $db);
-   
+   $db = mysql_connect($host, $db_user, $db_password);
+   mysql_select_db($db_name, $db);
    if(!$db) {
       // Show error if we cannot connect.
       echo 'ERROR: Could not connect to the database.';
