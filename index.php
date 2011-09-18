@@ -166,7 +166,7 @@
 						      <ul style="clear:both;">
 							  <li class="oe_heading">Online</li>
 							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
-							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
+							  <li><a href="http://clueless.tathva.org" target="_blank">Clueless</a></li>
 							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
 						      </ul>
 						      <ul>
