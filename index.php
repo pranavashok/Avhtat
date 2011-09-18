@@ -402,9 +402,8 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		  	<div id="fadeleft"></div>
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span> National Institute of Technology, Calicut presents Tathva '11 </span></li>
 				<li><span>| <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Watch out for Bulls 'n Bears, the equity trading game - coming soon! </span></li>
+				<li><span>| Watch out for Bulls n Bears, the equity trading game - Trial runs starting this Monday! </span></li>
 			    </ul>
 			</div>
 			<div id="faderight"></div>
