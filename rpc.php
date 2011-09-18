@@ -36,12 +36,13 @@
                      }                     
                      echo '<span class="searchheading">'.$title.'</span>';
                      
-                     $description = $result->article_content;
+                     $description = strip_tags($result->article_content);
+                     $pos = strpos($description, $queryString);
                      if(strlen($description) > 80) { 
-                        $description = substr($description, 0, 80) . "...";
+                        $description = substr($description, $pos-10, 70) . "...";
                      }
                      
-                     echo '<span>Description of each event comes here and it is less than 80 letters long.</span></a>';
+                     echo '<span>'.$description.'</span></a>';
                   }
                   echo '<span class="seperator"></span><br /><br />';
             } else {
