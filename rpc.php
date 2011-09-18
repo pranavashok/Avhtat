@@ -15,7 +15,9 @@
 
          // Is the string length greater than 0?
          if(strlen($queryString) >0) {
-            $query = mysql_query("SELECT article_type, article_title, article_content, article_hash FROM articles WHERE article_title LIKE '%" . $queryString . "%' OR article_tags LIKE '%" . $queryString . "%' OR article_content LIKE '%" . $queryString . "%' ORDER BY article_type LIMIT 8");
+            $query = mysql_query("SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_title LIKE '%".$queryString."%' UNION 
+SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_tags LIKE '%".$queryString."%' UNION 
+SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '%".$queryString."%' ORDER BY `article_type` DESC LIMIT 8");
 
             if($query) {
                // While there are results loop through them - fetching an Object.

@@ -197,8 +197,8 @@
 			    				</ul>
     				  		</div>
     					</li>
-    					<li><a href="#">Exhibitions<a>
-							<div style="width:320px;">
+    					<li><a href="#">Exhibitions</a>
+						<div style="width:320px;">
 		    					<ul>
 		    				      		<li class="oe_heading">Government</li>
 		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
@@ -209,6 +209,7 @@
 		    				    	<ul>
 			    				      	<li class="oe_heading">Tech Symposium</li>
 		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
+		    				      		<li><a href="#!interface">Interface '11</a></li>		    				     		    				      	
 			    				</ul>
     				  		</div>
     					
