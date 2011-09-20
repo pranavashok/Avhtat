@@ -205,12 +205,12 @@
 		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
 		    				      		<li><a href="#!npol">NPOL</a></li>
 		    				      		<li><a href="#!isro">ISRO</a></li>
-		    				      		<li><a href="#!hamradio">Ham Radio</a></li>		    				  		    				      		
 		    				    	</ul>
 		    				    	<ul>
 			    				      	<li class="oe_heading">Tech Symposium</li>
 		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
-		    				      		<li><a href="#!interface">Interface '11</a></li>		    				     		    				      	
+								<li><a href="#!hamradio">Ham Radio</a></li>
+		    				      		<li><a href="#!interface">IEEE Interface '11</a></li>		    				     		    				      	
 			    				</ul>
     				  		</div>
     					

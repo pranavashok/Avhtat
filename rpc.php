@@ -1,5 +1,6 @@
 <p id="searchresults">
 <?php
+   $count =0;
    // PHP5 Implementation - uses MySQLi.
    // mysqli('localhost', 'yourUsername', 'yourPassword', 'yourDatabase');
    require_once("config.php");
@@ -17,7 +18,11 @@
          if(strlen($queryString) >0) {
             $query = mysql_query("SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_title LIKE '%".$queryString."%' UNION SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_tags LIKE '%".$queryString."%' UNION 
 SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '% ".$queryString." %' OR article_strip LIKE '% ".$queryString.".%' ORDER BY `article_type` DESC LIMIT 8");
-
+	    //echo mysql_num_rows($query);
+	    if(mysql_num_rows($query) < 4){
+	    	$query = mysql_query("SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_title LIKE '%".$queryString."%' UNION SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_tags LIKE '%".$queryString."%' UNION 
+SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '%".$queryString."%' ORDER BY `article_type` DESC LIMIT 8");
+}
             if($query) {
                // While there are results loop through them - fetching an Object.
 
