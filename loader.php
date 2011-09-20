@@ -40,6 +40,9 @@ echo '<div id="stylized" class="myform">
 
 
 <button type="submit">Register</button>
+<br/><br/>
+<center><a href="#!forgotid" rel="ajax">Forgot Tathva ID</a></center><br/>
+<center><a href="#!forgotpass" rel="ajax">Forgot Password</a></center>
 <div class="spacer"></div>
 
 </form>
@@ -135,9 +138,74 @@ echo '<div id="ititle">Schedule</div><div id="imcs_container">
 </div> <!--imcs_container-->';
 
 }
-else if($_GET['page']=="gallery")
+else if($_GET['page']=="forgotid")
 {
-echo '';
+echo '<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="javascript:getid();">
+<h1>Tathva ID retrieval</h1>
+<p>Fill in all the required details</p>
+
+<label>Email
+<span class="small">Enter your email address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Phone
+<span class="small">Enter your phone number</span>
+</label>
+<input type="text" name="phone" id="phone" />
+
+<button type="submit">Retrieve</button>
+<br/><br/>
+<center><a href="#!forgotpass" rel="ajax">Forgot Password</a></center>
+<div class="spacer"></div>
+
+</form>
+</div>';
+}else if($_GET['page']=="forgotpass")
+{
+echo '<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="javascript:getpass();">
+<h1>Tathva password retrieval</h1>
+<p>Fill in all the required details</p>
+
+<label>Email
+<span class="small">Enter your email address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Phone
+<span class="small">Enter your phone number</span>
+</label>
+<input type="text" name="phone" id="phone" />
+
+<button type="submit">Retrieve</button>
+<br/><br/>
+<center><a href="#!forgotid" rel="ajax">Forgot Tathva ID</a></center>
+<div class="spacer"></div>
+
+</form>
+</div>';
+}else if($_GET['page']=="reset")
+{
+echo '<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="javascript:resetpass();">
+<h1>Password Reset</h1>
+<p>Fill in all the required details</p>
+<label>Password
+<span class="small">Enter new password</span>
+</label>
+<input type="password" name="password" id="password" />
+
+<label>Confirm Password
+<span class="small">Confirm new password</span>
+</label>
+<input type="password" name="password2" id="password2" />
+
+<button type="submit">Reset</button>
+<br/><br/>
+<div class="spacer"></div>
+</form></div>';
 }
 else if($_GET['page']=="sponsors")
 {

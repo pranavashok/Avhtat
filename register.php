@@ -45,7 +45,7 @@ Thank You for signing up on Tathva \'11!
 Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
 	------------------------
 	Your Name: '.$name.'
-	Tathva ID: TAT'.$password.'
+	Tathva ID: TAT'.$row[0].'
 	------------------------
 
 Please click this link to activate your account:
@@ -57,7 +57,7 @@ http://www.tathva.org/2011/#!verify?email='.$email.'&hash='.$hash.'
 			if(mail($to, $subject, $message, $headers)){ // Send our email
 				echo $_POST["name"].", you have been registered. <br/>";
 				echo "Your Tathva ID is TAT".$row[0]."<br/>";
-				$msg = 'Your account has been created, <br /> please verify it by clicking the activation link that has been send to your email.';
+				$msg = 'Your account has been created, <br /> please verify it by clicking the activation link that has been sent to your email.';
 			}else{
 				$msg = 'Sorry, the register feature is not working now. Try again later.'; 
 				$sql="DELETE FROM participant WHERE tathva_id = 'TAT".$row[0]."';";

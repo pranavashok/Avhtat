@@ -165,20 +165,67 @@ function ticker(obj,effect,speed){
       }, speed);
 }
 function register() {
-			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value') + '&password=' + $('#password').attr('value')+ '&password2=' + $('#password2').attr('value')+ '&institution=' + $('#institution').attr('value') ;
-			$.ajax({
-				url: "register.php",	
-				type: "POST",		
-				data: data,		
-				cache: false,
-				success: function (html) {	
-					$('#stylized').html(html);
-					$('#innerpage').fadeIn('slow');		
-					bindLinks();
-		
-				}		
-			});
-		}
+	var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value') + '&password=' + $('#password').attr('value')+ '&password2=' + $('#password2').attr('value')+ '&institution=' + $('#institution').attr('value') ;
+	$.ajax({
+		url: "register.php",	
+		type: "POST",		
+		data: data,		
+		cache: false,
+		success: function (html) {	
+		$('#stylized').html(html);
+		$('#innerpage').fadeIn('slow');		
+		bindLinks();
+	}		
+	});
+}
+function getid() {
+	var data = 'item=id' + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value');
+	$.ajax({
+		url: "retrieve.php",	
+		type: "POST",		
+		data: data,		
+		cache: false,
+		success: function (html) {	
+		$('#stylized').html(html);
+		$('#innerpage').fadeIn('slow');		
+	}		
+	});
+	
+}
+function getpass() {
+	var data = 'item=pass' + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value');
+	$.ajax({
+		url: "retrieve.php",	
+		type: "POST",		
+		data: data,		
+		cache: false,
+		success: function (html) {	
+		$('#stylized').html(html);
+		$('#innerpage').fadeIn('slow');		
+	}		
+	});
+	
+}
+function resetpass() {
+	if ($('#password').attr('value') == $('#password2').attr('value')){
+	str=document.location.search;
+	mailid=str.split('&')[0].split('=')[1];
+	hash= str.split('&')[1].split('=')[1];
+	var data = 'email=' + mailid + '&hash=' + hash + '&password=' + $('#password').attr('value');;
+	$.ajax({
+		url: "reset.php",	
+		type: "POST",		
+		data: data,		
+		cache: false,
+		success: function (html) {	
+		$('#stylized').html(html);
+		$('#innerpage').fadeIn('slow');		
+	}		
+	});
+	} else{
+		alert('Passwords do not match. Please re-enter.');
+	}
+}
 function feedback() {
 			var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&feedback=' + $('#feedback').attr('value');
 			$.ajax({

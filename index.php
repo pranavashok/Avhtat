@@ -166,7 +166,7 @@
 						      <ul style="clear:both;">
 							  <li class="oe_heading">Online</li>
 							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
-							  <li><a href="#!clueless" rel="ajax">Clueless</a></li>
+							  <li><a href="http://clueless.tathva.org/" target="_blank">Clueless</a></li>
 							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
 						      </ul>
 						      <ul>
@@ -205,12 +205,12 @@
 		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
 		    				      		<li><a href="#!npol">NPOL</a></li>
 		    				      		<li><a href="#!isro">ISRO</a></li>
-		    				      		<li><a href="#!hamradio">Ham Radio</a></li>		    				  		    				      		
 		    				    	</ul>
 		    				    	<ul>
 			    				      	<li class="oe_heading">Tech Symposium</li>
 		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
-		    				      		<li><a href="#!interface">Interface '11</a></li>		    				     		    				      	
+								<li><a href="#!hamradio">Ham Radio</a></li>
+		    				      		<li><a href="#!interface">IEEE Interface '11</a></li>		    				     		    				      	
 			    				</ul>
     				  		</div>
     					
