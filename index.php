@@ -412,16 +412,16 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div>
   		<div id = "updatebar">
   		  <div id = "updates"> 
-  		  	<div id="fadeleft"></div>
+  		  	<!--<div id="fadeleft"></div>-->
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span>| <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Watch out for Bulls n Bears, the equity trading game - Trial runs starting this Monday! </span></li>
+				<li><span><a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
+				<li><span>| Trial run of <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game, has begun. The official launch will be on Thursday. </span></li>
 			    </ul>
 			</div>
-			<div id="faderight"></div>
+			<!--<div id="faderight"></div>-->
 		  </div>
-  		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
+  		  <div id = "contactsbutton">INITIATIVES | CONTACTS | MORE</div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>
