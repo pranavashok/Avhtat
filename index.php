@@ -132,7 +132,7 @@
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 						      </ul>
 						      <ul>
-							  <li class="oe_heading" >Blitzkreig</li>
+							  <li class="oe_heading" >Blitzkrieg</li>
 							  <li><a href="#!dota" rel="ajax">DotA</a></li>
 							  <li><a href="#!counterstrike" rel="ajax">Counter-Strike 1.6</a></li>
 							  <li><a href="#!streetfighter" rel="ajax">Super Street Fighter 4</a></li>
