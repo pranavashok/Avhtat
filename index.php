@@ -194,7 +194,7 @@
 			    				      	<li><a href="#!hackattack">Hack Attack</a></li>
 			    				      	<li><a href="#!cloudcomputing">Cloud Computing</a></li> 
 			    				      	<li><a href="#!accelerobotix">Accelero-Botix</a></li> 
-			    				      	<li><a href="#!automotiveandenginedesign">Automotive & Engine Design</a></li>			    				      	
+			    				      	<li><a href="#!automotiveandengine">Automotive & Engine Design</a></li>			    				      	
 			    				</ul>
     				  		</div>
     					</li>
@@ -251,12 +251,13 @@
     			<div id = "searchcontainer">
     				<form id="searchform" action="" method="">
       					<div class="searchboxwrapper">
-      		  				<input id="q" class="searchbox" onkeyup="lookup(this.value);" name="q" type="text" value="tathva instant" autocomplete="off"/> 
+      		  				<input id="q" class="searchbox" onkeyup="lookup(this.value);" name="q" type="text" value="tathva instant" autocomplete="off"/> 	
+      		  				<img id="s-loader" src="styles/images/s-loader.gif"></img>
       					</div>
       					<!--<input id="searchbutton" type="submit" />-->
       					<div id="suggestions">
-      					
-      					</div>
+						
+					</div>
     				</form>
     			</div>
     			<div id = "loginlinkscontainer">

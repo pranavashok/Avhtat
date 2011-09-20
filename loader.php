@@ -67,7 +67,7 @@ echo '<div id="ititle">Information</div>
 <li>Events registered online should be confirmed at the registration      desk.</li>
 <li>Tathva ID and College ID card is must for attending      Tathva nights.</li>
 <li>For team events, event team captain has to register      along with the team members’ Tathva ID.</li>
-<li>The registration fee for Tathva’11 is Rs 250 of which Rs 50 is refundable caution deposit. (Rs 200 + 50 refundable)</li>
+<li>The event registration fee for Tathva’11 is Rs 200. Once registered you can take part in any of the events. A Hospitality fee of Rs 50 will be collected from the participants who require accomodation, which will be later refunded.</li>
 <li>A separate fee will be collected from those who avail      accommodation before the days of Tathva.</li>
 <li>For registering additional events, participants should      register at the registration desk.</li>
 <li>Accommodation will be provided usually to a group of 3      or 4. Please try to come as in a group to make procedures simpler.</li>
