@@ -18,7 +18,7 @@
 <!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
- 		<script type="text/javascript" src="js/externalscripts.min.js"></script>
+ 		<script type="text/javascript" src="js/externalscripts.js"></script>
   		<script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>-->
