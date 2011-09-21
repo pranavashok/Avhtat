@@ -11,12 +11,12 @@
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
- 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
+--> 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
   		<script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
@@ -84,7 +84,16 @@
 					bindLinks();
 					$("#loading").hide();
 					$("#oe_overlay").hide();
-				}		
+//					$(this).hide("slide", { direction: "down" }, 1000);
+					$("#initiatives").hide('slow', function(){
+						$('#footerlinks').animate({left:(($(document).width()/2)-470) + 'px'},500,function(){
+							$('html, body').stop(true, true).animate({
+								scrollTop: 0,
+								queue: false
+							}, 500, 'easeOutSine');
+						});	
+					});
+				}
 			});
 		}
 		function search() {
@@ -96,7 +105,7 @@
 			Tathva '11 | National Institute of Technology, Calicut
 		</title>
 	</head>
-	<body>
+	<body onload='init()'>
 	<div id = "wrapper">
   		<div id="oe_overlay" class="oe_overlay"><!--<iframe id='ipac' width=620 height=400 src="pacman.html"></iframe>--></div>
   		<div id = "topbar">   		
@@ -130,6 +139,8 @@
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
+							  <li><a href="#!tathvaquiz" rel="ajax">Tathva Quiz '11</a></li>
+							  <li><a href="#!tots" rel="ajax">TOTS</a></li>							  
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Blitzkrieg</li>
@@ -304,6 +315,7 @@
    	  <li><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
      	  <li><img src="styles/images/sponsors/nsef.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></li>
  	 </ul> 
  	 </div> 
 		</div>
@@ -432,7 +444,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		<div id="footercontainer">
   		<div id="footerlinks">
   		<ul>
-  		<li id="#initiate" >Initiatives</li>
+  		<li id="initiate">Initiatives</li>
   		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
   		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
   		<li><a href="#"> Forum</a> </li>
@@ -441,9 +453,10 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		</div>
   		<div id="initiatives">
   		<ul>
-  		<li> <a href="#!initiatives" rel="ajax">Initiatives </a></li>
-  		<li><a href="#"> Forum</a> </li>
-  		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
+			<li><a href="#!teachforindia">Teach for India</a></li>
+		   	<li><a href="#!supportmyschool">NDTV-Coke <br/>Support My School</a></li>
+		    	<li><a href="#!youngengineer">Young Engineer</a></li>
+		    	<li><a href="#!campusinitiatives">Campus Initiatives</a></li>
   		</ul>
   		</div>
   		

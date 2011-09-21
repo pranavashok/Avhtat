@@ -283,6 +283,7 @@ border-radius: 15px;
 #searchresults a span { color:#555555; }
 #searchresults a:hover span { color:#f1f1f1; }
 #searchresults span.category { font-size:11px; margin:5px; display:block; color:#ffffff; text-align:center; font-weight:bold;}
+#searchresults span.nomatch { font-size:13px; margin:2px; display:block; color:#ffffff; text-align:center; font-weight:bold;}
 #searchresults span.seperator { float:right; padding-right:15px; margin-right:5px;
       background-image:url(images/shortcuts_arrow.gif); background-repeat:no-repeat; background-position:right; }
 #searchresults span.seperator a { background-color:transparent; display:block; margin:5px; height:auto; color:#ffffff; }
@@ -484,17 +485,19 @@ opacity:1;
   
 }
 #footerlinks{
- width:180px;
+ position:absolute;
+ width:190px;
  float:left;
  border-right:grey 1px solid;
  text-align:right;
  height:120px;
  font-size:14px;
  padding-right:10px;
- padding-top:30px
+ padding-top:30px;
 }
 
-#footerlinks li a{
+#footerlinks li, #footerlinks li a{
+  cursor:pointer;
   font-weight:bold;
   color:white;
   text-decoration:none;
@@ -503,10 +506,30 @@ opacity:1;
   color:#fbbb00;  
 }
 #initiatives{
+  position:absolute;
+ width:150px;
+ float:left;
+ text-align:left;
+ height:120px;
+ font-size:12px;
+ padding-right:10px;
+ padding-top:30px;
   display:none;
+}
+#initiatives li{
+  margin-bottom:4px;
+}
+#initiatives li a{
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+}
+#initiatives li a:hover{
+  color:#fbbb00;  
 }
 
 #contacts{
+ position:absolute;
  width:560px;
  float:left;
  height:140px;
@@ -538,8 +561,9 @@ span.contact-details {
 }
 
 #nitc{
+ position:absolute;
  padding-top:15px;
- width:186px;
+ width:190px;
  float:right;
  background-color:black;
  font-size:12px;

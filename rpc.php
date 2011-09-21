@@ -23,6 +23,9 @@ SELECT article_type, article_title, article_strip, article_hash FROM articles WH
 	    	$query = mysql_query("SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_title LIKE '%".$queryString."%' UNION SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_tags LIKE '%".$queryString."%' UNION 
 SELECT article_type, article_title, article_strip, article_hash FROM articles WHERE article_strip LIKE '%".$queryString."%' ORDER BY `article_type` DESC LIMIT 8");
 }
+	    if(mysql_num_rows($query) == 0){
+	    	echo '<span class="nomatch"> <br/>No matches found </span>';
+	    }
             if($query) {
                // While there are results loop through them - fetching an Object.
 

@@ -3,6 +3,14 @@ var timer1 = null,
 	start = 0,
 	cur = 0;
 
+function init(){
+	midx = document.width/2;
+	footerlinks.style.left = (midx - 470) + 'px'
+	contacts.style.left = (midx-280) + 'px'
+	nitc.style.left = (midx+295) + 'px'
+	initiatives.style.left = (midx-360) + 'px'
+}
+
 $(document).ready(function () {
 	$("#q.searchbox").focus(function() {
 			this.value='';
@@ -100,7 +108,7 @@ $(document).ready(function () {
 		$('#sidebar-puller').css({top:target+'px'});
 	});
 	$('#initiate').click(function(){
-		$('#footerlinks').animate({left:'-=50px'},1000,function(){
+		$('#footerlinks').animate({left:(($(document).width()/2)-570) + 'px'},1000,function(){
 		$('#initiatives').show('slow');});
 		
 	});
