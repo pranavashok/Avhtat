@@ -18,7 +18,7 @@
 <!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
- 		<script type="text/javascript" src="js/externalscripts.min.js"></script>
+ 		<script type="text/javascript" src="js/externalscripts.js"></script>
   		<script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>-->
@@ -127,18 +127,18 @@
 						      <ul>
 							  <li class="oe_heading">General</li>
 							  <li><a href="#!blueprint" rel="ajax">Blueprint</a></li>
-							  <li><a href="#!blitzkreig" rel="ajax">Blitzkreig</a></li>
 							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 						      </ul>
 						      <ul>
-					                  <li class="oe_heading">Architecture</li>
-					                  <li><a href="#!pathtofame" rel="ajax">Path to Fame</a></li>
-					                  <li><a href="#!poddesign" rel="ajax">Pod Design</a></li>
-					                  <li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>
-					                  <li><a href="#!kineticsculpture" rel="ajax">Kinetic Sculpture</a></li>
-						      </ul>
+							  <li class="oe_heading" >Blitzkrieg</li>
+							  <li><a href="#!dota" rel="ajax">DotA</a></li>
+							  <li><a href="#!counterstrike" rel="ajax">Counter-Strike 1.6</a></li>
+							  <li><a href="#!streetfighter" rel="ajax">Super Street Fighter 4</a></li>
+							  <li><a href="#!nfsmw" rel="ajax">NFS: Most Wanted</a></li>							
+							  <li><a href="#!fifa11" rel="ajax">FIFA 11</a></li>
+							  <li><a href="#!ragdollmasters" rel="ajax">Ragdoll Masters</a></li>  							      </ul>						      
 						      <ul style="clear:both;">
 							  <li class="oe_heading">Electrical</li>
 							  <li><a href="#!mousedrive" rel="ajax">Mouse Drive</a></li>
@@ -164,10 +164,11 @@
 							  <li><a href="#!tuxofwar" rel="ajax">Tux of War</a></li>               
 						      </ul>
 						      <ul style="clear:both;">
-							  <li class="oe_heading">Online</li>
-							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
-							  <li><a href="http://clueless.tathva.org" target="_blank">Clueless</a></li>
-							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
+					                  <li class="oe_heading">Architecture</li>
+					                  <li><a href="#!pathtofame" rel="ajax">Path to Fame</a></li>
+					                  <li><a href="#!poddesign" rel="ajax">Pod Design</a></li>
+					                  <li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>
+					                  <li><a href="#!kineticsculpture" rel="ajax">Kinetic Sculpture</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">Management</li>
@@ -179,6 +180,12 @@
 							  <li class="oe_heading" >Chemical</li>
 							  <li><a href="#!cheautic" rel="ajax">Che Autic</a></li>
 							  <li><a href="#!interrepteur" rel="ajax">Interrupteur</a></li>
+						      </ul>
+						      <ul>
+							  <li class="oe_heading">Online</li>
+							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
+							  <li><a href="http://clueless.tathva.org" target="_blank">Clueless</a></li>
+							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
 						      </ul>
     						</div>
     					</li>
@@ -405,16 +412,16 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                 </div>
   		<div id = "updatebar">
   		  <div id = "updates"> 
-  		  	<div id="fadeleft"></div>
+  		  	<!--<div id="fadeleft"></div>-->
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span>| <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Watch out for Bulls n Bears, the equity trading game - Trial runs starting this Monday! </span></li>
+				<li><span><a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
+				<li><span>| Trial run of <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game, has begun. The official launch will be on Thursday. </span></li>
 			    </ul>
 			</div>
-			<div id="faderight"></div>
+			<!--<div id="faderight"></div>-->
 		  </div>
-  		  <div id = "contactsbutton">GET IN TOUCH | MORE</div>
+  		  <div id = "contactsbutton">INITIATIVES | CONTACTS | MORE</div>
   		  <div id = "social">
   		    <div id="gplus"><g:plusone size="medium" count="false"></g:plusone></div>
   		    <a href="#"><img src="styles/images/twitter.png"></img></a>

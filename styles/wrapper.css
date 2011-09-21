@@ -437,8 +437,8 @@ opacity:1;
   top:8px;
   color:#ffeeee;
   position:absolute;
-  left:260px;
-  right:130px;
+  left:290px;
+  right:120px;
   margin:auto;
   height:20px;
   font-size:14px;
@@ -574,7 +574,7 @@ span.contact-details {
 	font-size:13px;
 	font-weight:bold;
 	bottom:6px;
-	left:50px;
+	left:20px;
 	cursor:pointer;
 	color:#fff;
 }
