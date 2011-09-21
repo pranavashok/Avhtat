@@ -492,18 +492,18 @@ opacity:1;
  font-size:14px;
  padding-right:10px;
  padding-top:30px
- 
 }
 
 #footerlinks li a{
   font-weight:bold;
   color:white;
   text-decoration:none;
-
 }
 #footerlinks li a:hover{
-  color:#fbbb00;
-  
+  color:#fbbb00;  
+}
+#initiatives{
+  display:none;
 }
 
 #contacts{

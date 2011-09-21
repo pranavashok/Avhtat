@@ -99,6 +99,11 @@ $(document).ready(function () {
 		else if(target>maxtop) target = maxtop;
 		$('#sidebar-puller').css({top:target+'px'});
 	});
+	$('#initiate').click(function(){
+		$('#footerlinks').animate({left:'-=50px'},1000,function(){
+		$('#initiatives').show('slow');});
+		
+	});
 });
 
 

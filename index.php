@@ -425,13 +425,21 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		<div id="footercontainer">
   		<div id="footerlinks">
   		<ul>
-  		<li> <a href="#!initiatives" rel="ajax">Initiatives </a></li>
+  		<li id="#initiate" >Initiatives</li>
   		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
   		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
   		<li><a href="#"> Forum</a> </li>
   		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
   		</ul>
   		</div>
+  		<div id="initiatives">
+  		<ul>
+  		<li> <a href="#!initiatives" rel="ajax">Initiatives </a></li>
+  		<li><a href="#"> Forum</a> </li>
+  		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
+  		</ul>
+  		</div>
+  		
   		<div id="contacts">
   		<table>
   		<tr>
