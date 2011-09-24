@@ -11,11 +11,11 @@
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
---> 		<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
@@ -132,6 +132,7 @@
 							  <li><a href="#!theoffroadmi" rel="ajax">The Off Road MI</a></li>
 							  <li><a href="#!amphiboat" rel="ajax">AMPHI-BOaT</a></li>
 							  <li><a href="#!aquamissile" rel="ajax">Aqua Missile</a></li>
+                                                          <li><a href="#!wheels" rel="ajax">Wheels '11</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">General</li>
@@ -197,6 +198,7 @@
 							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
 							  <li><a href="http://clueless.tathva.org" target="_blank">Clueless</a></li>
 							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
+                                                          <li><a href="#!koderkup" rel="ajax">Koder Kup</a></li>
 						      </ul>
     						</div>
     					</li>
