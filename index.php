@@ -430,7 +430,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span><a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Trial run of <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game, has begun. The official launch will be on Thursday. </span></li>
+				<li><span>| Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
 			    </ul>
 			</div>
 			<!--<div id="faderight"></div>-->
