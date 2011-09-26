@@ -45,6 +45,13 @@ session_start();
 	 		        $('#loginbox').stop(true,true).hide("slow");
 	 		       
 	        	});
+	       		 $('#logintext').hover(function () {
+	 		        $('#userlinks').stop(true,true).show();
+	        	});	
+	                 $('#userlinks').mouseleave(function () {
+	 		        $('#userlinks').stop(true,true).hide();
+	 		       
+	        	});
 			var _escaped_fragment_ = document.location.search;
 			if(!_escaped_fragment_) $("#innerpage").hide();
  			$('.sbicon').tipsy({gravity: 's'});
@@ -296,20 +303,23 @@ session_start();
     			</div>
     			<div id = "loginlinkscontainer">
 	    			<ul id="loginlinks">
-	    				<li><a href="#!register" rel="ajax">Register</a></li>
+	    				
 	    					
 	    				<?php if(isset($_SESSION['tathvaid']))
 	    					{ $t = explode(' ',$_SESSION['name']);
 	    					echo "<li id='logintext'><a>Hi, ".$t[0]." <img src='styles/images/register.png'></a></li>";
 	    					}
 	    				      else 
+	    				       {  echo "<li><a href='#!register' rel='ajax'>Register</a></li>";
 	    				        echo "<li id='loginlink'><a href='#'>Login</a></li>";
+	    				       
+	    					}
 	    				?>	
 	    				<div id="userlinks">
 	    				<ul>
-	    				<li> Event Registration </li>
-	    				<li> Workshop Registration </li>
-	    				<li> Logout </li>
+	    				<li><a href="#!eventregister" rel="ajax">Event Registration</a></li>
+	    				<li><a href="#!workshopregister" rel="ajax">Workshop Registration</a></li>
+	    				<li><a href="logout.php">Logout</a></li>
 	    				</ul>
 	    				</div>
 	    				<div id="loginbox">
