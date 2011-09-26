@@ -1,3 +1,8 @@
+<?php
+require_once 'config.php'; 
+session_start();
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>	
@@ -13,9 +18,9 @@
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
- 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+ 		<script type="text/javascript" src="js/jquery.min.js"></script>
  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
@@ -31,6 +36,15 @@
 		<script type="text/javascript">	
 		//setTimeout('ipac.contentWindow.focus()',5000);
 	        $(document).ready(function () {
+	        
+	                $('#loginlink').hover(function () {
+	 		        $('#loginbox').show();
+
+	        	});	
+	                 $('#frontpage').click(function () {
+	 		        $('#loginbox').hide();
+	 		       
+	        	});
 			var _escaped_fragment_ = document.location.search;
 			if(!_escaped_fragment_) $("#innerpage").hide();
  			$('.sbicon').tipsy({gravity: 's'});
@@ -282,7 +296,41 @@
     			</div>
     			<div id = "loginlinkscontainer">
 	    			<ul id="loginlinks">
-	    				<li><a href="#!register" rel="ajax">Register</a></li>				
+	    				<li><a href="#!register" rel="ajax">Register</a></li>
+	    					
+	    				<?php if(isset($_SESSION['tathvaid']))
+	    					echo "<li id='logintext'><a>Hi,{$_SESSION['name']}</a></li>";
+	    				      else 
+	    				        echo "<li id='loginlink'><a href='#'>Login</a></li>";
+	    				?>	
+	    				<div id="loginbox">
+	    			<form method="post" action="index.php">
+	    			     <label for="tathva_id">Username <input id="tathva_id" name="tathva_id"  type="text" maxlength="20" size="25" /></label>
+				    <label for="password">Password <input id="password" name="pass"  type="password" maxlength="20" size="25"></label>
+					<input type="submit" value="Login"/>
+	    				</form>	    
+	    				&nbsp;<a href="#!forgotpass" rel="ajax">Forgot Password ?</a>  | <a href="#!forgotid" rel="ajax">Forgot Tathva ID ?</a>				<?php
+	    				if(isset($_POST['tathva_id'])) {
+	    				
+	    					$con = mysql_connect($host, $db_user, $db_password);
+						if (!$con) {
+							die('Could not connect: ' . mysql_error());
+						}
+						$db = mysql_select_db($db_name, $con);
+						$sql="SELECT name FROM participant where tathva_id='".$_POST['tathva_id']."' AND password='".md5($_POST['pass'])."';";
+						echo $sql;
+						$result=mysql_query($sql,$con);
+						$row=mysql_fetch_array($result);
+						if($row) {
+							$_SESSION['tathvaid'] = $_POST['tathva_id'];
+							$_SESSION['name'] = $row[0];
+						}
+						else {
+						   echo "hello";
+						}
+					}
+	    				?>
+	    				</div>		
 	    			</ul>
     			</div>	
   		</div>  		  		

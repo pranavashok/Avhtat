@@ -142,7 +142,7 @@ else if($_GET['page']=="forgotid")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:getid();">
-<h1>Tathva ID retrieval</h1>
+<h1>Forgot Tathva ID?</h1>
 <p>Fill in all the required details</p>
 
 <label>Email
@@ -166,7 +166,7 @@ echo '<div id="stylized" class="myform">
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:getpass();">
-<h1>Tathva password retrieval</h1>
+<h1>Forgot Password?</h1>
 <p>Fill in all the required details</p>
 
 <label>Email

@@ -162,12 +162,12 @@ li.oe_heading{
 
 #loginlinks{
 	height:38px;
-	width:100px;
+	width:200px;
 	
 }
 
 #loginlinks li{
-	float:left;
+	float:right;
 	
 }
 #loginlinks li a{
@@ -175,13 +175,13 @@ li.oe_heading{
 	text-decoration:none;
 	font-weight:bold;
 	color: #CCCCCC;
-	font-size: 14px;
+	font-size: 11px;
 	height:30px;
 	top:0px;
 	right:0px;
 	padding-left:10px;
 	padding-right:10px;
-	padding-top: 10px;
+	padding-top: 12px;
 	background-color: transparent;
 	text-align:center;
 	-webkit-transition: all 0.3s ease;
@@ -196,7 +196,7 @@ li.oe_heading{
 	-moz-transition: all 0.6s ease;
 	-o-transition: all 0.6s ease;
  	transition: all 0.6s ease;
- 	text-shadow:#000 0px 1px 0, #000 0 -1px 0;
+ 	text-shadow:#000 2px 2px 0, #000 0 -1px 0;
 	
 }
 
@@ -204,11 +204,74 @@ li.oe_heading{
 	color: #ffffff;
 }
 #searchcontainer {
-  width:320px;
+  width:350px;
   right:120px;
   position:absolute;
   top:3px;
 }
+
+#loginbox{ 
+  position: absolute;
+  background: #000;
+  opacity:0.8;
+  width:280px;
+  height:200px;
+  right:5px;
+  top:37px;
+  border:1px solid grey;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  z-index:20;
+  text-align:center;
+  padding:20px;
+  display:none;
+}
+#loginbox label{
+ color:#ddd;
+}
+#loginbox input{
+ height:25px;
+ margin:10px;
+}
+#loginbox a{
+ font-size:10px;
+ text-decoration:none;
+ color:#FD8E07;
+ font-weight:bold;
+
+}
+
+#loginbox a:hover{
+  font-weight:bold;
+
+}
+
+#loginbox input[type=submit]{
+
+cursor:pointer;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+box-shadow:0 1px 0 rgba(0,0,0,0.3);
+background: -moz-linear-gradient(19% 75% 90deg, #E0E0E0, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E0E0E0));
+color:#4A4A4A;
+font-family:arial,helvetica,sans-serif;
+font-size:10px;
+font-weight:bold;
+padding:0px 16px;
+text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+#loginbox input[type=submit]:hover{
+background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
+background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
+		
+}
+
 
 .searchboxwrapper{
   padding-top:6px;	
@@ -291,6 +354,8 @@ border-radius: 15px;
 #loginlinks{
  float:right;
 }
+
+
 
 #sidebar{
   position: fixed;
