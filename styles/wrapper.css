@@ -276,18 +276,34 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
   position: absolute;
   background: #000;
   opacity:0.8;
-  width:200px;
-  height:200px;
-  right:5px;
+  width:130px;
+  height:80px;
+  right:10px;
   top:37px;
-  border:1px solid grey;
+  
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   z-index:20;
+  padding:10px;
   text-align:center;
-  padding:20px;
+  display:none;
+}
+#userlinks li{
+   text-align:center;
+   padding:0px;	
+}
 
+#userlinks li a{ 
+ font-size:10px;
+ text-decoration:none;
+ color:#FD8E07;
+ font-weight:bold;
+ padding:0px;
+
+}
+#userlinks li a:hover{ 
+font-weight:bold;
 }
 
 .searchboxwrapper{
