@@ -210,6 +210,10 @@ echo '<div id="stylized" class="myform">
 else if($_GET['page']=="sponsors")
 {
 echo '<div id="ititle">Sponsors</div>
+<div id="imcs_container" class="fullwidth">
+<div class="icustomScrollBox">
+<div class="icontainer">
+<div class="icontent">
 <div id="sponsorslist"> 
  	  <a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a>
  	  <a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt=""/></a>
@@ -223,7 +227,17 @@ echo '<div id="ititle">Sponsors</div>
   	  <a href="http://www.transition-asia.com/" target="_blank"><img src="styles/images/sponsors/transition.jpg" alt=""/></a>
  	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>
      	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a>
-</div>';
+       <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a>
+       <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a>
+</div></div><!--icontent-->
+</div><!--icontainer-->
+<div class="idragger_container">
+<div class="idragger"></div>
+</div>
+</div><!--icustomScrollBox-->
+<a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
+</div> <!--imcs_container-->
+';
 }else if($_GET['page']=="feedback")
 {
 echo '<div id="stylized" class="myform">
