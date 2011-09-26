@@ -5,10 +5,10 @@ var timer1 = null,
 
 function init(){
 	midx = document.width/2;
-	footerlinks.style.left = (midx - 470) + 'px'
-	contacts.style.left = (midx-280) + 'px'
-	nitc.style.left = (midx+295) + 'px'
-	initiatives.style.left = (midx-360) + 'px'
+	document.getElementById('footerlinks').style.left = (midx - 470) + 'px'
+	document.getElementById('contacts').style.left = (midx-280) + 'px'
+	document.getElementById('nitc').style.left = (midx+295) + 'px'
+	document.getElementById('initiatives').style.left = (midx-360) + 'px'
 }
 
 $(document).ready(function () {

@@ -132,6 +132,7 @@
 							  <li><a href="#!theoffroadmi" rel="ajax">The Off Road MI</a></li>
 							  <li><a href="#!amphiboat" rel="ajax">AMPHI-BOaT</a></li>
 							  <li><a href="#!aquamissile" rel="ajax">Aqua Missile</a></li>
+                                                          <li><a href="#!wheels" rel="ajax">Wheels '11</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">General</li>
@@ -197,6 +198,7 @@
 							  <li><a href="#!bullsnbears" rel="ajax">Bulls n Bears</a></li>
 							  <li><a href="http://clueless.tathva.org" target="_blank">Clueless</a></li>
 							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
+                                                          <li><a href="#!koderkup" rel="ajax">Koder Kup</a></li>
 						      </ul>
     						</div>
     					</li>
@@ -428,7 +430,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span><a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Trial run of <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game, has begun. The official launch will be on Thursday. </span></li>
+				<li><span>| Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
 			    </ul>
 			</div>
 			<!--<div id="faderight"></div>-->
