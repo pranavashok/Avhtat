@@ -36,13 +36,13 @@ session_start();
 		<script type="text/javascript">	
 		//setTimeout('ipac.contentWindow.focus()',5000);
 	        $(document).ready(function () {
-	        
+	            
 	                $('#loginlink').hover(function () {
-	 		        $('#loginbox').show();
+	 		        $('#loginbox').stop(true,true).show("slow").fadeIn();
 
 	        	});	
-	                 $('#frontpage').click(function () {
-	 		        $('#loginbox').hide();
+	                 $('#loginbox').mouseleave(function () {
+	 		        $('#loginbox').stop(true,true).hide("slow");
 	 		       
 	        	});
 			var _escaped_fragment_ = document.location.search;
@@ -299,10 +299,19 @@ session_start();
 	    				<li><a href="#!register" rel="ajax">Register</a></li>
 	    					
 	    				<?php if(isset($_SESSION['tathvaid']))
-	    					echo "<li id='logintext'><a>Hi,{$_SESSION['name']}</a></li>";
+	    					{ $t = explode(' ',$_SESSION['name']);
+	    					echo "<li id='logintext'><a>Hi, ".$t[0]." <img src='styles/images/register.png'></a></li>";
+	    					}
 	    				      else 
 	    				        echo "<li id='loginlink'><a href='#'>Login</a></li>";
 	    				?>	
+	    				<div id="userlinks">
+	    				<ul>
+	    				<li> Event Registration </li>
+	    				<li> Workshop Registration </li>
+	    				<li> Logout </li>
+	    				</ul>
+	    				</div>
 	    				<div id="loginbox">
 	    			<form method="post" action="index.php">
 	    			     <label for="tathva_id">Username <input id="tathva_id" name="tathva_id"  type="text" maxlength="20" size="25" /></label>
@@ -326,7 +335,7 @@ session_start();
 							$_SESSION['name'] = $row[0];
 						}
 						else {
-						   echo "hello";
+						   
 						}
 					}
 	    				?>

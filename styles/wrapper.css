@@ -179,8 +179,8 @@ li.oe_heading{
 	height:30px;
 	top:0px;
 	right:0px;
-	padding-left:10px;
-	padding-right:10px;
+	padding-left:6px;
+	padding-right:6px;
 	padding-top: 12px;
 	background-color: transparent;
 	text-align:center;
@@ -272,6 +272,23 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 		
 }
 
+#userlinks{ 
+  position: absolute;
+  background: #000;
+  opacity:0.8;
+  width:200px;
+  height:200px;
+  right:5px;
+  top:37px;
+  border:1px solid grey;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  z-index:20;
+  text-align:center;
+  padding:20px;
+
+}
 
 .searchboxwrapper{
   padding-top:6px;	
