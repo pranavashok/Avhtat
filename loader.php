@@ -272,6 +272,12 @@ echo '<div id="stylized" class="myform">
 <iframe src="participating_events.php" width="100%" height=300 frameBorder="0" scrolling="no">
 </iframe>
 </div>';
+}else if($_GET['page']=="workshopregister")
+{
+echo '<div id="stylized" class="myform">
+<iframe src="participating_workshop.php" width="100%" height=300 frameBorder="0" scrolling="no">
+</iframe>
+</div>';
 }else if ($_GET['page'][1]=='='){
 	$searchResult = file_get_contents('http://www.tathva.org/2011/search.php?'.$_GET['page']);
 	
