@@ -1,6 +1,6 @@
 <?php  session_start(); ?>
 <html>
-	<head>
+<head>
 		<style type="text/css">
 		#content {
     font-family:arial;
@@ -108,78 +108,77 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	<script type="text/javascript" src="js/chosen.jquery.js"></script>
 	</head>
 
-	<body style="color:white;"><div id="content">
-	<div id="stylized" class="myform">
-	<div id="heading">	<h1	>Event Registration</h1></div><p></p>
-			<form action="participating_events.php" method="get" name="form1">
-		<label> Tathva ID:
-		<span class="small">Team Captain</span>
+	<body>	
+	<div id="content">
+	<div id="stylized" class="myform"><div id="heading">	<h1>Workshop Registration</h1></div><p></p>
+					<form action="participating_workshops.php" method="post" name="form1">
+			 	<label> Tathva ID:
+		<span class="small">Team Leader</span>
 		</label>  &nbsp;&nbsp;&nbsp; <?php echo $_SESSION['tathvaid'];?>
 		<input type="hidden" name="tat_id" value="<?php if (isset($_SESSION['tathvaid'])) echo $_SESSION['tathvaid']; ?>"/><br/><br/>
-	
-				<?php  
+				<?php 
 					require_once("config.php");
 					$conn = mysql_connect($host, $db_user, $db_password);
 					if((!$conn)){
 						die('Could Not Connect :' . mysql_error());
 					}
-					mysql_select_db($db_name,$conn);
-						$query='SELECT name FROM participant WHERE tathva_id ="'.$_SESSION['tathvaid'].'"';//tathva_id compared
+					mysql_select_db($db_name,$conn); 
+						$query='SELECT name FROM participant WHERE tathva_id ="'.$_POST['tat_id'].'";';
 						$result=mysql_query($query,$conn);
 						$row1=mysql_fetch_row($result);
-						$query="SELECT event_id,hash_tag,event_name FROM event WHERE hash_tag='".$_GET['event_id']."';";
-						$result=mysql_query($query,$conn);
-						$row2=mysql_fetch_row($result);	
-						echo "<br/><label>Name : <span class='small'>Team Captain</span>";
+						echo "<br/><label>Name : <span class='small'>Team Leader</span>";
 						echo"</label> &nbsp;&nbsp;&nbsp; ".  $_SESSION['name']."<br/>";
-						echo "<br/><br/><label>Event: </label></div><div style='margin:-20px 230px; width:290px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select an event.'  style=name='event_id' class='chzn-select'/></br> ";
-						$query="SELECT event_id,hash_tag,event_name FROM event WHERE hash_tag<>'".$_GET['event_id']."';";
-						$result=mysql_query($query,$conn);
-						$row=mysql_fetch_row($result);
-						echo "<option></option>";
-						while($row) {
-								echo "<option selected value='".$row2[1]."'>".$row2[2]."</option>";
-								echo "<option value='".$row[1]."'>".$row[2]."</option>";
+							echo "<br/><br/><label>Workshop: </label></div><div style='margin:-20px 230px; width:270px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select a workshop.'  style=name='event_id' class='chzn-select'/></br> ";
+							$query="SELECT workshop_id,workshop_name FROM workshop";
+							$result=mysql_query($query,$conn);
+							$row=mysql_fetch_row($result);
+							while($row) {
+								if(isset($_POST['workshop_id'])&& $_POST['workshop_id']==$row[0]) 
+									echo "<option selected value='".$row[0]."'>".$row[1]."</option>";
+								else
+									echo "<option value='".$row[0]."'>".$row[1]."</option>";
 								$row=mysql_fetch_row($result);
 							}		
-				?>	
-						</select><input type="submit" style="width:50px;margin:0; float:right;" value ="Go" name="part_entry"/></div><div id="stylized">								
+					
 						
-			<script type="text/javascript"> $(".chzn-select").chosen({no_results_text: "No event"}); </script>
+							
+				?>	
+						</select>
+						<input type="submit" style="width:50px;margin:0; float:right;"  value ="Go" name="part_entry"/></div><div id="stylized">
+						<script type="text/javascript"> $(".chzn-select").chosen({no_results_text: "No workshop"}); </script>
 			</form>
-			<br/><form action="connect_participating_events.php" method="post" name="form2" >
-			<?php
-					if(isset($_GET["part_entry"])) {
-			if($row1) { 
-						$query="SELECT min_part,max_part FROM event WHERE hash_tag='".$_GET['event_id']."';";
-						$result=mysql_query($query,$conn);
-						$row=mysql_fetch_row($result);
-						echo "<input type='hidden' name='team_leader1' value='".$_SESSION['tathvaid']."'/></br>";
-						$i=2; 
-						while($i<=$row[1]) {
-							if ($i==2) echo "<span class='small'>Enter details of other team members</span><br/>";
+			<form action="connect_participating_workshopv2.php" method="post" name="form2" >
+				<?php
+					if(isset($_POST["part_entry"])) {
+						if($row1) {
+							$query="SELECT max_part FROM workshop WHERE workshop_id='".$_POST['workshop_id']."';";
+							$result=mysql_query($query,$conn);
+							$row=mysql_fetch_row($result);
+							echo "<input type='hidden' name='team_leader1' value='".$_POST['tat_id']."'/><br/><br/>";
+							$i=2;
+							while($i<=$row[0]) {
 							echo "<label>Member ".($i-1)."  : <span class='small'>Enter Tathva ID</span></label><input type='text' name='team_member".$i."'/></br>";
 							$i++;
 			   			}
-			   			
-			   			echo "<input type ='hidden' name='event_id' value='".$_GET['event_id']."'/>";
-			   			echo "<input type ='hidden' name='tat_id' value='".$_GET['tat_id']."'/>";
+			   			echo "<input type ='hidden' name='workshop_id' value='".$_POST['workshop_id']."'/>";
+			   			echo "<input type ='hidden' name='tat_id' value='".$_POST['tat_id']."'/>";
 			   			echo "<input type='submit' value='Register'/>";
-			   			echo "</form>";
+			   			
 		   		}
 			   	else {
-			   		echo "Not Registered for TATHVA '11";
+			   		echo "Not Registered for Tathva '11";
 			   		echo "</form>";
 //			   		echo "<form  action='index.php#!register' method='post' name='form3' >";
 //			   		echo "<input type ='submit' value = 'Click here to Register of TATHVA '11'/> ";
 //			   		echo "</form>";
-					echo "<a href='index.php#!register' target='_parent'>Click here to Register of TATHVA \'11</a>";
+			   		echo "</form>";
 			   		}
-			   	}
 			   	
+			   	}
 			   		
-			  
+			
 			  ?>
-	</div></div>
+
+		</div>	  </div> 	
 	</body>
 </html>

@@ -267,15 +267,17 @@ echo '<div id="stylized" class="myform">
 </form>
 </div>';
 }else if($_GET['page']=="eventregister")
-{
+{ if (!isset($_SESSION['tathvaid']) 
 echo '<div id="stylized" class="myform">
-<iframe src="participating_events.php" width="100%" height=300 frameBorder="0" scrolling="no">
+<iframe style="margin-top:-20px;" src="participating_events.php" width="100%" height=400 frameBorder="0" scrolling="no">
 </iframe>
 </div>';
-}else if($_GET['page']=="workshopregister")
+}
+
+else if($_GET['page']=="workshopregister")
 {
 echo '<div id="stylized" class="myform">
-<iframe src="participating_workshop.php" width="100%" height=300 frameBorder="0" scrolling="no">
+<iframe  style="margin-top:-20px;" src="participating_workshops.php" width="100%" height=400 frameBorder="0" scrolling="no">
 </iframe>
 </div>';
 }else if ($_GET['page'][1]=='='){

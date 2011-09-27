@@ -303,7 +303,25 @@ session_start();
     			</div>
     			<div id = "loginlinkscontainer">
 	    			<ul id="loginlinks">
+	    						<?php
+	    				if(isset($_POST['tathva_id'])) {
 	    				
+	    					$con = mysql_connect($host, $db_user, $db_password);
+						if (!$con) {
+							die('Could not connect: ' . mysql_error());
+						}
+						$db = mysql_select_db($db_name, $con);
+						$sql="SELECT name FROM participant where tathva_id='".$_POST['tathva_id']."' AND password='".md5($_POST['pass'])."';";					$result=mysql_query($sql,$con);
+						$row=mysql_fetch_array($result);
+						if($row) {
+							$_SESSION['tathvaid'] = $_POST['tathva_id'];
+							$_SESSION['name'] = $row[0];
+						}
+						else {
+						   
+						}
+					}
+	    				?>
 	    					
 	    				<?php if(isset($_SESSION['tathvaid']))
 	    					{ $t = explode(' ',$_SESSION['name']);
@@ -328,27 +346,7 @@ session_start();
 				    <label for="password">Password <input id="password" name="pass"  type="password" maxlength="20" size="25"></label>
 					<input type="submit" value="Login"/>
 	    				</form>	    
-	    				&nbsp;<a href="#!forgotpass" rel="ajax">Forgot Password ?</a>  | <a href="#!forgotid" rel="ajax">Forgot Tathva ID ?</a>				<?php
-	    				if(isset($_POST['tathva_id'])) {
-	    				
-	    					$con = mysql_connect($host, $db_user, $db_password);
-						if (!$con) {
-							die('Could not connect: ' . mysql_error());
-						}
-						$db = mysql_select_db($db_name, $con);
-						$sql="SELECT name FROM participant where tathva_id='".$_POST['tathva_id']."' AND password='".md5($_POST['pass'])."';";
-						echo $sql;
-						$result=mysql_query($sql,$con);
-						$row=mysql_fetch_array($result);
-						if($row) {
-							$_SESSION['tathvaid'] = $_POST['tathva_id'];
-							$_SESSION['name'] = $row[0];
-						}
-						else {
-						   
-						}
-					}
-	    				?>
+	    				&nbsp;<a href="#!forgotpass" rel="ajax">Forgot Password ?</a>  | <a href="#!forgotid" rel="ajax">Forgot Tathva ID ?</a>		
 	    				</div>		
 	    			</ul>
     			</div>	
