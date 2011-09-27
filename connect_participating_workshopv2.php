@@ -1,11 +1,12 @@
 <html>
 	<body>
 		<?php
-			$con = mysql_connect("localhost","root","sharath");
+			require_once("config.php");
+			$con = mysql_connect($host, $db_user, $db_password);
 			if (!$con) {
 				die('Could not connect: ' . mysql_error());
 			}
-			mysql_select_db("registration",$con) or die("Database doesn't exist");
+			mysql_select_db($db_name,$con) or die("Database doesn't exist");
 			$query="SELECT max_part FROM workshop WHERE workshop_id='".$_POST['workshop_id']."';";
 			//echo $query;
 			$result=mysql_query($query,$con) or die("Query failed");

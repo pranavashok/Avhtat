@@ -54,7 +54,7 @@ font-size:12px;
 padding:4px 2px;
 border:solid 1px #aacfe4;
 width:200px;
-margin:2px 0 20px 10px;
+margin:2px 0 5px 10px;
 -moz-border-radius: 4px;
 -webkit-border-radius:4px;
 border-radius:4px;
@@ -106,12 +106,20 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	<link href='styles/chosen.css' type='text/css' rel='stylesheet' />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	$(".chzn-select").change(function(){
+		$("#goform").submit();
+	});
+	});
+	</script>
 	</head>
 
-	<body style="color:white;"><div id="content">
-	<div id="stylized" class="myform">
-	<div id="heading">	<h1	>Event Registration</h1></div><p></p>
-			<form action="participating_events.php" method="get" name="form1">
+	<body style="background-color:#000;">
+	<div id="content">
+	<div id="stylized" class="myform"> 
+	<div id="heading">	<h1>Event Registration</h1></div><p></p>
+			<form id="goform" action="participating_events.php" method="get" name="form1">
 		<label> Tathva ID:
 		<span class="small">Team Captain</span>
 		</label>  &nbsp;&nbsp;&nbsp; <?php echo $_SESSION['tathvaid'];?>
@@ -124,50 +132,53 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 						die('Could Not Connect :' . mysql_error());
 					}
 					mysql_select_db($db_name,$conn);
-						$query='SELECT name FROM participant WHERE tathva_id ="'.$_SESSION['tathvaid'].'"';//tathva_id compared
-						$result=mysql_query($query,$conn);
-						$row1=mysql_fetch_row($result);
-						$query="SELECT event_id,hash_tag,event_name FROM event WHERE hash_tag='".$_GET['event_id']."';";
+						$query="SELECT event_id,event_hash,event_name FROM event WHERE event_hash='".$_GET['event_hash']."';";
 						$result=mysql_query($query,$conn);
 						$row2=mysql_fetch_row($result);	
 						echo "<br/><label>Name : <span class='small'>Team Captain</span>";
 						echo"</label> &nbsp;&nbsp;&nbsp; ".  $_SESSION['name']."<br/>";
-						echo "<br/><br/><label>Event: </label></div><div style='margin:-20px 230px; width:290px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select an event.'  style=name='event_id' class='chzn-select'/></br> ";
-						$query="SELECT event_id,hash_tag,event_name FROM event WHERE hash_tag<>'".$_GET['event_id']."';";
+						echo "<br/><br/><label>Event: </label></div><div style='margin:-20px 230px; width:290px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select an event.'  name='event_hash' class='chzn-select'/></br> ";
+						$query="SELECT event_id,event_hash,event_name FROM event ORDER BY event_name;";
 						$result=mysql_query($query,$conn);
 						$row=mysql_fetch_row($result);
 						echo "<option></option>";
 						while($row) {
-								echo "<option selected value='".$row2[1]."'>".$row2[2]."</option>";
-								echo "<option value='".$row[1]."'>".$row[2]."</option>";
+								
+								echo "<option value='".$row[1]."'";
+								if ($_GET['event_hash'] == $row[1])
+								{
+								echo " selected = 'true' ";
+								}
+								echo ">".$row[2]."</option>";
 								$row=mysql_fetch_row($result);
 							}		
 				?>	
-						</select><input type="submit" style="width:50px;margin:0; float:right;" value ="Go" name="part_entry"/></div><div id="stylized">								
+						</select><!--<input type="submit" style="width:50px;margin:0; float:right;" value ="Go" name="part_entry"/>--></div><div id="stylized">								
 						
 			<script type="text/javascript"> $(".chzn-select").chosen({no_results_text: "No event"}); </script>
 			</form>
 			<br/><form action="connect_participating_events.php" method="post" name="form2" >
 			<?php
-					if(isset($_GET["part_entry"])) {
-			if($row1) { 
-						$query="SELECT min_part,max_part FROM event WHERE hash_tag='".$_GET['event_id']."';";
+					if(isset($_GET["event_hash"]) && !empty($_GET["event_hash"])) {
+					//if($row1) { 
+						$query="SELECT min_part,max_part FROM event WHERE event_hash='".$_GET['event_hash']."';";
 						$result=mysql_query($query,$conn);
 						$row=mysql_fetch_row($result);
 						echo "<input type='hidden' name='team_leader1' value='".$_SESSION['tathvaid']."'/></br>";
 						$i=2; 
 						while($i<=$row[1]) {
-							if ($i==2) echo "<span class='small'>Enter details of other team members</span><br/>";
-							echo "<label>Member ".($i-1)."  : <span class='small'>Enter Tathva ID</span></label><input type='text' name='team_member".$i."'/></br>";
+							if ($i==2) echo "<span style='margin:0 auto;' class='small'>Enter details of other team members</span><br/><label>Team Members  : <span class='small'>Enter Tathva IDs</span></label>";
+							echo "<label></label><input type='text' name='team_member".$i."'/>";
+							if(($i-1)%2==0) echo "<br/><label> &nbsp;</label>";
 							$i++;
+							if($i>$row[1]) echo "<br/><br/><br/><label>&nbsp;&nbsp;</label>";
 			   			}
-			   			
-			   			echo "<input type ='hidden' name='event_id' value='".$_GET['event_id']."'/>";
-			   			echo "<input type ='hidden' name='tat_id' value='".$_GET['tat_id']."'/>";
+			   			echo "<input type ='hidden' name='event_hash' value='".$_GET['event_hash']."'/>";
+			   			echo "<input type ='hidden' name='tat_id' value='".$_SESSION['tathvaid']."'/>";
 			   			echo "<input type='submit' value='Register'/>";
 			   			echo "</form>";
-		   		}
-			   	else {
+		   			} 
+	/*		   	else {
 			   		echo "Not Registered for TATHVA '11";
 			   		echo "</form>";
 //			   		echo "<form  action='index.php#!register' method='post' name='form3' >";
@@ -175,11 +186,13 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 //			   		echo "</form>";
 					echo "<a href='index.php#!register' target='_parent'>Click here to Register of TATHVA \'11</a>";
 			   		}
-			   	}
+			   	}*/
 			   	
 			   		
 			  
 			  ?>
-	</div></div>
+	</div>
+	
+	</div>
 	</body>
 </html>

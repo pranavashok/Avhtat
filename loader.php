@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php'; 
+session_start();
 
 if($_GET['page']=="register")
 {
@@ -267,11 +268,16 @@ echo '<div id="stylized" class="myform">
 </form>
 </div>';
 }else if($_GET['page']=="eventregister")
-{ if (!isset($_SESSION['tathvaid']) 
-echo '<div id="stylized" class="myform">
-<iframe style="margin-top:-20px;" src="participating_events.php" width="100%" height=400 frameBorder="0" scrolling="no">
-</iframe>
+{ if (!isset($_SESSION['tathvaid'])) {
+	echo '<div id="stylized" class="myform">
+You have not registered in Tathva \'11. Please <a href="index.php#!register">click here</a> to register. 
 </div>';
+
+}else {
+echo '<iframe style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no">
+</iframe>
+';
+}
 }
 
 else if($_GET['page']=="workshopregister")

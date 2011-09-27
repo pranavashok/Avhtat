@@ -108,13 +108,14 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	<script type="text/javascript" src="js/chosen.jquery.js"></script>
 	</head>
 
-	<body>	
+	<body style="color:white;">	
 	<div id="content">
 	<div id="stylized" class="myform"><div id="heading">	<h1>Workshop Registration</h1></div><p></p>
-					<form action="participating_workshops.php" method="post" name="form1">
+					<form action="participating_workshops.php" method="get" name="form1">
 			 	<label> Tathva ID:
 		<span class="small">Team Leader</span>
-		</label>  &nbsp;&nbsp;&nbsp; <?php echo $_SESSION['tathvaid'];?>
+		</label>  &nbsp;&nbsp;&nbsp; <?php 	$tat_id=$_SESSION['tathvaid']; 
+							echo $tat_id;	?>
 		<input type="hidden" name="tat_id" value="<?php if (isset($_SESSION['tathvaid'])) echo $_SESSION['tathvaid']; ?>"/><br/><br/>
 				<?php 
 					require_once("config.php");
@@ -122,18 +123,15 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 					if((!$conn)){
 						die('Could Not Connect :' . mysql_error());
 					}
-					mysql_select_db($db_name,$conn); 
-						$query='SELECT name FROM participant WHERE tathva_id ="'.$_POST['tat_id'].'";';
-						$result=mysql_query($query,$conn);
-						$row1=mysql_fetch_row($result);
+					mysql_select_db($db_name,$conn);
 						echo "<br/><label>Name : <span class='small'>Team Leader</span>";
 						echo"</label> &nbsp;&nbsp;&nbsp; ".  $_SESSION['name']."<br/>";
 							echo "<br/><br/><label>Workshop: </label></div><div style='margin:-20px 230px; width:270px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select a workshop.'  style=name='event_id' class='chzn-select'/></br> ";
-							$query="SELECT workshop_id,workshop_name FROM workshop";
+							$query="SELECT workshop_id,workshop_name,workshop_hash FROM workshop";
 							$result=mysql_query($query,$conn);
 							$row=mysql_fetch_row($result);
 							while($row) {
-								if(isset($_POST['workshop_id'])&& $_POST['workshop_id']==$row[0]) 
+								if(isset($_GET['workshop_id'])&& $_GET['workshop_id']==$row[0]) 
 									echo "<option selected value='".$row[0]."'>".$row[1]."</option>";
 								else
 									echo "<option value='".$row[0]."'>".$row[1]."</option>";

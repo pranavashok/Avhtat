@@ -158,7 +158,7 @@ session_start();
 						      <ul>
 							  <li class="oe_heading">General</li>
 							  <li><a href="#!blueprint" rel="ajax">Blueprint</a></li>
-							  <li><a href="#!losttreasureoftechila" rel="ajax">Lost Treasure of Techila</a></li>
+							  <li><a href="#!tots" rel="ajax">T.O.T.S</a></li>
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 							  <li><a href="#!tathvaquiz" rel="ajax">Tathva Quiz '11</a></li>
@@ -494,8 +494,10 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		  	<!--<div id="fadeleft"></div>-->
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span><a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
+			    	<li><span><a href="#!onlinequiz">Online Quiz</a> - The grandmaster of all online quizzes.</span></li>
+				<li><span> | <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
 				<li><span>| Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
+				<li><span> | <a href="#!koderkup">Koder Kup</a> - An online coding war like never before.</span></li>
 			    </ul>
 			</div>
 			<!--<div id="faderight"></div>-->
