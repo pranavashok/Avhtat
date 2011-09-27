@@ -106,11 +106,20 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	<link href='styles/chosen.css' type='text/css' rel='stylesheet' />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	$(".chzn-select").change(function(){
+		$("#goform").submit();
+	});
+	
+	});
+	</script>
 	</head>
 
-	<body style="color:white;">	
+	<body style="background-color:#000;">	
 	<div id="content">
-	<div id="stylized" class="myform"><div id="heading">	<h1>Workshop Registration</h1></div><p></p>
+	<div id="stylized" class="myform">
+	<div id="heading">	<h1>Workshop Registration</h1></div><p></p>
 					<form action="participating_workshops.php" method="get" name="form1">
 			 	<label> Tathva ID:
 		<span class="small">Team Leader</span>
@@ -126,20 +135,17 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 					mysql_select_db($db_name,$conn);
 						echo "<br/><label>Name : <span class='small'>Team Leader</span>";
 						echo"</label> &nbsp;&nbsp;&nbsp; ".  $_SESSION['name']."<br/>";
-							echo "<br/><br/><label>Workshop: </label></div><div style='margin:-20px 230px; width:270px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select a workshop.'  style=name='event_id' class='chzn-select'/></br> ";
-							$query="SELECT workshop_id,workshop_name,workshop_hash FROM workshop";
+							echo "<br/><br/><label>Workshop: </label></div><div style='margin:-20px 230px; width:270px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select a workshop.'  name='workshop_hash' class='chzn-select'><br/> ";
+							$query="SELECT workshop_id,workshop_name,workshop_hash FROM workshop ORDER BY workshop_name";
 							$result=mysql_query($query,$conn);
 							$row=mysql_fetch_row($result);
 							while($row) {
 								if(isset($_GET['workshop_id'])&& $_GET['workshop_id']==$row[0]) 
-									echo "<option selected value='".$row[0]."'>".$row[1]."</option>";
+									echo "<option selected value='".$row[2]."'>".$row[1]."</option>";
 								else
-									echo "<option value='".$row[0]."'>".$row[1]."</option>";
+									echo "<option value='".$row[2]."'>".$row[1]."</option>";
 								$row=mysql_fetch_row($result);
 							}		
-					
-						
-							
 				?>	
 						</select>
 						<input type="submit" style="width:50px;margin:0; float:right;"  value ="Go" name="part_entry"/></div><div id="stylized">
@@ -147,9 +153,9 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 			</form>
 			<form action="connect_participating_workshopv2.php" method="post" name="form2" >
 				<?php
-					if(isset($_POST["part_entry"])) {
-						if($row1) {
-							$query="SELECT max_part FROM workshop WHERE workshop_id='".$_POST['workshop_id']."';";
+					if(isset($_GET["workshop_hash"]) && !empty($_GET["workshop_hash"])) {
+						//if($row1) {
+							$query="SELECT max_part FROM workshop WHERE workshop_hash='".$_GET['workshop_hash']."';";
 							$result=mysql_query($query,$conn);
 							$row=mysql_fetch_row($result);
 							echo "<input type='hidden' name='team_leader1' value='".$_POST['tat_id']."'/><br/><br/>";

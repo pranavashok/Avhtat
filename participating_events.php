@@ -111,6 +111,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	$(".chzn-select").change(function(){
 		$("#goform").submit();
 	});
+	
 	});
 	</script>
 	</head>
@@ -137,11 +138,11 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 						$row2=mysql_fetch_row($result);	
 						echo "<br/><label>Name : <span class='small'>Team Captain</span>";
 						echo"</label> &nbsp;&nbsp;&nbsp; ".  $_SESSION['name']."<br/>";
-						echo "<br/><br/><label>Event: </label></div><div style='margin:-20px 230px; width:290px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select an event.'  name='event_hash' class='chzn-select'/></br> ";
+						echo "<br/><br/><label>Event: </label></div><div style='margin:-20px 230px; width:290px;position:absolute; float:right; color:black;  '>&nbsp;&nbsp;&nbsp;<select style=' color:black; width:180px; ' data-placeholder='Select an event.'  name='event_hash' class='chzn-select'><br/> ";
 						$query="SELECT event_id,event_hash,event_name FROM event ORDER BY event_name;";
 						$result=mysql_query($query,$conn);
 						$row=mysql_fetch_row($result);
-						echo "<option></option>";
+						//echo "<option></option>";
 						while($row) {
 								
 								echo "<option value='".$row[1]."'";
@@ -171,11 +172,11 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 							echo "<label></label><input type='text' name='team_member".$i."'/>";
 							if(($i-1)%2==0) echo "<br/><label> &nbsp;</label>";
 							$i++;
-							if($i>$row[1]) echo "<br/><br/><br/><label>&nbsp;&nbsp;</label>";
+							if($i>$row[1]) echo "<br/><br/><label>&nbsp;&nbsp;</label>";
 			   			}
 			   			echo "<input type ='hidden' name='event_hash' value='".$_GET['event_hash']."'/>";
 			   			echo "<input type ='hidden' name='tat_id' value='".$_SESSION['tathvaid']."'/>";
-			   			echo "<input type='submit' value='Register'/>";
+			   			echo "<br/><input type='submit' value='Register'/>";
 			   			echo "</form>";
 		   			} 
 	/*		   	else {

@@ -61,7 +61,17 @@ padding-bottom:10px;
 			while($r<=$j) {
 				$w="team_member$r";
 				if($_POST[$w]!="") {
-					$a++; 
+					$a++;
+					$b=2;
+					if (strcmp($_POST["team_leader1"],$_POST[$w])==0)
+						die("Do not enter same Tathva IDs.");
+					else {
+						$b=2;
+						while ($b<$r){
+							if(strcmp($_POST["team_member$b"],$_POST[$w])==0)
+								die("Do not enter same Tathva IDs.");								
+						}
+					}
 					$r++;
 				}
 				else
@@ -73,6 +83,7 @@ padding-bottom:10px;
 			$count=0;
 			while($r<=$a && $validate!=1) {
 				$w="team_member$r";
+				
 				$x = mysql_real_escape_string(stripslashes($_POST[$w]));
 				if(isset($x)) {
 					if($x!=''){
@@ -93,7 +104,7 @@ padding-bottom:10px;
 				
 				//}
 				if($count<$i && $i!=1) 
-					echo "Not enough members";
+					echo "Your team must include atleast ".$i." members.";
 				else {
 					$query="SELECT teammember_id FROM team WHERE teammember_id ='".$teamleader_1."' and event_id='".$event_id."';";
 					$result=mysql_query($query,$con);
@@ -163,7 +174,7 @@ padding-bottom:10px;
 				}
 				}
 			else {
-			echo "Team member ".$r." not registered";
+			echo "Invalid Team IDs. Please check it and try again.";
 			}
 			
 		?>

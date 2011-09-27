@@ -230,6 +230,7 @@ echo '<div id="ititle">Sponsors</div>
      	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a>
        <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a>
        <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a>
+       <a href="http://www.amul.com/" target="_blank"><img src="styles/images/sponsors/amul.jpg" alt=""/></a>
 </div></div><!--icontent-->
 </div><!--icontainer-->
 <div class="idragger_container">

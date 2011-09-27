@@ -12,6 +12,7 @@ function init(){
 }
 
 $(document).ready(function () {
+	$("#error").fadeOut(4000,'easeInExpo');
 	$("#q.searchbox").focus(function() {
 			this.value='';
 			$("#suggestions").show();
