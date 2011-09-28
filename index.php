@@ -282,22 +282,8 @@ session_start();
     				  		</div>
     				  		
 					</li>
-					<!-- <li><a href="#">Initiatives</a>
-						<div style="width:160px;">
-    				    			<ul>
-		    				      		<li class="oe_heading">Social Initiatives</li>
-		    				      		<li><a href="#!teachforindia">Teach for India</a></li>
-		    				      		<li><a href="#!supportmyschool">NDTV-Coke <br />Support My School</a></li>
-		    				      		<li><a href="#!youngengineer">Young Engineer</a></li>
-		    				    	</ul>
-		    				    	<ul>
-			    				      	<li class="oe_heading">Campus Initiatives</li>
-    				      				<li><a href="#!campusmapping">Campus Mapping</a></li>
-    				      				<li><a href="#!greencampus">Green Campus</a></li>
-			    				</ul>
-    				  		</div>
-    				  		
-					</li>-->
+					<li><a href="#!sponsors">Sponsors</a>
+					</li>
      				</ul> <!-- oe_menu ???-->
     			</div>  
     			<div id = "searchcontainer">
