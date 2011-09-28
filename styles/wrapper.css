@@ -457,7 +457,6 @@ opacity:1;
   -moz-transition: left 0.6s ease;
   -o-transition: left 0.6s ease;
    transition: left 0.6s ease;
-
 }
 
 #sidelinks{
@@ -489,8 +488,8 @@ opacity:1;
 }
 #regbutton-container{
 	position:absolute;
-	right:80px;
-	top:25px;
+	right:25px;
+	top:30px;
 }
 #regbutton{
 	width:100px;
@@ -509,6 +508,13 @@ opacity:1;
 	-moz-border-radius: 4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
+}
+#regbutton a:hover{
+	background-color:#ccc;
+	-webkit-transition: all 0.6s ease;
+  	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+   	transition: all 0.6s ease;
 
 }
 #content {
@@ -683,6 +689,24 @@ opacity:1;
 }
 span.contact-details {
 	color:#999;
+}
+#credits table{
+	color:white;
+	width:100%;
+	text-align:center;
+}
+#credits table td{
+	padding-left:10px;
+	font-size:12px;
+}
+#credits table tr {
+	height:30px;
+}	
+#credits table th{
+	padding-left:10px;
+	font-size:14px;
+	text-align:center;
+	color:#fbbb00;
 }
 
 #nitc{

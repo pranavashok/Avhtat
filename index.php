@@ -173,7 +173,7 @@ session_start();
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 							  <li><a href="#!tathvaquiz" rel="ajax">Tathva Quiz '11</a></li>
-							  <li><a href="#!tots" rel="ajax">TOTS</a></li>							  
+							  <li><a href="#!youngengineer" rel="ajax"><strong>Young Engineer</strong></a></li>							  
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Blitzkrieg</li>
@@ -479,28 +479,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<img src="styles/images/touchmagix.jpg" alt="6"/>
 		   	</a>
 		   </li>
-		   </ul>$.ajax({
-				url: "loader.php",	
-				type: "GET",		
-				data: data,		
-				cache: false,
-				success: function (html) {	
-					$('#bglogo').show();			
-					$('#content').html(html);				
-					bindLinks();
-					$("#loading").hide();
-					$("#oe_overlay").hide();
-//					$(this).hide("slide", { direction: "down" }, 1000);
-					$("#initiatives").hide('slow', function(){
-						$('#footerlinks').animate({left:(($(document).width()/2)-470) + 'px'},500,function(){
-							$('html, body').stop(true, true).animate({
-								scrollTop: 0,
-								queue: false
-							}, 500, 'easeOutSine');
-						});	
-					});
-				}
-			});
+		   </ul>
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
 				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
@@ -521,8 +500,8 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   				
   				</div>
   		                <div id="content">
-	                  		<?php //if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']);
-	                  		//echo '--'.$_GET['_escaped_fragment_'].'--'; ?>
+	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']);
+	                  		 ?>
   		                	<!-- Ajax Content -->
                                 </div>
 
