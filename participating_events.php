@@ -166,7 +166,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 						echo "<input type='hidden' name='team_leader1' value='".$_SESSION['tathvaid']."'/></br>";
 						$i=2; 
 						while($i<=$row[1]) {
-							if ($i==2) echo "<span style='margin:0 auto;' class='small'>Enter details of other team members</span><br/><label>Team Members  : <span class='small'>Enter Tathva IDs</span></label>";
+							if ($i==2) echo "<span style='margin:0 auto;' class='small'>Enter details of other team members (min ".($row[0]-1).") </span><br/><label>Team Members  : <span class='small'>Enter Tathva IDs</span></label>";
 							echo "<label></label><input type='text' name='team_member".$i."'/>";
 							if(($i-1)%2==0) echo "<br/><label> &nbsp;</label>";
 							$i++;

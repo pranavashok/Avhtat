@@ -7,7 +7,7 @@
 		$result=mysql_query($sql,$con) or die('erro');
 		$row=mysql_fetch_array($result);
 		if($row){
-			echo '<div id="regbutton"><a href="index.php?event_hash='.mysql_real_escape_string($_POST['page']).'#!eventregister">Register</a></div>';
+			echo '<div id="regbutton"><a href="index.php#!eventregister/'.mysql_real_escape_string($_POST['page']).'">Register</a></div>';
 		}
 	}
 ?>

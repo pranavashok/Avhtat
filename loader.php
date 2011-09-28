@@ -1,8 +1,11 @@
 <?php
 require_once 'config.php'; 
 session_start();
-
-if($_GET['page']=="register")
+$hash_full=$_GET['page'];
+$tmp = explode('/', $hash_full);
+$reg = $tmp[0];
+$hash= $tmp[1];
+if($hash_full=="register")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:register();">
@@ -49,7 +52,7 @@ echo '<div id="stylized" class="myform">
 </form>
 </div>';
 }
-else if($_GET['page']=="info")
+else if($hash_full=="info")
 {
 echo '<div id="ititle">Information</div>
 <div id="imenu">
@@ -123,7 +126,7 @@ echo '<div id="ititle">Information</div>
 </div> <!--imcs_container-->';
 }
 
-else if($_GET['page']=="schedule")
+else if($hash_full=="schedule")
 {
 echo '<div id="ititle">Schedule</div><div id="imcs_container">
 <div class="icustomScrollBox">
@@ -139,7 +142,7 @@ echo '<div id="ititle">Schedule</div><div id="imcs_container">
 </div> <!--imcs_container-->';
 
 }
-else if($_GET['page']=="forgotid")
+else if($hash_full=="forgotid")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:getid();">
@@ -163,7 +166,7 @@ echo '<div id="stylized" class="myform">
 
 </form>
 </div>';
-}else if($_GET['page']=="forgotpass")
+}else if($hash_full=="forgotpass")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:getpass();">
@@ -187,7 +190,7 @@ echo '<div id="stylized" class="myform">
 
 </form>
 </div>';
-}else if($_GET['page']=="reset")
+}else if($hash_full=="reset")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:resetpass();">
@@ -208,7 +211,7 @@ echo '<div id="stylized" class="myform">
 <div class="spacer"></div>
 </form></div>';
 }
-else if($_GET['page']=="sponsors")
+else if($hash_full=="sponsors")
 {
 echo '<div id="ititle">Sponsors</div>
 <div id="imcs_container" class="fullwidth">
@@ -240,7 +243,7 @@ echo '<div id="ititle">Sponsors</div>
 <a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
 </div> <!--imcs_container-->
 ';
-}else if($_GET['page']=="feedback")
+}else if($hash_full=="feedback")
 {
 echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:feedback()">
@@ -268,37 +271,32 @@ echo '<div id="stylized" class="myform">
 
 </form>
 </div>';
-}else if($_GET['page']=="eventregister")
+}else if($hash_full=="eventregister")
 { if (!isset($_SESSION['tathvaid'])) {
 	echo '<div id="stylized" class="myform">
-You have not registered in Tathva \'11. Please <a href="index.php#!register">click here</a> to register. 
+You have not logged in. Please login before registering for an event. 
 </div>';
 
 }else {
-echo '
-/*
-if (isset($_GET['event_hash']))
-echo '<iframe style="margin-top:-20px;" src="participating_events.php?event_hash='.$_GET['event_hash'].'" width="100%" height="100%" frameBorder="0" scrolling="no">
-</iframe>
-';
-else
-echo '<iframe style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no">
-</iframe>
-';
-*/
+echo '<iframe id="ifrevent" style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no" onload="javascript:function(){$(\"ifrevent\").show();}">
+</iframe>';
+
 }
 }
 
-else if($_GET['page']=="workshopregister")
+else if($hash_full=="workshopregister")
 {
 echo '<div id="stylized" class="myform">
 <iframe  style="margin-top:-20px;" src="participating_workshops.php" width="100%" height=400 frameBorder="0" scrolling="no">
 </iframe>
 </div>';
-}else if ($_GET['page'][1]=='='){
-	$searchResult = file_get_contents('http://www.tathva.org/2011/search.php?'.$_GET['page']);
+}else if ($hash_full[1]=='='){
+	$searchResult = file_get_contents('http://www.tathva.org/2011/search.php?'.$hash_full);
 	
 	echo $searchResult;
+}else if ($reg=="eventregister" && $hash!=""){
+	echo '<iframe style="margin-top:-20px;" src="participating_events.php?event_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
+</iframe>';
 }else
 {
 $con = mysql_connect($host, $db_user, $db_password);
@@ -306,7 +304,7 @@ if (!$con) {
 	die('Could not connect: ' . mysql_error());
 	}
 $db = mysql_select_db($db_name, $con);
-$sql = "SELECT article_content FROM articles WHERE article_hash='".$_GET['page']."'";
+$sql = "SELECT article_content FROM articles WHERE article_hash='".$hash_full."'";
 $result = mysql_query($sql,$con) or die("no content") ;
 $row = mysql_fetch_array($result);
 if (!($row))
