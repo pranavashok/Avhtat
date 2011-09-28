@@ -278,7 +278,7 @@ You have not logged in. Please login before registering for an event.
 </div>';
 
 }else {
-echo '<iframe id="ifrevent" style="margin-top:-20px;display:none;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no" onload="javascript:function(){$(\"ifrevent\").show();}">
+echo '<iframe id="ifrevent" style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no" onload="javascript:function(){$(\"ifrevent\").show();}">
 </iframe>';
 
 }
