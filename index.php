@@ -358,7 +358,7 @@ session_start();
 	    				<div id="loginbox">
 	    			<form method="post" action="index.php">
 	    			     <label for="tathva_id">Username <input id="tathva_id" name="tathva_id"  type="text" maxlength="20" size="20" /></label>
-				    <label for="password">Password <input id="password" name="pass"  type="password" maxlength="20" size="20"></label>
+				    <label for="password">Password <input id="t_password" name="pass"  type="password" maxlength="20" size="20"></label>
 					<input type="submit" value="Login"/>
 	    				</form>	    
 	    				&nbsp;<a href="#!forgotpass" rel="ajax">Forgot Password ?</a>  | <a href="#!forgotid" rel="ajax">Forgot Tathva ID ?</a>		
