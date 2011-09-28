@@ -88,6 +88,7 @@ session_start();
 		
 		function getPage() {
 			var data = 'page=' + encodeURIComponent(document.location.hash.substring(2));
+			
 			$('#suggestions').hide();
 			$('#frontpage').hide();	
 			$('#innerpage').fadeIn('slow');
@@ -114,6 +115,16 @@ session_start();
 							}, 500, 'easeOutSine');
 						});	
 					});
+				}
+			});
+			var data = 'page=' + encodeURIComponent(document.location.hash.substring(2));
+			$.ajax({
+				url: "regexist.php",	
+				type: "POST",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#regbutton-container').html(html);				
 				}
 			});
 		}
@@ -468,7 +479,28 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<img src="styles/images/touchmagix.jpg" alt="6"/>
 		   	</a>
 		   </li>
-		   </ul>
+		   </ul>$.ajax({
+				url: "loader.php",	
+				type: "GET",		
+				data: data,		
+				cache: false,
+				success: function (html) {	
+					$('#bglogo').show();			
+					$('#content').html(html);				
+					bindLinks();
+					$("#loading").hide();
+					$("#oe_overlay").hide();
+//					$(this).hide("slide", { direction: "down" }, 1000);
+					$("#initiatives").hide('slow', function(){
+						$('#footerlinks').animate({left:(($(document).width()/2)-470) + 'px'},500,function(){
+							$('html, body').stop(true, true).animate({
+								scrollTop: 0,
+								queue: false
+							}, 500, 'easeOutSine');
+						});	
+					});
+				}
+			});
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
 				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
@@ -485,8 +517,12 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			   <?php endif; ?>
   		
   		<div id="innerpage">
+  				<div id="regbutton-container">
+  				
+  				</div>
   		                <div id="content">
-	                  		<?php if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']); ?>
+	                  		<?php //if(isset($_GET['_escaped_fragment_'])) echo file_get_contents('http://localhost/Tathva--11-Website/loader.php?page='.$_GET['_escaped_fragment_']);
+	                  		//echo '--'.$_GET['_escaped_fragment_'].'--'; ?>
   		                	<!-- Ajax Content -->
                                 </div>
 

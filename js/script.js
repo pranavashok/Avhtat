@@ -189,7 +189,7 @@ function register() {
 		$('#stylized').html(html);
 		$('#innerpage').fadeIn('slow');		
 		bindLinks();
-	}		
+	}
 	});
 }
 function getid() {
@@ -202,7 +202,7 @@ function getid() {
 		success: function (html) {	
 		$('#stylized').html(html);
 		$('#innerpage').fadeIn('slow');		
-	}		
+	}
 	});
 	
 }

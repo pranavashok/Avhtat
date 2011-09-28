@@ -487,7 +487,30 @@ opacity:1;
 
 
 }
+#regbutton-container{
+	position:absolute;
+	right:80px;
+	top:25px;
+}
+#regbutton{
+	width:100px;
+	height:20px;
+}
+#regbutton a{
+	display:block;
+	background-color:#777;
+	color:#000;
+	height:20px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:2px;
+	text-decoration:none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
 
+}
 #content {
     font-family:arial;
     font-size:13px;

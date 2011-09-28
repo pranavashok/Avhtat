@@ -275,9 +275,17 @@ You have not registered in Tathva \'11. Please <a href="index.php#!register">cli
 </div>';
 
 }else {
+echo '
+/*
+if (isset($_GET['event_hash']))
+echo '<iframe style="margin-top:-20px;" src="participating_events.php?event_hash='.$_GET['event_hash'].'" width="100%" height="100%" frameBorder="0" scrolling="no">
+</iframe>
+';
+else
 echo '<iframe style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>
 ';
+*/
 }
 }
 

@@ -111,7 +111,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	$(".chzn-select").change(function(){
 		$("#goform").submit();
 	});
-	
+	 $(".chzn-select").chosen({no_results_text: "No event"});
 	});
 	</script>
 	</head>
@@ -155,8 +155,6 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 							}		
 				?>	
 						</select><!--<input type="submit" style="width:50px;margin:0; float:right;" value ="Go" name="part_entry"/>--></div><div id="stylized">								
-						
-			<script type="text/javascript"> $(".chzn-select").chosen({no_results_text: "No event"}); </script>
 			</form>
 			<br/><form action="connect_participating_events.php" method="post" name="form2" >
 			<?php
