@@ -48,7 +48,7 @@ padding-bottom:10px;
 			$teamleader_1=mysql_real_escape_string(stripslashes($_POST['team_leader1']));
 			$query="SELECT min_part,max_part,event_id FROM event WHERE event_hash='".$event_hash."';";
 			$result=mysql_query($query,$con) or die("Query failed");
-			$row=mysql_fetch_row($result) or die(mysql_error()." Error");
+			$row=mysql_fetch_row($result) or die(" Error");
 			$i=$row[0];
 			$j=$row[1];
 			$event_id=$row[2];
@@ -62,14 +62,14 @@ padding-bottom:10px;
 				$w="team_member$r";
 				if($_POST[$w]!="") {
 					$a++;
-					$b=2;
 					if (strcmp($_POST["team_leader1"],$_POST[$w])==0)
 						die("Do not enter same Tathva IDs.");
 					else {
 						$b=2;
 						while ($b<$r){
 							if(strcmp($_POST["team_member$b"],$_POST[$w])==0)
-								die("Do not enter same Tathva IDs.");								
+								die("Do not enter same Tathva IDs.");	
+							$b++;							
 						}
 					}
 					$r++;
@@ -143,7 +143,7 @@ padding-bottom:10px;
 							if($result)
 								echo "Thank you for registering! Your team id is ".$event_id.$id;
 							$team_id= $event_id.$id;
-							$sql="SELECT contact_num FROM participant WHERE tathva_id='".$teamleader_1."';";
+							$sql="SELECT phone FROM participant WHERE tathva_id='".$teamleader_1."';";
 							$result=mysql_query($sql,$con);
 							$row=mysql_fetch_row($result);
 							$r=2;
@@ -182,4 +182,4 @@ padding-bottom:10px;
 	</div>
 	</body>
 
-<html>			
+</html>			

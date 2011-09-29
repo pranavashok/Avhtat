@@ -102,7 +102,7 @@ session_start();
 				cache: false,
 				success: function (html) {	
 					$('#bglogo').show();			
-					$('#content').html(html);				
+					$('#innerpage > #content').html(html);				
 					bindLinks();
 					$("#loading").hide();
 					$("#oe_overlay").hide();
@@ -274,6 +274,7 @@ session_start();
     				    				<li class="oe_heading">Lectures</li>
     				      				<li><a href="#!drtessythomas">Dr. Tessy Thomas</a></li>
     				      				<li><a href="#!rajunarayanaswamy">Raju Narayana Swamy</a></li>
+    				      				<li><a href="#!drppchandrachoodan">Dr. P P Chandrachoodan</a></li>
     				    			</ul>
     				    			<ul>
     				    				<li class="oe_heading">Envision</li>
@@ -337,7 +338,7 @@ session_start();
 	    				<div id="userlinks">
 	    				<ul>
 	    				<li><a href="#!eventregister" rel="ajax">Event Registration</a></li>
-	    				<!--<li><a href="#!workshopregister" rel="ajax">Workshop Registration</a></li>-->
+	    				<li><a href="#!workshopregister" rel="ajax">Workshop Registration</a></li>
 	    				<li><a href="logout.php">Logout</a></li>
 	    				</ul>
 	    				</div>
@@ -500,7 +501,7 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
   		  	<!--<div id="fadeleft"></div>-->
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
-				<li><span> Event registrations have begun. <a href="#!eventregister">Register now!</a></span></li>			    
+				<li><span> <a href="#!eventregister">Event registrations</a> and <a href="#!workshopregister">Workshop registrations</a> have begun. Register now!</a></span></li>			    
 			    	<li><span> | <a href="#!onlinequiz">Online Quiz</a> - The grandmaster of all online quizzes.</span></li>
 				<li><span> | <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
 				<li><span>| Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>

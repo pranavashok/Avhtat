@@ -219,21 +219,39 @@ echo '<div id="ititle">Sponsors</div>
 <div class="icontainer">
 <div class="icontent">
 <div id="sponsorslist"> 
- 	  <a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a>
- 	  <a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt=""/></a>
- 	  <a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a>
- 	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a>
- 	  <!--<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a>-->
-   	  <a href="http://www.ndtv.com/micro/supportmyschool/default.aspx" target="_blank"><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></a>
- 	  <a href="http://www.treksnrapids.com/" target="_blank"><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></a>
-   	  <a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a>
-   	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a>
-  	  <a href="http://www.transition-asia.com/" target="_blank"><img src="styles/images/sponsors/transition.jpg" alt=""/></a>
- 	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>
-     	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a>
-       <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a>
-       <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a>
-       <a href="http://www.amul.com/" target="_blank"><img src="styles/images/sponsors/amul.jpg" alt=""/></a>
+Event Sponsors <br/><br/>
+ 	  <a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a> <br/>
+ 	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>  <br/>
+ 	  <a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a> <br/>
+       <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a> <br/> 	  
+   	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a> <br/>
+     	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a> <br/><br/>
+     	
+Adventure Sponsor<br/><br/>
+ 	  <a href="http://www.treksnrapids.com/" target="_blank"><img src="styles/images/sponsors/treksnrapids.jpg" alt=""/></a> <br/><br/>
+ 	  
+Merchandise Partner<br/><br/>
+  	  <a href="http://www.transition-asia.com/" target="_blank"><img src="styles/images/sponsors/transition.jpg" alt=""/></a> <br/><br/>
+ 
+Registration Sponsor<br/><br/>
+       <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a> <br/><br/>
+         
+<!--Beverage Sponsor<br/><br/>
+	<a href="" target="_blank"><img src="styles/images/sponsors/cocacola.jpg" alt=""/></a><br/><br/>
+	-->
+Exhibitions Partner<br/><br/>
+	<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a><br/><br/>
+IDP Partner<br/><br/>
+ 	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a> <br/><br/>
+
+Wokshop Partner<br/><br/>
+   	  <a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a> <br/><br/>
+
+Initiative Partner<br/><br/>
+       <a href="http://www.amul.com/" target="_blank"><img src="styles/images/sponsors/amul.jpg" alt=""/></a> <br/>
+       <a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt="" /></a>
+       <a href="http://www.ndtv.com/micro/supportmyschool/default.aspx" target="_blank"><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></a>  <br/><br/>
+   	  
 </div></div><!--icontent-->
 </div><!--icontainer-->
 <div class="idragger_container">
@@ -272,13 +290,13 @@ echo '<div id="stylized" class="myform">
 </form>
 </div>';
 }else if($hash_full=="eventregister")
-{ if (!isset($_SESSION['tathvaid'])) {
+{
+ if (!isset($_SESSION['tathvaid'])) {
 	echo '<div id="stylized" class="myform">
 You have not logged in. Please login before registering for an event. 
 </div>';
-
 }else {
-echo '<iframe id="ifrevent" style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no" onload="javascript:function(){$(\"ifrevent\").show();}">
+echo '<iframe id="ifrevent" style="margin-top:-20px;" src="participating_events.php" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>';
 
 }
@@ -286,16 +304,24 @@ echo '<iframe id="ifrevent" style="margin-top:-20px;" src="participating_events.
 
 else if($hash_full=="workshopregister")
 {
-echo '<div id="stylized" class="myform">
-<iframe  style="margin-top:-20px;" src="participating_workshops.php" width="100%" height=400 frameBorder="0" scrolling="no">
-</iframe>
+if (!isset($_SESSION['tathvaid'])) {
+	echo '<div id="stylized" class="myform">
+You have not logged in. Please login before registering for a workshop. 
 </div>';
+
+}else {
+echo '<iframe id="ifrworkshop" style="margin-top:-20px;" src="participating_workshops.php" width="100%" height="100%" frameBorder="0" scrolling="no">
+</iframe>';
+}
 }else if ($hash_full[1]=='='){
 	$searchResult = file_get_contents('http://www.tathva.org/2011/search.php?'.$hash_full);
 	
 	echo $searchResult;
 }else if ($reg=="eventregister" && $hash!=""){
 	echo '<iframe style="margin-top:-20px;" src="participating_events.php?event_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
+</iframe>';
+}else if ($reg=="workshopregister" && $hash!=""){
+	echo '<iframe style="margin-top:-20px;" src="participating_workshops.php?workshop_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>';
 }else
 {

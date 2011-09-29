@@ -54,7 +54,7 @@ font-size:12px;
 padding:4px 2px;
 border:solid 1px #aacfe4;
 width:200px;
-margin:2px 0 20px 10px;
+margin:2px 0 5px 10px;
 -moz-border-radius: 4px;
 -webkit-border-radius:4px;
 border-radius:4px;
@@ -111,7 +111,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	$(".chzn-select").change(function(){
 		$("#goform").submit();
 	});
-	
+	 $(".chzn-select").chosen({no_results_text: "No event"});	
 	});
 	</script>
 	</head>
@@ -120,7 +120,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	<div id="content">
 	<div id="stylized" class="myform">
 	<div id="heading">	<h1>Workshop Registration</h1></div><p></p>
-					<form action="participating_workshops.php" method="get" name="form1">
+					<form id= "goform" action="participating_workshops.php" method="get" name="form1">
 			 	<label> Tathva ID:
 		<span class="small">Team Leader</span>
 		</label>  &nbsp;&nbsp;&nbsp; <?php 	$tat_id=$_SESSION['tathvaid']; 
@@ -140,7 +140,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 							$result=mysql_query($query,$conn);
 							$row=mysql_fetch_row($result);
 							while($row) {
-								if(isset($_GET['workshop_id'])&& $_GET['workshop_id']==$row[0]) 
+								if($_GET['workshop_hash']==$row[2]) 
 									echo "<option selected value='".$row[2]."'>".$row[1]."</option>";
 								else
 									echo "<option value='".$row[2]."'>".$row[1]."</option>";
@@ -148,8 +148,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 							}		
 				?>	
 						</select>
-						<input type="submit" style="width:50px;margin:0; float:right;"  value ="Go" name="part_entry"/></div><div id="stylized">
-						<script type="text/javascript"> $(".chzn-select").chosen({no_results_text: "No workshop"}); </script>
+						<!--<input type="submit" style="width:50px;margin:0; float:right;"  value ="Go" name="part_entry"/>--></div><div id="stylized">
 			</form>
 			<form action="connect_participating_workshopv2.php" method="post" name="form2" >
 				<?php
@@ -158,29 +157,31 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 							$query="SELECT max_part FROM workshop WHERE workshop_hash='".$_GET['workshop_hash']."';";
 							$result=mysql_query($query,$conn);
 							$row=mysql_fetch_row($result);
-							echo "<input type='hidden' name='team_leader1' value='".$_POST['tat_id']."'/><br/><br/>";
+							echo "<input type='hidden' name='team_leader1' value='".$_SESSION['tathvaid']."'/><br/><br/>";
 							$i=2;
 							while($i<=$row[0]) {
-							echo "<label>Member ".($i-1)."  : <span class='small'>Enter Tathva ID</span></label><input type='text' name='team_member".$i."'/></br>";
-							$i++;
-			   			}
-			   			echo "<input type ='hidden' name='workshop_id' value='".$_POST['workshop_id']."'/>";
-			   			echo "<input type ='hidden' name='tat_id' value='".$_POST['tat_id']."'/>";
-			   			echo "<input type='submit' value='Register'/>";
+								if ($i==2) 
+									echo "<span style='margin:0 auto;' class='small'>Enter details of other team members (min ".($row[0]-1).") </span><br/><label>Team Members  : <span class='small'>Enter Tathva IDs</span></label>";
+								echo "<label></label><input type='text' name='team_member".$i."'/>";
+								if(($i-1)%2==0) echo "<br/><label> &nbsp;</label>";
+								$i++;
+								if($i>$row[0]) echo "<br/><br/><label>&nbsp;&nbsp;</label>";
+			   				}
+			   			echo "<input type ='hidden' name='workshop_hash' value='".$_GET['workshop_hash']."'/>";
+			   			echo "<input type ='hidden' name='tat_id' value='".$_SESSION['tathvaid']."'/>";
+			   			echo "<br/><input type='submit' value='Register'/>";
+			   			echo "</form>";
 			   			
 		   		}
-			   	else {
+		/*	   	else {
 			   		echo "Not Registered for Tathva '11";
 			   		echo "</form>";
 //			   		echo "<form  action='index.php#!register' method='post' name='form3' >";
 //			   		echo "<input type ='submit' value = 'Click here to Register of TATHVA '11'/> ";
 //			   		echo "</form>";
 			   		echo "</form>";
-			   		}
+			   		}*/
 			   	
-			   	}
-			   		
-			
 			  ?>
 
 		</div>	  </div> 	
