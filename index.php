@@ -513,10 +513,10 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span> <a href="#!eventregister">Event registrations</a> and <a href="#!workshopregister">Workshop registrations</a> have begun. Register now!</a></span></li>			    
+				<li><span> | Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
+				<li><span> | <a href="#!koderkup">Koder Kup</a> - The online coding contest is scheduled to begin on 4th October.</span></li>
+				<li><span> | <a href="#!b-aptist">B-Aptist</a> - Deadline for submission of executive summary extended to 10th October.</span></li>				
 			    	<li><span> | <a href="#!onlinequiz">Online Quiz</a> - The grandmaster of all online quizzes.</span></li>
-				<li><span> | <a href="http://clueless.tathva.org/" target="_blank">Clueless</a>, the cryptic online treasure hunt has started </span></li>
-				<li><span>| Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
-				<li><span> | <a href="#!koderkup">Koder Kup</a> - An online coding war like never before.</span></li>
 			    </ul>
 			</div>
 			<!--<div id="faderight"></div>-->
