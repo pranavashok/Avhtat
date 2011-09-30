@@ -1099,3 +1099,76 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 	width:220px;
 	height:110px;
 }
+/* Pacman */
+#pacman-wrapper{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:500;
+	opacity:0.95;
+	background-color:#000;
+	display:block;
+}
+#pacman-cont{
+	position:absolute;
+	left:30%;
+	top:20%;
+	width:600px;
+	height:384px;
+	opacity:1;
+	background-color:#000;
+	display:block;
+	border:3px #777 solid;
+}
+#loader {
+  position:relative;
+  background:#000;
+  width:600px;
+  height:384px;
+  margin:auto;
+  overflow:hidden;
+}
+#pacman {
+  position:absolute;
+  background:#000 url('images/pacman.gif') no-repeat;
+  width:24px;
+  height:24px;
+  z-index:10;
+}
+#pacman.right{
+}
+#pacman.up{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#pacman.down{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+#pacman.left{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+#food {
+  position:absolute;
+  background:#000 url('images/food.gif') no-repeat;
+  width:16px;
+  height:16px;
+  z-index:400;
+  top:20px;
+}
+#scoreboard{
+  color:#fff;
+  z-index:500;
+}

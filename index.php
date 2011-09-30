@@ -16,14 +16,16 @@ session_start();
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
- 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
+--> 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
+  		<script type="text/javascript" src="js/shortcut.js"></script>
+    		<script type="text/javascript" src="js/pacman.js"></script>
   		<script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
     		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>-->
@@ -137,7 +139,7 @@ session_start();
 			Tathva '11 | National Institute of Technology, Calicut
 		</title>
 	</head>
-	<body onload='init()'>
+	<body onload='init()' onkeydown='keyHandler(event)'>
 	<div id = "wrapper">
   		<div id="oe_overlay" class="oe_overlay"><!--<iframe id='ipac' width=620 height=400 src="pacman.html"></iframe>--></div>
   		<div id = "topbar">   		
@@ -493,6 +495,15 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
                                 </div>
 
                 </div> 
+                <div id="pacman-wrapper">
+                <div id="pacman-cont">
+                <div id="loader">
+		<div id="pacman"></div>
+		<div id="food"></div>
+		<div id="scoreboard"></div>
+		</div>
+                </div>
+                </div>
                 <div id="gallery-cont">
                 <iframe width="960px" height="520px" src="gallery.php"></iframe>
                 </div>

@@ -12,6 +12,20 @@ function init(){
 }
 
 $(document).ready(function () {
+	//init_pac();
+	flag=0;
+	$('#pacman-wrapper').hide();
+	shortcut.add("p",function() {
+		if(!flag){
+			init_pac();
+			$("#pacman-wrapper").show();
+		}
+	},{
+		'type':'keydown',
+		'disable_in_input':'true',
+		'propagate':true,
+		'target':document
+	});
 	$("#error").fadeOut(4000,'easeInExpo');
 	$("#q.searchbox").focus(function() {
 			this.value='';

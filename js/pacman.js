@@ -4,17 +4,20 @@ var maxx, maxy;
 var dx=1, dy=0;
 var flag=1;
 var speed=8;
-var score=0;
+var score=20;
+var loop=null;
 
-function init(){
-	pac = pacman;
-	foo = food;	
+function init_pac(){
+	pac = document.getElementById('pacman');
+	foo = document.getElementById('food');	
 	maxx = 600;
 	maxy = 384;
-	foo.style.left = maxx/2 + 'px';
-	foo.style.top = maxy/2 + 'px';
+	//foo.style.left = maxx/2 + 'px';
+	//foo.style.top = maxy/2 + 'px';
 	pac.style.left ='100px';
 	pac.style.top ='100px';
+	flag=1;
+	score-=20;
 	mainLoop();
 }
 
@@ -40,12 +43,15 @@ function keyHandler(event){
 		removeClass(pac, 'right');removeClass(pac, 'up');removeClass(pac, 'down');removeClass(pac, 'left');
 		addClass(pac, 'down');
 	}else if(event.keyCode==27){
+		if(flag)
+			document.getElementById('pacman-wrapper').style.display = 'none';
 		flag=0;
+		loop=null;	
 	}
 }
 function newFood(){
-	foo.style.top = Math.floor(Math.random()*maxy);
-	foo.style.left = Math.floor(Math.random()*maxx);
+	foo.style.top = 10+Math.floor(Math.random()*(maxy-20)) + 'px';
+	foo.style.left = 10+Math.floor(Math.random()*(maxx-20)) + 'px';
 }
 function updateCords(){
 	collDetect();
@@ -105,5 +111,5 @@ function mainLoop(){
 	//scoreboard.innerHTML = '('+pac.offsetLeft+', '+pac.offsetTop+') - ('+foo.offsetLeft+', '+ foo.offsetTop+')';
 	scoreboard.innerHTML = 'Score : ' + score;
 	if(flag)
-		setTimeout('mainLoop()',40);
+		loop = setTimeout('mainLoop()',40);
 }
