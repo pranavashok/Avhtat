@@ -109,7 +109,7 @@ function mainLoop(){
 	pac.style.left= x+'px';
 	pac.style.top = y+'px';
 	//scoreboard.innerHTML = '('+pac.offsetLeft+', '+pac.offsetTop+') - ('+foo.offsetLeft+', '+ foo.offsetTop+')';
-	scoreboard.innerHTML = 'Score : ' + score;
+	document.getElementById('scoreboard').innerHTML = 'Score : ' + score;
 	if(flag)
 		loop = setTimeout('mainLoop()',40);
 }
