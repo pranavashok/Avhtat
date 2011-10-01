@@ -16,12 +16,12 @@ session_start();
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
- 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
+--> 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
   		<script type="text/javascript" src="js/shortcut.js"></script>
@@ -49,7 +49,7 @@ session_start();
 	        	});
 	       		 $('#logintext').hover(function () {
 	 		        $('#userlinks').stop(true,true).show();
-	        	});	
+	        	});
 	                 $('#userlinks').mouseleave(function () {
 	 		        $('#userlinks').stop(true,true).hide();
 	 		       
@@ -332,11 +332,12 @@ session_start();
 	    					echo "<li id='logintext'><a>Hi, ".$t[0]." <img src='styles/images/register.png'></a></li>";
 	    					}
 	    				      else 
-	    				       {  echo "<li><a href='#!register' rel='ajax'>Register</a></li>";
+	    				       {  echo "<li ><a href='#!register' rel='ajax'>Register</a></li>";
 	    				        echo "<li id='loginlink'><a href='#'>Login</a></li>";
 	    				       
 	    					}
-	    				?>	
+	    				?>
+	    					
 	    				<div id="userlinks">
 	    				<ul>
 	    				<li><a href="#!eventregister" rel="ajax">Event Registration</a></li>
@@ -421,40 +422,34 @@ behind it.
 		   </a>
 		   </li>
 		   <li id='panel2'>
-		 	<div class="text-content">
-		   	<h2> <a href="#!aquamissile">Aqua Missile</a> </h2><br/>
-			<p>
-				A challenging event that tests your designing skills. Blend two of the ancient elements of nature,
-water and air, to create one of the most modern innovations of mankind.
+			<div class="text-content">
+		 	<h2> <a href="#!youngengineer">Young Engineer</a> </h2><br/>
+		 	<p>
+				Young enough to ask questions?  Wise enough to answer them? Then this is the event for you. A national level search for budding school-goers that aims at uplifting their innovative and productive skills.
 			</p>
 		   	</div>
-		   	<a href="#!aquamissile">
-				<img src="styles/images/waterrocket.jpg" alt="3"/>
-		   	</a>
+		   	<a href="#!youngengineer">
+		   	   	<img src="styles/images/young-engineer.jpg" alt="4"/>
+		   	   </a>		 	
 		   </li>
 		   <li id='panel3'>
 		 	<div class="text-content">
-		   	<h2> <a href="#!dirtrace">Dirt Race</a> </h2><br/>
-			<p>
-				The race to the finish-line can never get more interesting than this. Let your bots do all the talking
-while you sit back and enjoy the game. Be crowned the champion in this all new exciting Robot-war!
-			</p>
+			
 		   	</div>
-		   	<a href="#!dirtrace">
-				<img src="styles/images/dirtrace.jpg" alt="4"/>
-		   	</a>
+		   	   <a href="#!wheels">
+		   	   	<img src="styles/images/wheels.jpg" alt="3"/>
+		   	   </a>
 		   </li>
 		   <li id='panel4'>
 		 	<div class="text-content">
-		   	<h2> <a href="#!bplan">B - Plan</a> </h2><br/>
+		 	<h2> <a href="#!clueless">Clueless</a> </h2><br/>
 			<p>
-				If you have ever dreamt of making it big in the Biz-world, then this is the event for you. Chalk out
-your dream business venture and earn a place in our coveted Hall of Fame!
+			Puzzle your way through each mind-boggling round in this cryptic online treasure hunt. Top the Leaderboard to win weekly cash prizes. So login today, and don’t be left Clueless!
 			</p>
 		   	</div>
-		   	<a href="#!bplan">
-				<img src="styles/images/bplan.jpg" alt="5"/>
-		   	</a>
+		   	<a href="#!clueless">
+		   	   	<img src="styles/images/clueless.jpg" alt="5"/>
+		   	   </a>
 		   </li>
 		   <li id='panel5'>
 		 	<div class="text-content">
@@ -468,16 +463,57 @@ you asking for more. Enjoy a whole new experience like never before only at Tath
 				<img src="styles/images/touchmagix.jpg" alt="6"/>
 		   	</a>
 		   </li>
+		   <li id='panel6'>
+		   <div class="text-content">
+		   	<h2> <a href="#!aquamissile">Aqua Missile</a> </h2><br/>
+			<p>
+				A challenging event that tests your designing skills. Blend two of the ancient elements of nature,
+water and air, to create one of the most modern innovations of mankind.
+			</p>
+		   </div>
+		   <a href="#!aquamissile">
+				<img src="styles/images/waterrocket.jpg" alt="3"/>
+		   </a>
+		   </li>
+		   <li id='panel7'>
+		   <div class="text-content">
+		   	<h2> <a href="#!dirtrace">Dirt Race</a> </h2><br/>
+			<p>
+				The race to the finish-line can never get more interesting than this. Let your bots do all the talking
+while you sit back and enjoy the game. Be crowned the champion in this all new exciting Robot-war!
+			</p>
+		   </div>
+		   <a href="#!dirtrace">
+				<img src="styles/images/dirtrace.jpg" alt="4"/>
+		   </a>
+		   </li>
+		   <li id='panel8'>
+		   <div class="text-content">
+		   	<h2> <a href="#!bplan">B - Plan</a> </h2><br/>
+			<p>
+				If you have ever dreamt of making it big in the Biz-world, then this is the event for you. Chalk out
+your dream business venture and earn a place in our coveted Hall of Fame!
+			</p>
+		   </div>
+		   <a href="#!bplan">
+				<img src="styles/images/bplan.jpg" alt="5"/>
+		   </a>
+		   </li>
 		   </ul>
+		   <div id="nav-icons-cont">
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
 				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
 				<li id='1'><a href="#"><img src="styles/images/buttons/cloud.jpg"/></a></li>
-				<li id='2'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
-				<li id='3'><a href="#"><img src="styles/images/buttons/dirtrace.jpg"/></a></li>
-				<li id='4'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
+				<li id='2'><a href="#"><img src="styles/images/buttons/young-engineer.jpg"/></a></li>
+				<li id='3'><a href="#"><img src="styles/images/buttons/wheels.jpg"/></a></li>
+				<li id='4'><a href="#"><img src="styles/images/buttons/clueless.jpg"/></a></li>
 				<li id='5'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
+				<li id='6'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
+				<li id='7'><a href="#"><img src="styles/images/buttons/dirtrace.jpg"/></a></li>
+				<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></li>
 			</ul>	
+		   </div>
 		   </div>
 		   </div>
         			

@@ -1,7 +1,9 @@
 /* General Stuff */
 var timer1 = null,
 	start = 0,
-	cur = 0;
+	cur = 0,
+	dx=0,
+	slideflag=0;
 
 function init(){
 	midx = document.width/2;
@@ -127,9 +129,31 @@ $(document).ready(function () {
 		$('#initiatives').show('slow');});
 		
 	});
+	$("#nav-icons-cont").mouseover(function(event){
+		slideflag=1;
+		xpos=event.pageX - $(this).offset().left;
+		if (xpos <=80){
+			dx=1;
+		}
+		else if (xpos >=320){
+			dx =-1;
+		}else
+			slideflag=0;
+	}); 
+	$("#nav-icons-cont").mouseleave(function(){
+		slideflag=0;
+	});
+	setInterval('slideThumbs()',10);
 });
-
-
+function slideThumbs(){
+if(slideflag){
+	navpos=$('#nav-icons').position().left;
+	navwid=$('#nav-icons').width();
+	target = navpos+dx;
+	if (target >= -(navwid-400) && target  <= 0)
+		$("#nav-icons").css({left: target + 'px'});
+}
+}
 function bindLinks() {
 	var i = 0;
 	var count = $(".ilinks li").length;

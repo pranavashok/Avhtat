@@ -906,7 +906,7 @@ overflow:auto;
 	border-bottom:1px solid #fff;
 	text-decoration:none;
 }
-#nav-icons{
+#nav-icons-cont{
 	display:block;
 	position:absolute;
 	left:55%;
@@ -914,6 +914,13 @@ overflow:auto;
 	width:40%;
 	height:40px;
 	overflow:hidden;
+}
+#nav-icons{
+	display:block;
+	position:relative;
+	left:0px;
+	top:0px;
+	width:600px;
 }
 #sponsor {
 	display:block;
