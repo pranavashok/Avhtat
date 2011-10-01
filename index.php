@@ -16,12 +16,12 @@ session_start();
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-<!--		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
---> 		<script type="text/javascript" src="js/jquery.min.js"></script>
- 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<!--<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>-->
  		<script type="text/javascript" src="js/externalscripts.js"></script>
   		<script type="text/javascript" src="js/shortcut.js"></script>
@@ -110,7 +110,7 @@ session_start();
 					$("#oe_overlay").hide();
 //					$(this).hide("slide", { direction: "down" }, 1000);
 					$("#initiatives").hide('slow', function(){
-						$('#footerlinks').animate({left:(($(document).width()/2)-470) + 'px'},500,function(){
+						$('#footerlinks').animate({left:0+ 'px'},500,function(){
 							$('html, body').stop(true, true).animate({
 								scrollTop: 0,
 								queue: false
@@ -139,7 +139,7 @@ session_start();
 			Tathva '11 | National Institute of Technology, Calicut
 		</title>
 	</head>
-	<body onload='init()' onkeydown='keyHandler(event)'>
+	<body onkeydown='keyHandler(event)'>
 	<div id = "wrapper">
   		<div id="oe_overlay" class="oe_overlay"><!--<iframe id='ipac' width=620 height=400 src="pacman.html"></iframe>--></div>
   		<div id = "topbar">   		

@@ -5,14 +5,6 @@ var timer1 = null,
 	dx=0,
 	slideflag=0;
 
-function init(){
-	midx = document.width/2;
-	document.getElementById('footerlinks').style.left = (midx - 470) + 'px'
-	document.getElementById('contacts').style.left = (midx-280) + 'px'
-	document.getElementById('nitc').style.left = (midx+295) + 'px'
-	document.getElementById('initiatives').style.left = (midx-360) + 'px'
-}
-
 $(document).ready(function () {
 	//init_pac();
 	flag=0;
@@ -125,7 +117,7 @@ $(document).ready(function () {
 		$('#sidebar-puller').css({top:target+'px'});
 	});
 	$('#initiate').click(function(){
-		$('#footerlinks').animate({left:(($(document).width()/2)-570) + 'px'},1000,function(){
+		$('#footerlinks').animate({left:-150+'px'},1000,function(){
 		$('#initiatives').show('slow');});
 		
 	});

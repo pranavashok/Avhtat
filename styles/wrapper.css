@@ -615,7 +615,7 @@ opacity:1;
   
 }
 #footerlinks{
- position:absolute;
+ position:relative;
  width:190px;
  float:left;
  border-right:grey 1px solid;
@@ -636,15 +636,16 @@ opacity:1;
   color:#fbbb00;  
 }
 #initiatives{
-  position:absolute;
+ position:absolute;
  width:150px;
  float:left;
+ left:275px;
  text-align:left;
  height:120px;
  font-size:12px;
  padding-right:10px;
  padding-top:30px;
-  display:none;
+ display:none;
 }
 #initiatives li{
   margin-bottom:4px;
@@ -659,7 +660,7 @@ opacity:1;
 }
 
 #contacts{
- position:absolute;
+ position:relative;
  width:560px;
  float:left;
  height:140px;
@@ -709,10 +710,10 @@ span.contact-details {
 }
 
 #nitc{
- position:absolute;
- padding-top:15px;
- width:190px;
  float:right;
+ position:relative;
+/* padding-top:15px;*/
+ width:190px;
  background-color:black;
  font-size:12px;
  height:130px;
@@ -729,7 +730,6 @@ span.contact-details {
 }
 #nitc  a:hover{
   color:#fbbb00;
-  
 }
 #nitc span{
   text-align:center;
