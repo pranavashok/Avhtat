@@ -379,7 +379,7 @@ session_start();
  	  <li><img src="styles/images/sponsors/arbitron.jpg" alt=""/></li>
    	  <li><img src="styles/images/sponsors/transition.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/raritan.jpg" alt=""/></li>
- 	  <!--<li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>-->
+ 	  <li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
  	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>
  <!--	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>-->
@@ -388,7 +388,12 @@ session_start();
    	  <li><img src="styles/images/sponsors/aruba.jpg" alt=""/></li>
      	  <li><img src="styles/images/sponsors/nsef.jpg" alt=""/></li>
      	  <li><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></li>
-     	  <li><img src="styles/images/sponsors/amul.jpg" alt=""/></li>     	  
+     	  <li><img src="styles/images/sponsors/amul.jpg" alt=""/></li>     	 
+     	  <li><img src="styles/images/sponsors/time.jpg" alt=""/></li>     	      	   
+     	  <li><img src="styles/images/sponsors/fadoo.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/thinkdigit.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/btechguru.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/archipidia.jpg" alt=""/></li>     	 
  	 </ul> 
  	 </div> 
 		</div>
@@ -434,7 +439,11 @@ behind it.
 		   </li>
 		   <li id='panel3'>
 		 	<div class="text-content">
-			
+			<h2> <a href="#!wheels">Wheels</a> </h2><br/>
+		 	<p>
+				"A superb collection of rare and sought-after cars" is insufficient to describe the new generation cars, vintage cars and your heart-throbbing favorites all under one roof.
+				
+			</p>
 		   	</div>
 		   	   <a href="#!wheels">
 		   	   	<img src="styles/images/wheels.jpg" alt="3"/>
@@ -511,7 +520,7 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 				<li id='5'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
 				<li id='6'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
 				<li id='7'><a href="#"><img src="styles/images/buttons/dirtrace.jpg"/></a></li>
-				<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></li>
+				<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
 			</ul>	
 		   </div>
 		   </div>

@@ -220,11 +220,11 @@ echo '<div id="ititle">Sponsors</div>
 <div class="icontent">
 <div id="sponsorslist"> 
 Event Sponsors <br/><br/>
- 	  <a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a> <br/>
- 	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>  <br/>
- 	  <a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a> <br/>
-       <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a> <br/> 	  
-   	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a> <br/>
+ 	  <a href="http://gasotech.com/" target="_blank"><img src="styles/images/sponsors/gasotech.jpg" alt=""/></a> <br/><br/>
+ 	  <a href="http://www.raritan.com/" target="_blank"><img src="styles/images/sponsors/raritan.jpg" alt=""/></a>  <br/><br/>
+ 	  <a href="http://www.arbitron.com/" target="_blank"><img src="styles/images/sponsors/arbitron.jpg" alt=""/></a> <br/><br/>
+       <a href="http://www.ulcyberpark.com//" target="_blank"><img src="styles/images/sponsors/cyberpark.jpg" alt=""/></a> <br/><br/> 	  
+   	  <a href="http://www.arubanetworks.com/" target="_blank"><img src="styles/images/sponsors/aruba.jpg" alt=""/></a> <br/><br/>
      	  <a href="http://nsef-india.org/" target="_blank"><img src="styles/images/sponsors/nsef.jpg" alt=""/></a> <br/><br/>
      	
 Adventure Sponsor<br/><br/>
@@ -236,21 +236,35 @@ Merchandise Partner<br/><br/>
 Registration Sponsor<br/><br/>
        <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a> <br/><br/>
          
-<!--Beverage Sponsor<br/><br/>
+Beverage Sponsor<br/><br/>
 	<a href="" target="_blank"><img src="styles/images/sponsors/cocacola.jpg" alt=""/></a><br/><br/>
-	-->
+	
 Exhibitions Partner<br/><br/>
 	<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a><br/><br/>
+
+Media Partner<br/><br/>
+	  <a href="http://www.thinkdigit.com/" target="_blank"><img src="styles/images/sponsors/thinkdigit.jpg" alt=""/></a><br/><br/>
+
+Education Partner<br/><br/>
+ 	  <a href="http://www.btechguru.com/" target="_blank"><img src="styles/images/sponsors/btechguru.jpg" alt=""/></a><br/><br/>
+ 	  <a href="http://www.time4education.com/" target="_blank"><img src="styles/images/sponsors/time.jpg" alt=""/></a><br/><br/>
+
 IDP Partner<br/><br/>
- 	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a> <br/><br/>
+ 	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a><br/><br/>
+     	  <a href="http://www.facebook.com/archipidia" target="_blank"><img src="styles/images/sponsors/archipidia.jpg" alt=""/></a><br/><br/>
 
 Wokshop Partner<br/><br/>
    	  <a href="http://www.aerotrix.com/" target="_blank"><img src="styles/images/sponsors/aerotrix.jpg" alt=""/></a> <br/><br/>
+    	  <a href="http://www.technophilia.co.in/" target="_blank"><img src="styles/images/sponsors/technophilia.jpg" alt=""/></a> <br/><br/>
+   	  <a href="http://www.metawing.com/" target="_blank"><img src="styles/images/sponsors/metawing.jpg" alt=""/></a> <br/><br/>
+
+Online PR Partner<br/><br/>
+	  <a href="http://www.faadooengineers.com/" target="_blank"><img src="styles/images/sponsors/fadoo.jpg" alt=""/></a><br/><br/>
 
 Initiative Partner<br/><br/>
-       <a href="http://www.amul.com/" target="_blank"><img src="styles/images/sponsors/amul.jpg" alt=""/></a> <br/>
+       <a href="http://www.amul.com/" target="_blank"><img src="styles/images/sponsors/amul.jpg" alt=""/></a> <br/><br/>
        <a href="http://www.teachforindia.org/" target="_blank"><img src="styles/images/sponsors/teachforindia.jpg" alt="" /></a>
-       <a href="http://www.ndtv.com/micro/supportmyschool/default.aspx" target="_blank"><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></a>  <br/><br/>
+       <a href="http://www.ndtv.com/micro/supportmyschool/default.aspx" target="_blank"><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></a>  <br/><br/><br/>
    	  
 </div></div><!--icontent-->
 </div><!--icontainer-->

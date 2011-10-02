@@ -80,7 +80,7 @@ padding-bottom:10px;
 			//echo $_POST['team_leader1'];
 			$r=2;
 			//echo $a;
-			$count=0;
+			$count=1;
 			while($r<=$a && $validate!=1) {
 				$w="team_member$r";
 				
