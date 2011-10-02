@@ -237,7 +237,7 @@ Registration Sponsor<br/><br/>
        <a href="http://www.byjusclasses.com/" target="_blank"><img src="styles/images/sponsors/byjusclasses.jpg" alt=""/></a> <br/><br/>
          
 Beverage Sponsor<br/><br/>
-	<a href="" target="_blank"><img src="styles/images/sponsors/cocacola.jpg" alt=""/></a><br/><br/>
+	<a href="http://www.coca-cola.com/" target="_blank"><img src="styles/images/sponsors/cocacola.jpg" alt=""/></a><br/><br/>
 	
 Exhibitions Partner<br/><br/>
 	<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a><br/><br/>
@@ -258,7 +258,7 @@ Wokshop Partner<br/><br/>
     	  <a href="http://www.technophilia.co.in/" target="_blank"><img src="styles/images/sponsors/technophilia.jpg" alt=""/></a> <br/><br/>
    	  <a href="http://www.metawing.com/" target="_blank"><img src="styles/images/sponsors/metawing.jpg" alt=""/></a> <br/><br/>
 
-Online PR Partner<br/><br/>
+Engineering and Tech Partner<br/><br/>
 	  <a href="http://www.faadooengineers.com/" target="_blank"><img src="styles/images/sponsors/fadoo.jpg" alt=""/></a><br/><br/>
 
 Initiative Partner<br/><br/>
