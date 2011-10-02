@@ -135,6 +135,7 @@ $(document).ready(function () {
 	$("#nav-icons-cont").mouseleave(function(){
 		slideflag=0;
 	});
+	$("#initiatives").css({left:($("#footerlinks").position().left+60)+'px'});
 	setInterval('slideThumbs()',10);
 });
 function slideThumbs(){
