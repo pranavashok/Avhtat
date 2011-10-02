@@ -332,11 +332,23 @@ echo '<iframe id="ifrworkshop" style="margin-top:-20px;" src="participating_work
 	
 	echo $searchResult;
 }else if ($reg=="eventregister" && $hash!=""){
+ if (!isset($_SESSION['tathvaid'])) {
+	echo '<div id="stylized" class="myform">
+	You have not logged in. Please login before registering for an event. 
+	</div>';
+}else {
 	echo '<iframe style="margin-top:-20px;" src="participating_events.php?event_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>';
+	}
 }else if ($reg=="workshopregister" && $hash!=""){
+	 if (!isset($_SESSION['tathvaid'])) {
+	echo '<div id="stylized" class="myform">
+You have not logged in. Please login before registering for a workshop. 
+</div>';
+}else {
 	echo '<iframe style="margin-top:-20px;" src="participating_workshops.php?workshop_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>';
+	}
 }else
 {
 $con = mysql_connect($host, $db_user, $db_password);
