@@ -10,9 +10,12 @@ if($hash_full=="register")
 ?>
 <div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:register();">
+<div style="float:right">
+<a href="#!forgotid" rel="ajax">Forgot Tathva ID?</a><br/><br/>
+<a href="#!forgotpass" rel="ajax">Forgot Password?</a>
+</div>
 <h1>Registration</h1>
 <p>Fill in all the required details</p>
-
 <label>Name
 <span class="small">Add your name</span>
 </label>
@@ -41,8 +44,12 @@ if($hash_full=="register")
 <label>Institution Name
 <span class="small">Add your institution</span>
 </label>
-<!--            Institution List -->
-<select>
+</div>
+<!--            Institution List --><div style="margin:-25px 45px; padding:0px 0px 0px 200px; width:430px; float:right; color:black;  ">&nbsp;&nbsp;&nbsp;
+<select name="institution" class="chzn-select" data-placeholder="Select an institute" style="margin:-20px 300px; width:200px;  color:black;  ">
+
+<option></option>
+<option value="Other">Other</option>
 <option value="A.D.Patel Institute of Technology">A.D.Patel Institute of Technology</option>
 <option value="A.M.S College of Engineering">A.M.S College of Engineering</option>
 <option value="ABV-IIITM, Gwalior">ABV-IIITM, Gwalior</option>
@@ -313,16 +320,15 @@ if($hash_full=="register")
 <option value="Veda Vyasa Vidhyalayam, Kozhikode">Veda Vyasa Vidhyalayam, Kozhikode</option>
 <option value="Velagapudi Ramakrishna Siddhartha Engineering College">Velagapudi Ramakrishna Siddhartha Engineering College</option>
 <option value="Vinayaka Mission University, Chennai">Vinayaka Mission University, Chennai</option>
-</select>
-
+</select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});</script>
+</div><div id="stylized" style="float:left; margin-left:60px;" class="myform">
 
 <!--         End of institution list -->
 
 
 <button type="submit">Register</button>
 <br/><br/>
-<center><a href="#!forgotid" rel="ajax">Forgot Tathva ID</a></center><br/>
-<center><a href="#!forgotpass" rel="ajax">Forgot Password</a></center>
+
 <div class="spacer"></div>
 
 </form>

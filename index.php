@@ -18,6 +18,8 @@ session_start();
 		<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='styles/chosen.css' type='text/css' rel='stylesheet' />
+		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <!-- 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -35,10 +37,12 @@ session_start();
 -->		<script type="text/javascript" src="js/script.js"></script>
 		<!--<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 -->
+		<script type="text/javascript" src="js/chosen.jquery.js"></script>
+
 		<script type="text/javascript">	
 		//setTimeout('ipac.contentWindow.focus()',5000);
 	        $(document).ready(function () {
-	            
+
 	                $('#loginlink').hover(function () {
 	 		        $('#loginbox').stop(true,true).show("slow").fadeIn();
 
@@ -130,6 +134,7 @@ session_start();
 					$('#regbutton-container').html(html);				
 				}
 			});
+		   	                
 		}
 		function search() {
 			document.location.hash='!q='+$('#q').attr('value').replace(' ','|');
@@ -348,7 +353,7 @@ session_start();
 	    				</div>
 	    				<div id="loginbox">
 	    			<form method="post" action="index.php">
-	    			     <label for="tathva_id">Username <input id="tathva_id" name="tathva_id"  type="text" maxlength="20" size="20" /></label>
+	    			     <label for="tathva_id">Tathva ID <input id="tathva_id" name="tathva_id"  type="text" maxlength="20" size="20" /></label>
 				    <label for="password">Password <input id="t_password" name="pass"  type="password" maxlength="20" size="20"></label>
 					<input type="submit" value="Login"/>
 	    				</form>	    
