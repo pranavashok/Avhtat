@@ -82,6 +82,7 @@ session_start();
 				$('#frontpage').hide();	
 				$('#innerpage').hide();
 				$('#gallery-cont').fadeIn('slow');
+				$('#footer').css('position','absolute');
 				$('#loading').hide();
 			}
 			else if (hash.substr(0,7) == '!verify')	loadVerify(hash.substr(8));
