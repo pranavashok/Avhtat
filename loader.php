@@ -303,7 +303,25 @@ echo '<div id="stylized" class="myform">
 
 </form>
 </div>';
-}else if($hash_full=="eventregister")
+}else if($hash_full=="reachus")
+{
+echo '<div id="stylized" >
+<form id="form"name="form" method="post" action="javascript:feedback()">
+<h1>Getting There</h1>
+<p></p><small><a  href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=nit+calicut&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=35.273162,79.013672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=nit&amp;hnear=Kozhikode,+Kerala,+India&amp;t=m&amp;cid=14981244607500735704&amp;ll=11.321174,75.935268&amp;spn=0.058912,0.072956&amp;z=13&amp;iwloc=A" style="color:#ccc; float:left; text-decoration:none;text-align:right">View Larger Map</a></small><br/>
+<iframe width="400"  style="float:left" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=nit+calicut&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=35.273162,79.013672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=nit&amp;hnear=Kozhikode,+Kerala,+India&amp;t=m&amp;cid=14981244607500735704&amp;ll=11.321174,75.935268&amp;spn=0.058912,0.072956&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br />
+</form>
+<div style="padding:20px 0px 0px 430px;"><b>From Calicut Railway Station </b> (22 kms)<br/><br/>By Bus<br/> <small> <i>Take a 10minute walk or get a rickshaw for a fare of ₹12 to <b>Palayam</b> bus stand  and board a bus to REC / NIT Calicut</i></small><br/><br/>By Rickshaw<br/> <small> <i>Get a rickshaw from the Railway Station to NIT Calicut for a fare of ₹ 300 </i></small><br/><br/>By Taxi<br/> <small> <i>You may get a taxi from the railway station to NIT Calicut for a fare of ₹450. </i></small><br/><br/><br/>
+<b>From Calicut Airport </b> <br/><br/> <small> <i>Calicut Airport is located at Karipur, 27 Kms south-east of the city and it is  
+45 kms  from NIT Calicut. You can reach NIT Calicut by taxi from the Calicut Airport and the taxi fare is 
+approximately ₹ 800. </i></small><br/><br/>
+</div>
+
+</div>';
+}
+
+
+else if($hash_full=="eventregister")
 {
  if (!isset($_SESSION['tathvaid'])) {
 	echo '<div id="stylized" class="myform">
