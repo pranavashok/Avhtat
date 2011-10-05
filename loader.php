@@ -514,7 +514,12 @@ Registration Sponsor<br/><br/>
          
 Beverage Sponsor<br/><br/>
 	<a href="http://www.coca-cola.com/" target="_blank"><img src="styles/images/sponsors/cocacola.jpg" alt=""/></a><br/><br/>
-	
+
+Gaming Partners<br/><br/>
+	<a href="http://www.coolermaster.com/" target="_blank"><img src="styles/images/sponsors/coolermaster.jpg" alt=""/></a><br/><br/>
+	<a href="http://www.cmstorm.com/" target="_blank"><img src="styles/images/sponsors/cmstorm.jpg" alt=""/></a><br/><br/>
+	<a href="http://www.choiix.com/" target="_blank"><img src="styles/images/sponsors/choiix.jpg" alt=""/></a><br/><br/>
+
 Exhibitions Partner<br/><br/>
 	<a href="http://touchmagix.com/" target="_blank"><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></a><br/><br/>
 

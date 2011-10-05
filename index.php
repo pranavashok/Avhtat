@@ -381,6 +381,9 @@ session_start();
    	  <li><img src="styles/images/sponsors/transition.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/raritan.jpg" alt=""/></li>
  	  <li><img src="styles/images/sponsors/cocacola.jpg" alt=""/></li>
+     	  <li><img src="styles/images/sponsors/coolermaster.jpg" alt=""/></li>     
+     	  <li><img src="styles/images/sponsors/choiix.jpg" alt=""/></li>     
+     	  <li><img src="styles/images/sponsors/cmstorm.jpg" alt=""/></li>     
  	  <li><img src="styles/images/sponsors/greenadd.jpg" alt=""/></li> 	  
  	  <li><img src="styles/images/sponsors/supportmyschool.jpg" alt=""/></li>
  <!--	  <li><img src="styles/images/sponsors/touchmagix.jpg" alt=""/></li>-->
