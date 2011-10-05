@@ -601,7 +601,7 @@ opacity:1;
   font-family: 'Play', sans-serif;
   width:100%;
   height:200px;
-  position:absolute;
+
   color:white;
   background-color:#000;
   font-size:12px;
@@ -990,7 +990,20 @@ margin-bottom:8px;
 color: #bfff00;
 }
 #stylized a{
-color:#bfff00;
+text-decoration:none;
+font-family:'play';
+color:#ccc;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.1s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+#stylized a:hover{
+color:#fbbb00;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.1s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
 }
 #stylized p{
 font-size:11px;
