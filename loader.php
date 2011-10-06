@@ -341,7 +341,6 @@ echo '<div id="ititle">Information</div>
 <ul class = "ilinks">
 <li id="0">Registration</li>
 <li id="1">Hospitality</li>
-<li id="2">Deregistration</li>
 </ul>
 </div>
 
@@ -384,18 +383,6 @@ Hospitality Manager<br/>
 honeysusan@tathva.org<br/>
 
 </div>
-
-<div id="isection2" class="isection">
-<ul>
-<li>Before deregistering our executives will check for the      damage in the utilities given to you during stay.</li>
-<li>If the team captain leaves before the other team      members please inform us and re edit the team captain.</li>
-<li>After getting cleared from the hospitality desk move on      to the registration desk.</li>
-<li>Here the hospitality team captain can collect the      caution deposit of his/her team.</li>
-<li>Accommodation receipt must be produced during      deregistration. </li>
-<li>The prizes for team events will be given only to the      event team captain.</li>
-</ul>
-</div>
-
 </div><!--icontent-->
 </div><!--icontainer-->
 <div class="idragger_container">
