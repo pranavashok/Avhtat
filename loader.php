@@ -7,8 +7,7 @@ $reg = $tmp[0];
 $hash= $tmp[1];
 if($hash_full=="register")
 {
-?>
-<div id="stylized" class="myform">
+echo '<div id="stylized" class="myform">
 <form id="form" name="form" method="post" action="javascript:register();">
 <div style="float:right">
 <a href="#!forgotid" rel="ajax">Forgot Tathva ID?</a><br/><br/>
@@ -44,9 +43,10 @@ if($hash_full=="register")
 <label>Institution Name
 <span class="small">Add your institution</span>
 </label>
+</form>
 </div>
 <!--            Institution List --><div style="margin:-25px 45px; padding:0px 0px 0px 200px; width:430px; float:right; color:black;  ">&nbsp;&nbsp;&nbsp;
-<select name="institution" class="chzn-select" data-placeholder="Select an institute" style="margin:-20px 300px; width:200px;  color:black;  ">
+<select id="institution" name="institution" class="chzn-select" data-placeholder="Select an institute" style="margin:-20px 300px; width:200px;  color:black;  ">
 
 <option></option>
 <option value="Other">Other</option>
@@ -62,7 +62,7 @@ if($hash_full=="register")
 <option value="Ajay Binay Institute of Technology">Ajay Binay Institute of Technology</option>
 <option value="Al-Farook Educational Center, Calicut">Al-Farook Educational Center, Calicut</option>
 <option value="Al-Farook Residential School, Calicut">Al-Farook Residential School, Calicut</option>
-<option value="All Saints' College, Trivandrum">All Saints' College, Trivandrum</option>
+<option value="All Saints\' College, Trivandrum">All Saints\' College, Trivandrum</option>
 <option value="Alliance Business School, Bangalore">Alliance Business School, Bangalore</option>
 <option value="St. Aloysious Institute of Management and IT, Mangalore">St. Aloysious Institute of Management and IT, Mangalore</option>
 <option value="Amal Jyothi College of Engineering">Amal Jyothi College of Engineering</option>
@@ -75,7 +75,7 @@ if($hash_full=="register")
 <option value="Anna University, Trichy">Anna University, Trichy</option>
 <option value="Apeejay Institute of Management, Jalandhar">Apeejay Institute of Management, Jalandhar</option>
 <option value="Assam University, Silchar">Assam University, Silchar</option>
-<option value="Aurora's Engineering College">Aurora's Engineering College</option>
+<option value="Aurora\'s Engineering College">Aurora\'s Engineering College</option>
 <option value="B.M.S College of Engineering, Bangalore">B.M.S College of Engineering, Bangalore</option>
 <option value="BITS Pilani">BITS Pilani</option>
 <option value="BVBCET">BVBCET</option>
@@ -321,19 +321,18 @@ if($hash_full=="register")
 <option value="Velagapudi Ramakrishna Siddhartha Engineering College">Velagapudi Ramakrishna Siddhartha Engineering College</option>
 <option value="Vinayaka Mission University, Chennai">Vinayaka Mission University, Chennai</option>
 </select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});</script>
-</div><div id="stylized" style="float:left; margin-left:60px;" class="myform">
-
+</div>
+<br/><br/>
+<div id="stylized" class="myform" style="margin:30px;">
 <!--         End of institution list -->
-
-
+<form id="form" name="form" method="post" action="javascript:register();">
 <button type="submit">Register</button>
 <br/><br/>
 
 <div class="spacer"></div>
 
 </form>
-</div>
-<?php
+</div>';
 }
 else if($hash_full=="info")
 {

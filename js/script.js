@@ -217,7 +217,7 @@ function register() {
 		data: data,		
 		cache: false,
 		success: function (html) {	
-		$('#stylized').html(html);
+		$('#content').html(html);
 		$('#innerpage').fadeIn('slow');		
 		bindLinks();
 	}
