@@ -589,7 +589,6 @@ your dream business venture and earn a place in our coveted Hall of Fame!
   		<li id="initiate">Initiatives</li>
   		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
   		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
-  		<li><a href="#"> Forum</a> </li>
   		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
   		</ul>
   		</div>
