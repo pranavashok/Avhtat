@@ -181,7 +181,7 @@ session_start();
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
 							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
 							  <li><a href="#!tathvaquiz" rel="ajax">Tathva Quiz '11</a></li>
-							  <li><a href="#!youngengineer" rel="ajax"><strong>Young Engineer</strong></a></li>							  
+							  <li><a href="#!logiq" rel="ajax">Log IQ</a></li>							  
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Blitzkrieg</li>
@@ -287,6 +287,7 @@ session_start();
     				    			<ul>
     				    				<li class="oe_heading">Envision</li>
     				      				<li><a href="#!idp">Industry Defined Problems</a></li>
+    				      				<li><a href="#!youngengineer" rel="ajax">Young Engineer</a></li>
     				    			</ul>
     				  		</div>
     				  		
