@@ -471,16 +471,15 @@ behind it.
 		   	   </a>
 		   </li>
 		   <li id='panel5'>
-		 	<div class="text-content">
-		   	<h2> <a href="#!touchmagix">Touch Magix</a> </h2><br/>
+		   <div class="text-content">
+		   <h2> <a href="#!theoffroadmi">The Off Road MI</a> </h2><br/>
 			<p>
-				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
-you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
+				"Have you ever imagined yourself in the ancient Roman or Greek era? Thought of inventing a chariot there? Here, we take you back to that age where you can use your pure logic to engineer a vehicle, a real mechanical engineering challenge."  
 			</p>
-		   	</div>
-		   	<a href="#!touchmagix">
-				<img src="styles/images/touchmagix.jpg" alt="6"/>
-		   	</a>
+		   </div>
+		   <a href="#!theoffroadmi">
+				<img src="styles/images/offroadmi.jpg" alt="7"/>
+		   </a>
 		   </li>
 		   <li id='panel6'>
 		   <div class="text-content">
@@ -491,10 +490,22 @@ water and air, to create one of the most modern innovations of mankind.
 			</p>
 		   </div>
 		   <a href="#!aquamissile">
-				<img src="styles/images/waterrocket.jpg" alt="3"/>
+				<img src="styles/images/waterrocket.jpg" alt="6"/>
 		   </a>
 		   </li>
 		   <li id='panel7'>
+		   	<div class="text-content">
+		   	<h2> <a href="#!touchmagix">Touch Magix</a> </h2><br/>
+			<p>
+				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
+you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
+			</p>
+		   	</div>
+		   	<a href="#!touchmagix">
+				<img src="styles/images/touchmagix.jpg" alt="6"/>
+		   	</a>
+		   </li>
+		   <!--<li id='panel7'>
 		   <div class="text-content">
 		   	<h2> <a href="#!dirtrace">Dirt Race</a> </h2><br/>
 			<p>
@@ -505,7 +516,7 @@ while you sit back and enjoy the game. Be crowned the champion in this all new e
 		   <a href="#!dirtrace">
 				<img src="styles/images/dirtrace.jpg" alt="4"/>
 		   </a>
-		   </li>
+		   </li>-->
 		   <li id='panel8'>
 		   <div class="text-content">
 		   	<h2> <a href="#!bplan">B - Plan</a> </h2><br/>
@@ -527,9 +538,9 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 				<li id='2'><a href="#"><img src="styles/images/buttons/young-engineer.jpg"/></a></li>
 				<li id='3'><a href="#"><img src="styles/images/buttons/wheels.jpg"/></a></li>
 				<li id='4'><a href="#"><img src="styles/images/buttons/clueless.jpg"/></a></li>
-				<li id='5'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
+				<li id='5'><a href="#"><img src="styles/images/buttons/offroadmi.jpg"/></a></li>
 				<li id='6'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
-				<li id='7'><a href="#"><img src="styles/images/buttons/dirtrace.jpg"/></a></li>
+				<li id='7'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
 				<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
 			</ul>	
 		   </div>
