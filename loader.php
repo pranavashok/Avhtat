@@ -320,10 +320,19 @@ echo '<div id="stylized" class="myform">
 <option value="Veda Vyasa Vidhyalayam, Kozhikode">Veda Vyasa Vidhyalayam, Kozhikode</option>
 <option value="Velagapudi Ramakrishna Siddhartha Engineering College">Velagapudi Ramakrishna Siddhartha Engineering College</option>
 <option value="Vinayaka Mission University, Chennai">Vinayaka Mission University, Chennai</option>
-</select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});</script>
+</select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});
+$(".chzn-select").change(function(){
+		if($(this).attr("value")=="Other")
+			$("#institution2").show();
+		else
+			$("#institution2").hide();
+	});
+</script>
 </div>
 <br/><br/>
 <div id="stylized" class="myform" style="margin:30px;">
+<br/>
+<label> &nbsp;</label><input style="display:none;" type="text" name="institution2" id="institution2" /> <br/>
 <!--         End of institution list -->
 <form id="form" name="form" method="post" action="javascript:register();">
 <button type="submit">Register</button>
