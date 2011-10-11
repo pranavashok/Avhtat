@@ -45,7 +45,7 @@ echo '<div id="stylized" class="myform">
 </label>
 </form>
 </div>
-<!--            Institution List --><div style="margin:-25px 45px; padding:0px 0px 0px 200px; width:430px; float:right; color:black;  ">&nbsp;&nbsp;&nbsp;
+<!--            Institution List --><div style="margin:-25px 45px; padding:0px 0px 30px 200px; width:430px; float:right; color:black;  ">&nbsp;&nbsp;&nbsp;
 <select id="institution" name="institution" class="chzn-select" data-placeholder="Select an institute" style="margin:-20px 300px; width:200px;  color:black;  ">
 
 <option></option>
@@ -74,6 +74,7 @@ echo '<div id="stylized" class="myform">
 <option value="Anjuman College of Engineering & Technology">Anjuman College of Engineering & Technology</option>
 <option value="Anna University, Trichy">Anna University, Trichy</option>
 <option value="Apeejay Institute of Management, Jalandhar">Apeejay Institute of Management, Jalandhar</option>
+<option value="Arizona State University">Arizona State University</option>
 <option value="Assam University, Silchar">Assam University, Silchar</option>
 <option value="Aurora\'s Engineering College">Aurora\'s Engineering College</option>
 <option value="B.M.S College of Engineering, Bangalore">B.M.S College of Engineering, Bangalore</option>
@@ -223,6 +224,7 @@ echo '<div id="stylized" class="myform">
 <option value="Nehru College of Engineering, Pampady">Nehru College of Engineering, Pampady</option>
 <option value="Nirma Institute of Technology">Nirma Institute of Technology</option>
 <option value="Noorul Islam College of Engineering">Noorul Islam College of Engineering</option>
+<option value="North Carolina State University">North Carolina State University</option>
 <option value="Orissa Engineering College, Bhubaneswar">Orissa Engineering College, Bhubaneswar</option>
 <option value="P A College of Engineering">P A College of Engineering</option>
 <option value="P K M M H S S Edarikode">P K M M H S S Edarikode</option>
@@ -528,10 +530,13 @@ Media Partner<br/><br/>
 	  <a href="http://www.thinkdigit.com/" target="_blank"><img src="styles/images/sponsors/thinkdigit.jpg" alt=""/></a><br/><br/>
 
 Education Partner<br/><br/>
+	  <a href="http://www.campusfrance.org/en" target="_blank"><img src="styles/images/sponsors/campusfrance.jpg" alt=""/></a><br/><br/>
+  	  <a href="http://www.studyinholland.nl/" target="_blank"><img src="styles/images/sponsors/studyinholland.jpg" alt=""/></a><br/><br/>
  	  <a href="http://www.btechguru.com/" target="_blank"><img src="styles/images/sponsors/btechguru.jpg" alt=""/></a><br/><br/>
  	  <a href="http://www.time4education.com/" target="_blank"><img src="styles/images/sponsors/time.jpg" alt=""/></a><br/><br/>
 
 IDP Partner<br/><br/>
+	  <a href="http://www.ntpc.co.in/" target="_blank"><img src="styles/images/sponsors/ntpc.jpg" alt=""/></a><br/><br/>
  	  <a href="http://www.greenadd.in/" target="_blank"><img src="styles/images/sponsors/greenadd.jpg" alt=""/></a><br/><br/>
      	  <a href="http://www.facebook.com/archipidia" target="_blank"><img src="styles/images/sponsors/archipidia.jpg" alt=""/></a><br/><br/>
 
