@@ -137,6 +137,7 @@ $(document).ready(function () {
 	});
 	$("#initiatives").css({left:($("#footerlinks").position().left+60)+'px'});
 	setInterval('slideThumbs()',10);
+	$(".youtube").YouTubePopup({ autoplay: 1 });
 });
 function slideThumbs(){
 if(slideflag){
@@ -171,6 +172,7 @@ function bindLinks() {
 		$(".ilinks li:eq(0)").addClass('selected');
 	});
 	$("#imcs_container").mCustomScrollbar("vertical", 400, "easeOutCirc", 1.05, "auto", "yes", "yes", 10);
+	$(".youtube").YouTubePopup({ autoplay: 1 });
 }
 
 function cycle() {

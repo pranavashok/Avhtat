@@ -282,7 +282,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
   background: #000;
   opacity:0.8;
   width:160px;
-  height:80px;
+  height:100px;
   right:10px;
   top:37px;
   
@@ -311,6 +311,10 @@ background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D
 }
 #userlinks li a:hover{ 
 font-weight:bold;
+}
+table.tstyle td{
+ text-align:center;
+ padding:5px;
 }
 
 .searchboxwrapper{
@@ -460,10 +464,6 @@ opacity:1;
   -moz-transition: left 0.6s ease;
   -o-transition: left 0.6s ease;
    transition: left 0.6s ease;
-}
-
-#sidelinks{
-
 }
 
 #frontpage{

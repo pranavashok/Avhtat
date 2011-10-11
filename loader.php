@@ -333,8 +333,8 @@ $(".chzn-select").change(function(){
 </script>
 </div>
 <br/><br/>
-<div id="stylized" class="myform" style="margin:30px;">
-<br/>
+<div id="stylized" class="myform">
+<br/><br/>
 <label> &nbsp;</label><input style="display:none;" type="text" name="institution2" id="institution2" /> <br/>
 <!--         End of institution list -->
 <form id="form" name="form" method="post" action="javascript:register();">
@@ -669,7 +669,7 @@ You have not logged in. Please login before registering for a workshop.
 	$sql = "SELECT event_id, team_id FROM team WHERE teammember_id LIKE '".$_SESSION['tathvaid']."'";
 	$result = mysql_query($sql,$con);
 	$row = mysql_fetch_row($result);
-	echo '<div id="ititle">Registration Details</div>
+	echo '<div id="ititle">Profile</div>
 <div id="imenu">
 <ul class = "ilinks">
 <li id="0">Events</li>
@@ -685,7 +685,7 @@ You have not logged in. Please login before registering for a workshop.
 	if (!($row))
 		echo 'You have not registered for any events yet.';
 	else{
-		echo '<table><tr><th>Event</th><th>Event ID</th></tr>';
+		echo '<table class="tstyle" border=1><tr><th>Event</th><th>Event ID</th></tr>';
 		while($row){
 			$query = "SELECT event_hash, event_name FROM event WHERE event_id LIKE '".$row[0]."'";
 			$res = mysql_query($query,$con);
@@ -701,9 +701,9 @@ You have not logged in. Please login before registering for a workshop.
 	$result = mysql_query($sql,$con);
 	$row = mysql_fetch_row($result);
 	if (!($row))
-		echo 'You have not registered for any events yet.';
+		echo 'You have not registered for any workshops yet.';
 	else{
-		echo '<table><tr><th>Workshop</th><th>Workshop ID</th></tr>';
+		echo '<table class="tstyle" border=1><tr><th>Workshop</th><th>Workshop ID</th></tr>';
 		while($row){
 			$query = "SELECT workshop_hash, workshop_name FROM workshop WHERE workshop_id LIKE '".$row[0]."'";
 			$res = mysql_query($query,$con);

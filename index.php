@@ -141,10 +141,6 @@ session_start();
 			document.location.hash='!q='+$('#q').attr('value').replace(' ','|');
 			getPage();
 		}
-		$(function () {
-			$("a.youtube").YouTubePopup({ autoplay: 1 });
-			$("img.youtube").YouTubePopup({ autoplay: 1 });
-		});
 		</script>
 		<title>
 			Tathva '11 | National Institute of Technology, Calicut
@@ -360,7 +356,7 @@ session_start();
 	    					
 	    				<div id="userlinks">
 	    				<ul>
-	    				<li><a href="#!myaccount" rel="ajax">Dashboard</a><li>
+	    				<li><a href="#!myaccount" rel="ajax">Profile</a><li>
 	    				<li><a href="#!eventregister" rel="ajax">Event Registration</a></li>
 	    				<li><a href="#!workshopregister" rel="ajax">Workshop Registration</a></li>
 	    				<li><a href="logout.php">Logout</a></li>
@@ -627,6 +623,7 @@ your dream business venture and earn a place in our coveted Hall of Fame!
   		<div id="footerlinks">
   		<ul>
   		<li id="initiate">Initiatives</li>
+  		<li> <a href="#!informals" rel="ajax">Informals</a></li>
   		<li> <a href="#!reachus" rel="ajax">Reach Us </a></li>
   		<li> <a href="#!downloads" rel="ajax">Downloads</a></li>
   		<li><a href="#!credits" rel="ajax"> Credits</a> </li>
