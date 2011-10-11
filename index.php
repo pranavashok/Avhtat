@@ -530,7 +530,6 @@ water and air, to create one of the most modern innovations of mankind.
 		   	<a href="#!youngengineer">
 		   	   	<img src="styles/images/young-engineer.jpg" alt="4"/>
 		   	   </a>		 	
-
 		   </li>
 		   <!--<li id='panel7'>
 		   <div class="text-content">
@@ -543,7 +542,7 @@ while you sit back and enjoy the game. Be crowned the champion in this all new e
 		   <a href="#!dirtrace">
 				<img src="styles/images/dirtrace.jpg" alt="4"/>
 		   </a>
-		   </li>
+		   </li>-->
 		   <li id='panel8'>
 		   <div class="text-content">
 		   	<h2> <a href="#!bplan">B - Plan</a> </h2><br/>

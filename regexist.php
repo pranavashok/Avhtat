@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-	session_start();
+	//session_start();
   	$con = mysql_connect($host, $db_user, $db_password);
-	if ($con && isset($_SESSION['tathvaid'])) {
+	//if ($con && isset($_SESSION['tathvaid'])) {
 		$db = mysql_select_db($db_name, $con);
 		$sql="SELECT event_id FROM event WHERE event_hash LIKE '".mysql_real_escape_string($_POST['page'])."';";
 		$result=mysql_query($sql,$con) or die('error');
@@ -17,5 +17,5 @@
 				echo '<div id="regbutton"><a href="index.php#!workshopregister/'.mysql_real_escape_string($_POST['page']).'">Register</a></div>';
 			}
 		}
-	}
+	//}
 ?>

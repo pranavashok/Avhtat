@@ -321,10 +321,19 @@ echo '<div id="stylized" class="myform">
 <option value="Veda Vyasa Vidhyalayam, Kozhikode">Veda Vyasa Vidhyalayam, Kozhikode</option>
 <option value="Velagapudi Ramakrishna Siddhartha Engineering College">Velagapudi Ramakrishna Siddhartha Engineering College</option>
 <option value="Vinayaka Mission University, Chennai">Vinayaka Mission University, Chennai</option>
-</select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});</script>
+</select><script>$(".chzn-select").chosen({no_results_text: "Choose Other"});
+$(".chzn-select").change(function(){
+		if($(this).attr("value")=="Other")
+			$("#institution2").show();
+		else
+			$("#institution2").hide();
+	});
+</script>
 </div>
 <br/><br/>
 <div id="stylized" class="myform" style="margin:30px;">
+<br/>
+<label> &nbsp;</label><input style="display:none;" type="text" name="institution2" id="institution2" /> <br/>
 <!--         End of institution list -->
 <form id="form" name="form" method="post" action="javascript:register();">
 <button type="submit">Register</button>
@@ -644,6 +653,76 @@ You have not logged in. Please login before registering for a workshop.
 	echo '<iframe style="margin-top:-20px;" src="participating_workshops.php?workshop_hash='.$hash.'" width="100%" height="100%" frameBorder="0" scrolling="no">
 </iframe>';
 	}
+}else if ($hash_full=="myaccount"){
+  if (!isset($_SESSION['tathvaid'])) {
+	echo '<div id="stylized" class="myform">
+  You have not logged in. Please login to see your account. 
+  </div>';
+  }else {
+  	$con = mysql_connect($host, $db_user, $db_password);
+	if (!$con) {
+		die('Could not connect: ' . mysql_error());
+	}
+	$db = mysql_select_db($db_name, $con);
+	$sql = "SELECT event_id, team_id FROM team WHERE teammember_id LIKE '".$_SESSION['tathvaid']."'";
+	$result = mysql_query($sql,$con);
+	$row = mysql_fetch_row($result);
+	echo '<div id="ititle">Registration Details</div>
+<div id="imenu">
+<ul class = "ilinks">
+<li id="0">Events</li>
+<li id="1">Workshops</li>
+</ul>
+</div>
+
+<div id="imcs_container">
+<div class="icustomScrollBox">
+<div class="icontainer">
+<div class="icontent">
+<div id="isection0" class="isection">';
+	if (!($row))
+		echo 'You have not registered for any events yet.';
+	else{
+		echo '<table><tr><th>Event</th><th>Event ID</th></tr>';
+		while($row){
+			$query = "SELECT event_hash, event_name FROM event WHERE event_id LIKE '".$row[0]."'";
+			$res = mysql_query($query,$con);
+			$row1 = mysql_fetch_row($res);
+			echo '<tr><td><a href="#!'.$row1[0].'" rel="ajax">'.$row1[1].'</a></td><td>'.$row[1].'</td></tr>';	
+  			$row=mysql_fetch_row($result);
+  		}
+  		echo '</table>';
+  	}
+  	echo '</div>
+<div id="isection1" class="isection">';
+	$sql = "SELECT workshop_id, workshop_team_id FROM team_workshop WHERE tathva_id LIKE '".$_SESSION['tathvaid']."'";
+	$result = mysql_query($sql,$con);
+	$row = mysql_fetch_row($result);
+	if (!($row))
+		echo 'You have not registered for any events yet.';
+	else{
+		echo '<table><tr><th>Workshop</th><th>Workshop ID</th></tr>';
+		while($row){
+			$query = "SELECT workshop_hash, workshop_name FROM workshop WHERE workshop_id LIKE '".$row[0]."'";
+			$res = mysql_query($query,$con);
+			$row1 = mysql_fetch_row($res);
+			echo '<tr><td><a href="#!'.$row1[0].'" rel="ajax">'.$row1[1].'</a></td><td>'.$row[1].'</td></tr>';
+			$row=mysql_fetch_row($result);	
+  		}
+  		echo '</table>';
+  	}
+  	echo '</div>
+</div><!--icontent-->
+</div><!--icontainer-->
+<div class="idragger_container">
+<div class="idragger"></div>
+</div>
+<div id="igrad"></div>
+</div><!--icustomScrollBox-->
+<a href="#" class="iscrollUpBtn"></a><a href="#" class="iscrollDownBtn"></a>
+</div> <!--imcs_container-->';
+	
+  }
 }else
 {
 $con = mysql_connect($host, $db_user, $db_password);

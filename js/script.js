@@ -210,18 +210,48 @@ function ticker(obj,effect,speed){
       }, speed);
 }
 function register() {
-	var data = 'name=' + $('#name').attr('value') + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value') + '&password=' + $('#password').attr('value')+ '&password2=' + $('#password2').attr('value')+ '&institution=' + $('#institution').attr('value') ;
-	$.ajax({
-		url: "register.php",	
-		type: "POST",		
-		data: data,		
-		cache: false,
-		success: function (html) {	
-		$('#content').html(html);
-		$('#innerpage').fadeIn('slow');		
-		bindLinks();
+	d1 = $('#name').attr('value');
+	d2 = $('#email').attr('value');
+	d3 = $('#phone').attr('value');
+	d4 = $('#password').attr('value');
+	d5 = $('#password2').attr('value');
+	d6 = $('#institution').attr('value');
+	if(d1!="" && d2!="" && d3!="" && d4!="" && d5!="" &&d6!=""){
+	if(d6=="Other"){
+		d6=$("#institution2").attr('value');
+		if(d6!=""){
+		var data = 'name=' + d1 + '&email=' + d2 + '&phone=' + d3 + '&password=' + d4+ '&password2=' + d5+ '&institution=' + d6 ;
+		$.ajax({
+			url: "register.php",	
+			type: "POST",		
+			data: data,		
+			cache: false,
+			success: function (html) {	
+			$('#content').html(html);
+			$('#innerpage').fadeIn('slow');		
+			bindLinks();
+			}	
+		});
+		}else{
+			alert("Please fill in your instituiton.");
+		}
+	}else{
+		var data = 'name=' + d1 + '&email=' + d2 + '&phone=' + d3 + '&password=' + d4+ '&password2=' + d5+ '&institution=' + d6 ;
+		$.ajax({
+			url: "register.php",	
+			type: "POST",		
+			data: data,		
+			cache: false,
+			success: function (html) {	
+			$('#content').html(html);
+			$('#innerpage').fadeIn('slow');		
+			bindLinks();
+			}	
+		});
 	}
-	});
+	}else{
+		alert("Please fill in all the fields.");
+	}
 }
 function getid() {
 	var data = 'item=id' + '&email=' + $('#email').attr('value') + '&phone=' + $('#phone').attr('value');
