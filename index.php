@@ -360,6 +360,7 @@ session_start();
 	    					
 	    				<div id="userlinks">
 	    				<ul>
+	    				<li><a href="#!myaccount" rel="ajax">Dashboard</a><li>
 	    				<li><a href="#!eventregister" rel="ajax">Event Registration</a></li>
 	    				<li><a href="#!workshopregister" rel="ajax">Workshop Registration</a></li>
 	    				<li><a href="logout.php">Logout</a></li>
