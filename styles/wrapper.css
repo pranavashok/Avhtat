@@ -29,7 +29,11 @@ body{
   border-bottom:1px solid #4a4a4a; 
   min-width:960px; 
 }
-
+.onthespot {
+	text-align:right;
+	color:#999;
+	float:right;
+}
 .oe_wrapper{
  position:absolute;
  left:50px;
@@ -866,8 +870,19 @@ overflow:auto;
   transition: all 0.6s ease;
   display:none;
 }
-
 #panels img{
+	position:absolute;
+	left:20px;
+	top:20px;
+	width:45%;
+	height:300px;
+	border:10px solid #979797;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition: all 0.2s ease;
+  	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+#panels iframe{
 	position:absolute;
 	left:20px;
 	top:20px;
@@ -905,6 +920,14 @@ overflow:auto;
 	padding-bottom:5px;
 	border-bottom:1px solid #fff;
 	text-decoration:none;
+}
+.ui-dialog-titlebar {
+	height:25px;
+}
+.ui-dialog-titlebar-close {
+	position:absolute;
+	top:5px;
+	right:5px;
 }
 #nav-icons-cont{
 	display:block;

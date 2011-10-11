@@ -248,6 +248,7 @@ echo '<div id="stylized" class="myform">
 <option value="SJB Institute of Technology">SJB Institute of Technology</option>
 <option value="SJC Institute of Technology">SJC Institute of Technology</option>
 <option value="SN College Chempazhanthy">SN College Chempazhanthy</option>
+<option value="SNM Institute of Management & Technology">SNM Institute of Management & Technology</option>
 <option value="SNS College of Engineering">SNS College of Engineering</option>
 <option value="SNS College of Technology">SNS College of Technology</option>
 <option value="Sree Narayana Gurukulam College, Kolenchery">Sree Narayana Gurukulam College, Kolenchery</option>

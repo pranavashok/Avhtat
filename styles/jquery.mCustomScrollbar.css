@@ -6,7 +6,7 @@
 /* content block 1 */
 
 #imcs_container{position:absolute; top:90px; left:180px; width:75%; height:80%; padding:0 10px; /*border-top:1px solid #333; border-bottom:1px solid #333;*/}
-#imcs_container.fullwidth{position:absolute; top:90px; left:0px; width:95%; height:80%; padding:0 10px; }
+#imcs_container.fullwidth{position:absolute; top:90px; left:20px; width:95%; height:80%; padding:0 10px; }
 #imcs_container .icustomScrollBox {position:relative; height:100%; overflow:hidden;}
 #imcs_container .icustomScrollBox .icontainer {position:relative; width:96%; height:auto; top:0; float:left;}
 #imcs_container .icustomScrollBox .icontent {margin: 10px 0 0 0; clear:both;}

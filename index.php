@@ -12,6 +12,7 @@ session_start();
 		<meta http-equiv="expires" content="Mon, 31 Aug 2012 00:00:00 GMT" />
 		<link rel="icon" type="image/png" href="styles/images/favicon.png" />
 		<link href='styles/wrapper.css' type='text/css' rel='stylesheet' />
+		<link href='styles/ui-darkness/jquery-ui-1.8.16.custom.css' type='text/css' rel='stylesheet' />
 		<link href='styles/lavalamp.css' type='text/css' rel='stylesheet' />
 		<link href='styles/li-scroller.css' type='text/css' rel='stylesheet' />
 		<link href='styles/tipsy.css' type='text/css' rel='stylesheet' />		<!--for sidebar tooltip-->		
@@ -140,6 +141,10 @@ session_start();
 			document.location.hash='!q='+$('#q').attr('value').replace(' ','|');
 			getPage();
 		}
+		$(function () {
+			$("a.youtube").YouTubePopup({ autoplay: 1 });
+			$("img.youtube").YouTubePopup({ autoplay: 1 });
+		});
 		</script>
 		<title>
 			Tathva '11 | National Institute of Technology, Calicut
@@ -172,42 +177,42 @@ session_start();
 							  <li><a href="#!theoffroadmi" rel="ajax">The Off Road MI</a></li>
 							  <li><a href="#!amphiboat" rel="ajax">AMPHI-BOaT</a></li>
 							  <li><a href="#!aquamissile" rel="ajax">Aqua Missile</a></li>
-                                                          <li><a href="#!wheels" rel="ajax">Wheels '11</a></li>
+                                                          <li><a href="#!conceptcardesign" rel="ajax">Concept Car Design</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">General</li>
 							  <li><a href="#!blueprint" rel="ajax">Blueprint</a></li>
-							  <li><a href="#!tots" rel="ajax">T.O.T.S</a></li>
+							  <li><a href="#!tots" rel="ajax">T.O.T.S <span class="onthespot">&#8225;</span></a></li>
   							  <li><a href="#!bizbioperzanta" rel="ajax">Bizbio Perzanta</a></li>
-							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso</a></li>
+							  <li><a href="#!inquisitovirtuoso" rel="ajax">Inquisito Virtuoso <span class="onthespot">&#8225;</span></a></li>
 							  <li><a href="#!tathvaquiz" rel="ajax">Tathva Quiz '11</a></li>
-							  <li><a href="#!logiq" rel="ajax">Log IQ</a></li>							  
+							  <li><a href="#!logiq" rel="ajax">Log IQ <span class="onthespot">&#8225;</span></a></li>							  
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Blitzkrieg</li>
 							  <li><a href="#!dota" rel="ajax">DotA</a></li>
 							  <li><a href="#!counterstrike" rel="ajax">Counter-Strike 1.6</a></li>
 							  <li><a href="#!streetfighter" rel="ajax">Super Street Fighter 4</a></li>
-							  <li><a href="#!nfsmw" rel="ajax">NFS: Most Wanted</a></li>							
+							  <li><a href="#!nfsmw" rel="ajax">NFS: Most Wanted</a></li>
 							  <li><a href="#!fifa11" rel="ajax">FIFA 11</a></li>
-							  <li><a href="#!ragdollmasters" rel="ajax">Ragdoll Masters</a></li>  							      </ul>						      
+							  <li><a href="#!ragdollmasters" rel="ajax">Ragdoll Masters <span class="onthespot">&#8225;</span></a></li>  							      </ul>						      
 						      <ul style="clear:both;">
 							  <li class="oe_heading">Electrical</li>
 							  <li><a href="#!mousedrive" rel="ajax">Mouse Drive</a></li>
 							  <li><a href="#!coilgun" rel="ajax">Coil Gun</a></li>
-							  <li><a href="#!puretrics" rel="ajax">Pure Trics</a></li>
+							  <li><a href="#!puretrics" rel="ajax">Pure Trics <span class="onthespot">&#8225;</span></a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading" >Electronics</li>
-							  <li><a href="#!3gsm" rel="ajax">3GSM</a></li>
+							  <li><a href="#!gsm" rel="ajax">GSM</a></li>
 							  <li><a href="#!sonici" rel="ajax">Sonic i</a></li>
 							  <li><a href="#!eracer" rel="ajax">E Racer</a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">Civil</li>
-							  <li><a href="#!erecthion" rel="ajax">eRECthion</a></li>
+							  <li><a href="#!erecthion" rel="ajax">eRECthion <span class="onthespot">&#8225;</span></a></li>
 							  <li><a href="#!ageoffloatingempires" rel="ajax">Age of Floating Empires</a></li>
-							  <li><a href="#!descartessquare" rel="ajax">Descartes Square</a></li>
+							  <li><a href="#!descartessquare" rel="ajax">Descartes Square <span class="onthespot">&#8225;</span></a></li>
 						      </ul>
 						      <ul>
 							  <li class="oe_heading">Computer Science</li>
@@ -219,7 +224,7 @@ session_start();
 					                  <li class="oe_heading">Architecture</li>
 					                  <li><a href="#!pathtofame" rel="ajax">Path to Fame</a></li>
 					                  <li><a href="#!poddesign" rel="ajax">Pod Design</a></li>
-					                  <li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>
+					                  <!--<li><a href="#!colourpalette" rel="ajax">Colour Palette</a></li>-->
 					                  <li><a href="#!kineticsculpture" rel="ajax">Kinetic Sculpture</a></li>
 						      </ul>
 						      <ul>
@@ -240,6 +245,7 @@ session_start();
 							  <li><a href="#!onlinequiz" rel="ajax">Online Quiz</a></li>
                                                           <li><a href="#!koderkup" rel="ajax">Koder Kup</a></li>
 						      </ul>
+						      <span class="onthespot">&#8225;  - Events which do not require preparation</span>
     						</div>
     					</li>
     					<li><a href="#">Workshops</a>
@@ -259,7 +265,7 @@ session_start();
     				  		</div>
     					</li>
     					<li><a href="#">Exhibitions</a>
-						<div style="width:320px;">
+						<div style="width:480px;">
 		    					<ul>
 		    				      		<li class="oe_heading">Government</li>
 		    				      		<li><a href="#!indianarmy">Indian Army</a></li>
@@ -271,6 +277,12 @@ session_start();
 		    				      		<li><a href="#!touchmagix">Touch Magix</a></li>		    				     
 								<li><a href="#!hamradio">Ham Radio</a></li>
 		    				      		<li><a href="#!interface">IEEE Interface '11</a></li>		    				     		    				      	
+			    				</ul>
+		    				    	<ul>
+			    				      	<li class="oe_heading">Wheels '11</li>
+		    				      		<li><a href="#!wheels">Hands On</a></li>		    				     
+								<li><a href="#!wheels">Vista</a></li>
+		    				      		<li><a href="#!wheels">Full Throttle</a></li>		    				     		    				      			<li><a href="#!wheels">Autograph</a></li>
 			    				</ul>
     				  		</div>
     					
@@ -288,6 +300,7 @@ session_start();
     				    				<li class="oe_heading">Envision</li>
     				      				<li><a href="#!idp">Industry Defined Problems</a></li>
     				      				<li><a href="#!youngengineer" rel="ajax">Young Engineer</a></li>
+    				      				<li><a href="#!srishti">Srishti</a></li>
     				    			</ul>
     				  		</div>
     				  		
@@ -412,18 +425,52 @@ session_start();
 		   <ul id="panels">
 		   <li id='panel0'>
 		   <div class="text-content">
-		   	<h2> <a href="#!rcplane">Airshow</a> </h2><br/>
+		   <h2> <a class="youtube" href="#" rel="daP-My8aS0M">Tathva '11 Promo Video</a> </h2><br/>
 			<p>
-				Always been mesmerized by aircrafts and aviation? Then this is the chance for you to see and learn
-it from the professionals. A series of workshops that is sure to take you on a magical journey into the
-world of aerodynamics. Experience this life of zero gravity only at Tathva ’11.
+				Events, workshops, exhibitions and more...<br/> <br/>
+It’s all happening at Tathva ’11. Prepare for an experience like never before. The countdown begins...<br/>
+<br/>
+Inspiring Innovation. Only at NIT Calicut.
 			</p>
 		   </div>
-		   <a href="#!rcplane">
-			<img src="styles/images/airshow.jpg" alt="1"/>
-		   </a>
+		   <img class="youtube" rel="daP-My8aS0M" src="styles/images/promo.jpg" />
 		   </li>
 		   <li id='panel1'>
+		   <div class="text-content">
+		   <h2> <a href="#!theoffroadmi">The Off Road MI</a> </h2><br/>
+			<p>
+				"Have you ever imagined yourself in the ancient Roman or Greek era? Thought of inventing a chariot there? Here, we take you back to that age where you can use your pure logic to engineer a vehicle, a real mechanical engineering challenge."  
+			</p>
+		   </div>
+		   <a href="#!theoffroadmi">
+				<img src="styles/images/offroadmi.jpg" alt="7"/>
+		   </a>
+		   </li>
+		   <li id='panel2'>
+		 	<div class="text-content">
+			<h2> <a href="#!wheels">Wheels</a> </h2><br/>
+		 	<p>
+				"A superb collection of rare and sought-after cars" is insufficient to describe the new generation cars, vintage cars and your heart-throbbing favorites all under one roof.
+				
+			</p>
+		   	</div>
+		   	   <a href="#!wheels">
+		   	   	<img src="styles/images/wheels.jpg" alt="3"/>
+		   	   </a>		   
+		   </li>
+		   <li id='panel3'>
+		   	<div class="text-content">
+		   	<h2> <a href="#!touchmagix">Touch Magix</a> </h2><br/>
+			<p>
+				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
+you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
+			</p>
+		   	</div>
+		   	<a href="#!touchmagix">
+				<img src="styles/images/touchmagix.jpg" alt="6"/>
+		   	</a>		   
+		   </li>
+		   <li id='panel4'>
 		   <div class="text-content">
 		   	<h2> <a href="#!cloudcomputing">Cloud Computing Workshop</a> </h2><br/>
 			<p>
@@ -436,30 +483,7 @@ behind it.
 			<img src="styles/images/cloud.jpg" alt="2"/>
 		   </a>
 		   </li>
-		   <li id='panel2'>
-			<div class="text-content">
-		 	<h2> <a href="#!youngengineer">Young Engineer</a> </h2><br/>
-		 	<p>
-				Young enough to ask questions?  Wise enough to answer them? Then this is the event for you. A national level search for budding school-goers that aims at uplifting their innovative and productive skills.
-			</p>
-		   	</div>
-		   	<a href="#!youngengineer">
-		   	   	<img src="styles/images/young-engineer.jpg" alt="4"/>
-		   	   </a>		 	
-		   </li>
-		   <li id='panel3'>
-		 	<div class="text-content">
-			<h2> <a href="#!wheels">Wheels</a> </h2><br/>
-		 	<p>
-				"A superb collection of rare and sought-after cars" is insufficient to describe the new generation cars, vintage cars and your heart-throbbing favorites all under one roof.
-				
-			</p>
-		   	</div>
-		   	   <a href="#!wheels">
-		   	   	<img src="styles/images/wheels.jpg" alt="3"/>
-		   	   </a>
-		   </li>
-		   <li id='panel4'>
+		   <li id='panel5'>
 		 	<div class="text-content">
 		 	<h2> <a href="#!clueless">Clueless</a> </h2><br/>
 			<p>
@@ -470,18 +494,21 @@ behind it.
 		   	   	<img src="styles/images/clueless.jpg" alt="5"/>
 		   	   </a>
 		   </li>
-		   <li id='panel5'>
+		   <li id='panel6'>
 		   <div class="text-content">
-		   <h2> <a href="#!theoffroadmi">The Off Road MI</a> </h2><br/>
+		   
+		   	<h2> <a href="#!rcplane">Airshow</a> </h2><br/>
 			<p>
-				"Have you ever imagined yourself in the ancient Roman or Greek era? Thought of inventing a chariot there? Here, we take you back to that age where you can use your pure logic to engineer a vehicle, a real mechanical engineering challenge."  
+				Always been mesmerized by aircrafts and aviation? Then this is the chance for you to see and learn
+it from the professionals. A series of workshops that is sure to take you on a magical journey into the
+world of aerodynamics. Experience this life of zero gravity only at Tathva ’11.
 			</p>
 		   </div>
-		   <a href="#!theoffroadmi">
-				<img src="styles/images/offroadmi.jpg" alt="7"/>
+		   <a href="#!rcplane">
+			<img src="styles/images/airshow.jpg" alt="1"/>
 		   </a>
 		   </li>
-		   <li id='panel6'>
+		   <li id='panel7'>
 		   <div class="text-content">
 		   	<h2> <a href="#!aquamissile">Aqua Missile</a> </h2><br/>
 			<p>
@@ -493,17 +520,16 @@ water and air, to create one of the most modern innovations of mankind.
 				<img src="styles/images/waterrocket.jpg" alt="6"/>
 		   </a>
 		   </li>
-		   <li id='panel7'>
-		   	<div class="text-content">
-		   	<h2> <a href="#!touchmagix">Touch Magix</a> </h2><br/>
-			<p>
-				Be enthralled by a creative mix of displays as you get engulfed in this fascinating show that will leave
-you asking for more. Enjoy a whole new experience like never before only at Tathva ’11.
+		   <li id='panel8'>
+			<div class="text-content">
+		 	<h2> <a href="#!youngengineer">Young Engineer</a> </h2><br/>
+		 	<p>
+				Young enough to ask questions?  Wise enough to answer them? Then this is the event for you. A national level search for budding school-goers that aims at uplifting their innovative and productive skills.
 			</p>
 		   	</div>
-		   	<a href="#!touchmagix">
-				<img src="styles/images/touchmagix.jpg" alt="6"/>
-		   	</a>
+		   	<a href="#!youngengineer">
+		   	   	<img src="styles/images/young-engineer.jpg" alt="4"/>
+		   	   </a>		 	
 		   </li>
 		   <!--<li id='panel7'>
 		   <div class="text-content">
@@ -528,20 +554,21 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 		   <a href="#!bplan">
 				<img src="styles/images/bplan.jpg" alt="5"/>
 		   </a>
-		   </li>
+		   </li>-->
 		   </ul>
 		   <div id="nav-icons-cont">
 		   <div id="nav-icons">
 			<ul class='lavaLamp'>
-				<li id='0'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>
-				<li id='1'><a href="#"><img src="styles/images/buttons/cloud.jpg"/></a></li>
-				<li id='2'><a href="#"><img src="styles/images/buttons/young-engineer.jpg"/></a></li>
-				<li id='3'><a href="#"><img src="styles/images/buttons/wheels.jpg"/></a></li>
-				<li id='4'><a href="#"><img src="styles/images/buttons/clueless.jpg"/></a></li>
-				<li id='5'><a href="#"><img src="styles/images/buttons/offroadmi.jpg"/></a></li>
-				<li id='6'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
-				<li id='7'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
-				<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>
+				<li id='0'><a href="#"><img src="styles/images/buttons/promobtn.jpg"/></a></li>
+				<li id='1'><a href="#"><img src="styles/images/buttons/offroadmi.jpg"/></a></li>
+				<li id='2'><a href="#"><img src="styles/images/buttons/wheels.jpg"/></a></li>
+				<li id='3'><a href="#"><img src="styles/images/buttons/touchmagix.jpg"/></a></li>
+				<li id='4'><a href="#"><img src="styles/images/buttons/cloud.jpg"/></a></li>				
+				<li id='5'><a href="#"><img src="styles/images/buttons/clueless.jpg"/></a></li>
+				<li id='6'><a href="#"><img src="styles/images/buttons/airshow.jpg"/></a></li>				
+				<li id='7'><a href="#"><img src="styles/images/buttons/waterrocket.jpg"/></a></li>
+				<li id='8'><a href="#"><img src="styles/images/buttons/young-engineer.jpg"/></a></li>
+				<!--<li id='8'><a href="#"><img src="styles/images/buttons/bplan.jpg"/></a></li>-->
 			</ul>	
 		   </div>
 		   </div>
@@ -579,9 +606,9 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 			<div class="ticketcontainer">
 			    <ul id="ticker01">
 				<li><span> <a href="#!eventregister">Event registrations</a> and <a href="#!workshopregister">Workshop registrations</a> have begun. Register now!</a></span></li>			    
+				<li><span> | <a href="http://tuxofwar.tathva.org/" target="_blank">Tux of War</a> online prelims re-scheduled for Tuesday October 11, 10 pm to 11 pm. Register now! </span></li>
 				<li><span> | Check out <a href="http://bullsnbears.tathva.org/" target="_blank">Bulls n Bears</a>, the equity trading game.  </span></li>
-				<li><span> | <a href="#!koderkup">Koder Kup</a> - The online coding contest is scheduled to begin on 4th October.</span></li>
-				<li><span> | <a href="#!b-aptist">B-Aptist</a> - Deadline for submission of executive summary extended to 10th October.</span></li>				
+				<li><span> | <a href="#!koderkup">Koder Kup</a> - The online coding contest has begun on 4th October.</span></li>
 			    	<li><span> | <a href="#!onlinequiz">Online Quiz</a> - The grandmaster of all online quizzes.</span></li>
 			    </ul>
 			</div>
@@ -609,7 +636,6 @@ your dream business venture and earn a place in our coveted Hall of Fame!
 			<li><a href="#!teachforindia">Teach for India</a></li>
 		   	<li><a href="#!supportmyschool">NDTV-Coke <br/>Support My School</a></li>
 		    	<li><a href="#!youngengineer">Young Engineer</a></li>
-		    	<li><a href="#!campusinitiatives">Campus Initiatives</a></li>
   		</ul>
   		</div>
   		
@@ -650,3 +676,4 @@ your dream business venture and earn a place in our coveted Hall of Fame!
   	<div id="loading"><img src="styles/images/loading.gif"/></div>
 	</body>	
 </html>
+
