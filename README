@@ -6,3 +6,10 @@ Authors: Pranav Ashok, Sachin Krishnan, Shamil CM
 Created: 2011 July 21, 9:42 PM
 
 Checking out the first revision: 10:42 PM
+
+Added in 2020
+-------------
+
+To star the website, perform the following steps
+1. Rename config.php.example to config.php
+2. Run `php -S localhost:8000` with some php>=5.4
